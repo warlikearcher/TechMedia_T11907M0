@@ -59,6 +59,7 @@ FROM
         SELECT
             tbcpulist.idProduct,
             tbcpulist.nameProduct,
+            tbcpulist.photo1,
             tbcpulist.rate
         FROM
             tbcpulist
@@ -68,6 +69,7 @@ UNION
     SELECT
         tbgraphicslist.idProduct,
         tbgraphicslist.nameProduct,
+        tbgraphicslist.photo1,
         tbgraphicslist.rate
     FROM
         tbgraphicslist
@@ -77,6 +79,7 @@ UNION
     SELECT
         tblaptoplist.idProduct,
         tblaptoplist.nameProduct,
+        tblaptoplist.photo1,
         tblaptoplist.rate
     FROM
         tblaptoplist
@@ -86,6 +89,7 @@ UNION
     SELECT
         tbramlist.idProduct,
         tbramlist.nameProduct,
+        tbramlist.photo1,
         tbramlist.rate
     FROM
         tbramlist
@@ -95,6 +99,7 @@ UNION
     SELECT
         tbradiatorslist.idProduct,
         tbradiatorslist.nameProduct,
+        tbradiatorslist.photo1,
         tbradiatorslist.rate
     FROM
         tbradiatorslist
@@ -271,6 +276,9 @@ and open the template in the editor.
                     break;
                 case "payment":
                     include 'client/view/payment.php';
+                    break;
+                case "news":
+                    include 'client/view/news.php';
                     break;
                 case "orderQuery":
                     include 'client/view/orderQuery.php';

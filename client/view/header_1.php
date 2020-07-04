@@ -14,7 +14,7 @@
                         <li id="fb"><a href="https://www.facebook.com/TechMedia-107704110962045/" target="_blank"><span class="fa fa-facebook ">acebook</span></a></li>
                         <li id="tw"><a href="https://twitter.com/MinelrealEric" target="_blank"><span class="fa fa-twitter">Twitter</span></a></li>
                         <li id="gmail"><a href="mailto:warlikearcher@gmail.com" target="_blank"><span class="fa fa-google">mail</span></a></li>
-                        <li id="promo"><a href="#" target="_blank"><span class="glyphicon glyphicon-gift">Khuyến mãi</span></a>
+                        <li id="promo"><a href="index.php?view=news&id=16" target="_blank"><span class="glyphicon glyphicon-gift">Khuyến mãi</span></a>
                         </li>
                     </ul>
                 </div>
@@ -60,9 +60,9 @@
             <div class="col-md-6 center-menu" >
                 <div>
                     <ul class="nav navbar-nav" id="list-nav">
-                        <li class="menu-list"><a href="index.php">Trang chủ</a></li>
+                        <li class="menu-list"><a href="../../index.php">Trang chủ</a></li>
                         <li class="menu-list"><a href="">Giới thiệu</a></li>
-                        <li class="menu-list"><a href="">Khuyến mãi</a></li>
+                        <li class="menu-list"><a href="index.php?view=news&id=16">Khuyến mãi</a></li>
                         <li class="menu-list"><a href="">Liên hệ</a></li>                      
                         <?php
                         if (isset($_SESSION["user-email"]) && ($role==0)){

@@ -598,17 +598,27 @@ a{
 }
 .list-ii .grid-container .item{
     border: 0.5px solid rgb(34, 34, 34);
+    height: 100px;
+    width: 557.17px;
 }
 .list-ii .grid-container .item .news-item-img{
     float: left;
     height: 100%;
     width: 40%;
+    max-width: 40%;
+    max-height: 100px;
 }
 .list-ii .grid-container .item figcaption{
     float: right;
     height: 100%;
     width: 60%;
     text-align: center;
+}
+.news-item-img ,
+.news-item-img img{
+    height: 100%;
+    max-height: 98px;
+    width: 100%;
 }
 /* finish news content */
 /* finish index pages css */
@@ -943,3 +953,24 @@ table.dataTable thead .sorting_desc_disabled:before {
     bottom: .5em;
 }
 /*End Search History*/
+
+/*New page*/
+.title-news{
+    
+}
+.content-news img{
+    height: 200px;
+    max-height: 250px;
+    width: 100%;
+}
+.content-news .ct-area{
+    margin-top: 20px;
+    font-family: cursive;
+    
+}
+.list-news{
+    border: 1px solid grey;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+/*End new Page*/
