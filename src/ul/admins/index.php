@@ -1,12 +1,11 @@
 <?php
 include_once './controllers/database/connectDB.php';
-if(!isset($_GET['src']) || (isset($_GET['src']) && $_GET['src'] == 'dashBoard')){
-include './config/model/take_money.php';
+if (!isset($_GET['src']) || (isset($_GET['src']) && $_GET['src'] == 'dashBoard')) {
+    include './config/model/take_money.php';
 }
 //pagination
-    require './config/model/pagination.php';
+require './config/model/pagination.php';
 //end pagination
-
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +23,7 @@ and open the template in the editor.
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <title>Admins page</title>
-        
+
     </head>
     <body>
         <div id="wrapper" class="padding-0">

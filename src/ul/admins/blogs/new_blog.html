@@ -1,0 +1,47 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Thêm bài viết mới</title>
+        <!-- Font Google -->
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <!-- Style.css -->        
+        <link href="css/CodeMau_form.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div style="background-color: #D3D3D3; width: 900px; margin-left: 100px; border-radius: 20px;">
+            <div id="createpost">
+                <h2>Tạo Bài Viết Mới</h2>
+                <br/>
+
+                <form method="POST" action="new_blog_savedb.php">
+                    <label for="title">Tiêu Đề Bài Viết:</label>
+                    <input type="text" name="title" id="title" placeholder="Nhập Tiêu Đề Bài Viết" class="form-control" value="" required>
+                    <br/>
+                    <label for="linkImage">Ảnh Đại Diện: </label><br/>
+                    <input type="text" name="linkImage" id="linkImage" value="TechMedia\src\ul\admin\blogs\images" class="form-control" placeholder="Dán Link Ảnh Đại Diện Vào Đây" required/>
+                    <br/>
+
+
+                    <label for="posts">Soạn Thảo Nội Dung Bài Viết:</label><br>
+                    <textarea rows="5" cols="100" id="post" name="post"></textarea>
+                    <script>
+                        // Replace the <textarea id="editor1"> with a CKEditor
+                        // instance, using default configuration.
+                        CKEDITOR.replace('posts');
+                    </script>
+                    <br/>
+                    <label for="tacgia">Người Đăng: </label><br/>
+                    <input type="text" name="author" id="author" value="Admin" class="form-control" required/>
+                    <br/>
+                    <label for="date">Ngày Đăng: </label><br/>
+                    <input type="text" name="date" id="date" value= "01-7-2020" class="form-control" required/>
+                    <br/>
+                    <input type="submit" id="btnOk" name="btnOk" value="Đăng Bài" class="btn btn-info" style="width: 90px; height: 40px">
+                    <input type="reset" name="btnReset" value="Reset" class="btn btn-info" style="width: 90px; height: 40px">
+                    <a href="../index.php" class="btn btn-info" style="width: 90px; height: 40px"> Trở về trang trước</a>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

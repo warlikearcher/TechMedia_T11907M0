@@ -11,35 +11,10 @@
           <ul class="navbar-nav ml-auto">
             
             <!-- Nav Item - 1 -->
-            <li class=" dropdown alert-content">
-              <a class="dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="glyphicon glyphicon-bell"></i>
-                <!-- Counter - Alerts -->
-                <span class="badges badge-danger badge-counter">3+</span>
-                
-              </a>
-              <!-- Dropdown - Alerts -->
-              <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="alertsDropdown">
-                <h6 class="dropdown-header">
-                  Thông báo
-                </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-success">
-                      <i class="fas fa-donate text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 7, 2019</div>
-                    $290.29 has been deposited into your account!
-                  </div>
-                </a>
-              </div>
-            </li>
             <!-- Nav Item - User -->
             <li class=" dropdown users-li">
               <a class="dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Tên admin ABC gì gì đó</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Hòa Trần</span>
                 <img class="img-profile rounded-circle" src="#">
               </a>
               <!-- Dropdown - User Information -->
@@ -79,6 +54,9 @@
                         break;
                     case "productTable":
                         include (__DIR__ . "../Tab/product_Table.php");
+                        break;
+                    case "news":
+                        include (__DIR__ . "../Tab/index_blog.php");
                         break;
                     case "History":
                         include (__DIR__ . "../Tab/History_tab.php");

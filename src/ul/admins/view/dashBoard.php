@@ -34,6 +34,11 @@
             <span>Sản phẩm</span></a>
     </li>
     <li class="nav-item padding-0 dashboard-item">
+        <a class="collapse-item" href="index.php?src=news">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Viết tin tức</span></a>
+    </li>
+    <li class="nav-item padding-0 dashboard-item">
         <a class="collapse-item" href="index.php?src=History">
             <i class="fas fa-fw fa-table"></i>
             <span>Lịch sử đặt hàng</span></a>
