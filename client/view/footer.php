@@ -49,15 +49,15 @@
             <div class="col-sm-4 col-md-4 col-lg-4 right-footer padding-0">
                 <h3>Our Product</h3>
                 <ul class="padding-1">
-                    <li><a  href="product.php?ref=laptop">Laptop</a></li>
-                    <li><a  href="product.php?ref=keyboard">Bàn phím</a></li>
-                    <li><a  href="product.php?ref=mainboard">MainBoard</a></li>
-                    <li><a  href="product.php?ref=cpu">CPU</a></li>
-                    <li><a  href="product.php?ref=pccase">Thùng PC</a></li>
-                    <li><a  href="product.php?ref=radiator">Tản nhiệt</a></li>
-                    <li><a  href="product.php?ref=ram">Ram</a></li>
-                    <li><a  href="product.php?ref=speak">Loa</a></li>
-                    <li><a  href="product.php?ref=graphics">Graphics</a></li>
+                    <li><a  href="index.php?view=product&ref=laptop">Laptop</a></li>
+                    <li><a  href="index.php?view=product&ref=monitor">Màn Hình</a></li>
+                    <li><a  href="index.php?view=product&ref=mainboard">MainBoard</a></li>
+                    <li><a  href="index.php?view=product&ref=cpu">CPU</a></li>
+                    <li><a  href="index.php?view=product&ref=pccase">Thùng PC</a></li>
+                    <li><a  href="index.php?view=product&ref=radiator">Tản nhiệt</a></li>
+                    <li><a  href="index.php?view=product&ref=ram">Ram</a></li>
+                    <li><a  href="index.php?view=product&ref=speak">Loa</a></li>
+                    <li><a  href="index.php?view=product&ref=graphics">Graphics</a></li>
                 </ul>
             </div>
             <!-- End right-->

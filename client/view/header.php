@@ -61,9 +61,9 @@
                 <div>
                     <ul class="nav navbar-nav" id="list-nav">
                         <li class="menu-list"><a href="index.php">Trang chủ</a></li>
-                        <li class="menu-list"><a href="">Giới thiệu</a></li>
+                        <li class="menu-list"><a href="index.php?view=introduce">Giới thiệu</a></li>
                         <li class="menu-list"><a href="index.php?view=news&id=16">Khuyến mãi</a></li>
-                        <li class="menu-list"><a href="">Liên hệ</a></li>                      
+                        <li class="menu-list"><a href="index.php?view=contact">Liên hệ</a></li>                      
                         <?php
                         if (isset($_SESSION["user-email"]) && ($role == 0)) {
                             echo '<li class="menu-list"><a href="client/view/customer_info.php" style="color: white; font-family: sans-serif;">' . $name . '</a></li>';

@@ -265,17 +265,11 @@ WHERE
     }
 }
 //end add cart
-//add promo code
-//
-//end add promo code
-//get final price
-//if(isset($_POST["action"])){
-//    if($_POST["action"] == 'submitCart'){
-//        $_SESSION["final_total"] = $total_promo;
-//    }
-//}
+if(isset($_GET['view']) && $_GET['view'] == 'product'){
+    include './config/model/pagination.php';
+}
 if (isset($_POST["submitCart"])) {
-    $final_total = $_POST["total_pro"] + 24000;
+    $final_total = $_POST["total_pro"];
 }
 //end final price
 ?>

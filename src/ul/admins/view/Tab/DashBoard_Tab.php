@@ -87,7 +87,8 @@
     </div>
 </div>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
+<script type="text/javascript" src="./././library/js/loader.js"></script>
 <script type="text/javascript">
 //    left chart
     google.charts.load('current', {'packages': ['line']});

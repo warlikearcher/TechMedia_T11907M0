@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once './controllers/database/connectDB.php';
 if (!isset($_GET['src']) || (isset($_GET['src']) && $_GET['src'] == 'dashBoard')) {
     include './config/model/take_money.php';
@@ -22,6 +23,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="library/js/IconUser.js"></script>
         <title>Admins page</title>
 
     </head>
@@ -65,5 +67,6 @@ and open the template in the editor.
         </div>
         <script src="../admin/library/js/copllapsible.js"></script>
         <script src="../admin/library/js/canvasjs.min.js.js"></script>
+
     </body>
 </html>

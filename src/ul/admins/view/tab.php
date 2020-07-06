@@ -14,8 +14,8 @@
             <!-- Nav Item - User -->
             <li class=" dropdown users-li">
               <a class="dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Hòa Trần</span>
-                <img class="img-profile rounded-circle" src="#">
+                  <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION["user-email"]?></span>
+                  <span class="fas fa-user-circle"></span>
               </a>
               <!-- Dropdown - User Information -->
             </li>

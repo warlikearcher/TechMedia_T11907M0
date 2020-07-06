@@ -20,13 +20,13 @@
     </li>
     <li class="nav-item padding-0 dashboard-item">
         <a class="collapse-item" href="index.php?src=userTable">
-            <i class="fas fa-fw fa-table"></i>
+            <i class="fas fa-users"></i>
             <span>Tài khoản khách</span></a>
     </li>
     <li class="nav-item padding-0 dashboard-item">
         <a class="collapse-item" href="index.php?src=adminTable">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tài khoản quản trị viên</span></a>
+            <i class="fas fa-users-cog"></i>
+            <span>Quản trị viên</span></a>
     </li>
     <li class="nav-item padding-0 dashboard-item">
         <a class="collapse-item" href="index.php?src=productTable">
@@ -35,17 +35,17 @@
     </li>
     <li class="nav-item padding-0 dashboard-item">
         <a class="collapse-item" href="index.php?src=news">
-            <i class="fas fa-fw fa-table"></i>
+            <i class="far fa-newspaper"></i>
             <span>Viết tin tức</span></a>
     </li>
     <li class="nav-item padding-0 dashboard-item">
         <a class="collapse-item" href="index.php?src=History">
-            <i class="fas fa-fw fa-table"></i>
+            <i class="fas fa-history"></i>
             <span>Lịch sử đặt hàng</span></a>
     </li>
     <li class="nav-item padding-0 dashboard-item">
         <a class="collapse-item" href="config/model/logout_func.php">
-            <i class="fas fa-fw fa-table"></i>
+            <i class="fas fa-sign-out-alt"></i>
             <span>Đăng xuất</span></a>
     </li>
 
