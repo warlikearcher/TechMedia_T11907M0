@@ -1,5 +1,5 @@
 <?php
-if(isset($_SESSION["cart_item"])){
+if (isset($_SESSION["cart_item"])) {
     session_destroy();
 }
 
@@ -32,26 +32,31 @@ $result_test = mysqli_query($link, "select * from tblaptoplist  limit 0,4;");
 $rows_test = mysqli_fetch_all($result_test, MYSQLI_ASSOC);
 $rows_a = mysqli_fetch_all($result_a, MYSQLI_ASSOC);
 $rows_b = mysqli_fetch_all($result_b, MYSQLI_ASSOC);
-$acc = "";
-if (isset($_GET['user'])) {
-    $acc = $_GET['user'];
-}
-switch ($acc) {
-    case "1":
-        header('location: /../client/user/index.php');
-        break;
-    case "0":
-        header('location: /../client/admin/index.php');
-        break;
-    default :
-        break;
-}
 //add cart
-if (!empty($_GET["action"])) {
-    switch ($_GET["action"]) {
-        case "add":
-            if (!empty($_POST["quantity"])) {
-                $productByCode = $db_handle->runQuery("SELECT
+if (isset($_SESSION["user-email"])) {
+    $email = $_SESSION["user-email"];
+    $sq = "SELECT nameProduct,code,SUM(quantity) as quantitySUM,SUM(price) as priceSUM FROM cart WHERE email = '$email' GROUP BY nameProduct";
+    $r = mysqli_query($link, $sq);
+//check cart + load cart
+    if ($num = mysqli_num_rows($r) > 0) {
+        while ($row = mysqli_fetch_array($r)) {
+            $itemArray = array(
+                'name' => $row[1],
+                'code' => $row[2],
+                'quantity' => $row["quantitySUM"],
+                'price' => $row["priceSUM"]
+                    )
+            ;
+        }
+    } else {
+        $cart_count = 0;
+    }
+    //    add cart
+    if (isset($_GET["action"])) {
+        switch ($_GET["action"]) {
+            case "add":
+                $code = $_GET["id"];
+                $r = mysqli_query($link, "SELECT
     *
 FROM
     (
@@ -107,83 +112,161 @@ UNION
     ) AS r
 WHERE
     r.idProduct ='" . $_GET["id"] . "'");
-                $itemArray = array($productByCode[0]["idProduct"] => array(
-                        'name' => $productByCode[0]["nameProduct"],
-                        'code' => $productByCode[0]["idProduct"],
-                        'quantity' => $_POST["quantity"],
-                        'price' => $productByCode[0]["rate"]
-                    )
-                );
+                $item = mysqli_fetch_row($r);
+                $nameProduct = $item[1];
+                $code = $item[0];
+                $price = $item[3];
+                $quantity = 1;
+                $resu = mysqli_query($link, "INSERT INTO cart (email, nameProduct,code,quantity,price)
+VALUES ('$email','$nameProduct','$code',$quantity,$price);");
 
-                if (!empty($_SESSION["cart_item"])) {
-                    if (in_array($productByCode[0]["idProduct"], array_keys($_SESSION["cart_item"]))) {
-                        foreach ($_SESSION["cart_item"] as $k => $v) {
-                            if ($productByCode[0]["idProduct"] == $k) {
-                                if (empty($_SESSION["cart_item"][$k]["quantity"])) {
-                                    $_SESSION["cart_item"][$k]["quantity"] = 0;
+                break;
+            case "remove":
+                $idPro = $_GET['id'];
+                $r = mysqli_query($link, "DELETE FROM cart WHERE code= '$idPro';");
+                break;
+            case "empty":
+                $r = mysqli_query($link, "DELETE FROM cart WHERE email= '$email';");
+                break;
+        }
+    }
+    
+//    check promo code
+    if (isset($_POST["add_promo"])) {
+        $code_promo = $_POST["promo_code"];
+        $promoSql = "SELECT distinct * FROM `promo_code` WHERE promoCode = '$code_promo';";
+        $res = mysqli_query($link, $promoSql);
+        $selectRow = mysqli_fetch_row($res);
+        if (($numRo = mysqli_num_rows($res)) == 1) {
+            $sqlCheckUse = "SELECT COUNT(*) as count FROM orders WHERE email = '$email' AND promoCode = '$code_promo' GROUP BY promoCode;";
+            $resu = mysqli_query($link, $sqlCheckUse);
+            $checkRow = mysqli_fetch_array($resu);
+            if ($selectRow[3] == $checkRow['count']) {
+                echo "<script>";
+                echo 'alert("Bạn đã sử dụng hết lượt của mã giảm giá này rồi");';
+                echo "window.location.href = 'index.php?view=cart';";
+                echo "</script>";
+                $code_promo = "";
+            } else {
+                $promo_percent = $selectRow[2];
+            }
+        } else {
+            echo "<script>";
+            echo 'alert("Mã giảm giá không đúng");';
+            echo "window.location.href = 'index.php?view=cart';";
+            echo "</script>";
+            unset($code_promo);
+        }
+        $promo_percent;
+    }
+} else {
+    if (!empty($_GET["action"])) {
+        switch ($_GET["action"]) {
+            case "add":
+                if (!empty($_POST["quantity"])) {
+                    $productByCode = $db_handle->runQuery("SELECT
+    *
+FROM
+    (
+        (
+        SELECT
+            tbcpulist.idProduct,
+            tbcpulist.nameProduct,
+            tbcpulist.photo1,
+            tbcpulist.rate
+        FROM
+            tbcpulist
+    )
+UNION
+    (
+    SELECT
+        tbgraphicslist.idProduct,
+        tbgraphicslist.nameProduct,
+        tbgraphicslist.photo1,
+        tbgraphicslist.rate
+    FROM
+        tbgraphicslist
+)
+UNION
+    (
+    SELECT
+        tblaptoplist.idProduct,
+        tblaptoplist.nameProduct,
+        tblaptoplist.photo1,
+        tblaptoplist.rate
+    FROM
+        tblaptoplist
+)
+UNION
+    (
+    SELECT
+        tbramlist.idProduct,
+        tbramlist.nameProduct,
+        tbramlist.photo1,
+        tbramlist.rate
+    FROM
+        tbramlist
+)
+UNION
+    (
+    SELECT
+        tbradiatorslist.idProduct,
+        tbradiatorslist.nameProduct,
+        tbradiatorslist.photo1,
+        tbradiatorslist.rate
+    FROM
+        tbradiatorslist
+)
+    ) AS r
+WHERE
+    r.idProduct ='" . $_GET["id"] . "'");
+                    $itemArray = array($productByCode[0]["idProduct"] => array(
+                            'name' => $productByCode[0]["nameProduct"],
+                            'code' => $productByCode[0]["idProduct"],
+                            'quantity' => $_POST["quantity"],
+                            'price' => $productByCode[0]["rate"]
+                        )
+                    );
+
+                    if (!empty($_SESSION["cart_item"])) {
+                        if (in_array($productByCode[0]["idProduct"], array_keys($_SESSION["cart_item"]))) {
+                            foreach ($_SESSION["cart_item"] as $k => $v) {
+                                if ($productByCode[0]["idProduct"] == $k) {
+                                    if (empty($_SESSION["cart_item"][$k]["quantity"])) {
+                                        $_SESSION["cart_item"][$k]["quantity"] = 0;
+                                    }
+                                    $_SESSION["cart_item"][$k]["quantity"] += $_POST["quantity"];
                                 }
-                                $_SESSION["cart_item"][$k]["quantity"] += $_POST["quantity"];
                             }
+                        } else {
+                            $_SESSION["cart_item"] = array_merge($_SESSION["cart_item"], $itemArray);
                         }
                     } else {
-                        $_SESSION["cart_item"] = array_merge($_SESSION["cart_item"], $itemArray);
+                        $_SESSION["cart_item"] = $itemArray;
                     }
-                } else {
-                    $_SESSION["cart_item"] = $itemArray;
                 }
-            }
-            break;
-        case "remove":
-            if (!empty($_SESSION["cart_item"])) {
-                foreach ($_SESSION["cart_item"] as $k => $v) {
-                    if ($_GET["id"] == $k)
-                        unset($_SESSION["cart_item"][$k]);
-                    header("Location: index.php?view=cart");
-                    if (empty($_SESSION["cart_item"]))
-                        unset($_SESSION["cart_item"]);
+                break;
+            case "remove":
+                if (!empty($_SESSION["cart_item"])) {
+                    foreach ($_SESSION["cart_item"] as $k => $v) {
+                        if ($_GET["id"] == $k)
+                            unset($_SESSION["cart_item"][$k]);
+                        header("Location: index.php?view=cart");
+                        if (empty($_SESSION["cart_item"]))
+                            unset($_SESSION["cart_item"]);
+                    }
                 }
-            }
-            break;
-        case "empty":
-            unset($_SESSION["cart_item"]);
-            header("location: index.php");
-            break;
+                break;
+            case "empty":
+                unset($_SESSION["cart_item"]);
+                header("location: index.php");
+                break;
+        }
     }
 }
-
 //end add cart
 //add promo code
 //
-
-if (isset($_POST["add_promo"])) {
-    $code_promo = $_POST["promo_code"];
-    $promoSql = "SELECT distinct * FROM `promo_code` WHERE promoCode = '$code_promo';";
-    $res = mysqli_query($link, $promoSql);
-    $selectRow = mysqli_fetch_row($res);
-    if (($numRo = mysqli_num_rows($res)) == 1) {
-        $sqlCheckUse = "SELECT COUNT(*) as count FROM orders WHERE customer_id = 4 AND promoCode = '$code_promo' GROUP BY promoCode;";
-        $resu = mysqli_query($link, $sqlCheckUse);
-        $checkRow = mysqli_fetch_array($resu);
-        if ($selectRow[3] == $checkRow['count']) {
-            echo "<script>";
-            echo 'alert("Bạn đã sử dụng hết lượt của mã giảm giá này rồi");';
-            echo "window.location.href = 'index.php?view=cart';";
-            echo "</script>";
-            $code_promo = "";
-        }
-        else{
-            $promo_percent = $selectRow[2];
-        }
-    } else {
-        echo "<script>";
-        echo 'alert("Mã giảm giá không đúng");';
-        echo "window.location.href = 'index.php?view=cart';";
-        echo "</script>";
-        unset($code_promo);
-    }
-    $promo_percent;
-}
-
 //end add promo code
 //get final price
 //if(isset($_POST["action"])){
@@ -238,66 +321,66 @@ and open the template in the editor.
 
     </head>
     <body>
-        <?php include 'client/view/header.php'; ?>
+<?php include 'client/view/header.php'; ?>
 
         <main>
-            <?php
-            if (!isset($_GET['view'])) {
-                $view = "";
-            } else {
-                $view = $_GET['view'];
-            }
-            switch ($view) {
-                case "home":
-                    include 'client/view/vertical_menu.php';
-                    include 'client/view/section.php';
-                    break;
+        <?php
+        if (!isset($_GET['view'])) {
+            $view = "";
+        } else {
+            $view = $_GET['view'];
+        }
+        switch ($view) {
+            case "home":
+                include 'client/view/vertical_menu.php';
+                include 'client/view/section.php';
+                break;
 
-                case "review":
-                    include 'client/view/review.php';
-                    break;
-                case "product":
-                    include 'client/section_product.php';
-                    break;
-                case "detail":
-                    include 'client/product_detail.php';
-                    break;
-                case "promo":
-                    include 'client/view/promo.php';
-                    break;
-                case "contact":
-                    include 'client/view/contact.php';
-                    break;
-                case "user":
-                    include 'client/view/user.php';
-                    break;
-                case "cart":
-                    include 'client/view/cart_view.php';
-                    break;
-                case "payment":
-                    include 'client/view/payment.php';
-                    break;
-                case "news":
-                    include 'client/view/news.php';
-                    break;
-                case "orderQuery":
-                    include 'client/view/orderQuery.php';
-                    break;
-                default :
-                    include 'client/view/vertical_menu.php';
-                    include 'client/view/section.php';
-                    break;
-            }
+            case "review":
+                include 'client/view/review.php';
+                break;
+            case "product":
+                include 'client/section_product.php';
+                break;
+            case "detail":
+                include 'client/product_detail.php';
+                break;
+            case "promo":
+                include 'client/view/promo.php';
+                break;
+            case "contact":
+                include 'client/view/contact.php';
+                break;
+            case "user":
+                include 'client/view/user.php';
+                break;
+            case "cart":
+                include 'client/view/cart_view.php';
+                break;
+            case "payment":
+                include 'client/view/payment.php';
+                break;
+            case "news":
+                include 'client/view/news.php';
+                break;
+            case "orderQuery":
+                include 'client/view/orderQuery.php';
+                break;
+            default :
+                include 'client/view/vertical_menu.php';
+                include 'client/view/section.php';
+                break;
+        }
 //            if (isset($error) && $error = 'error') {
 //                header('Location: error505.php');
 //                exit();
 //            }
-            ?>
+        ?>
         </main>
 
-        <?php
-        include 'client/view/footer.php';
-        ?>
+            <?php
+            include 'client/view/footer.php';
+            ?>
         <?php
         if ($view == 'detail') {
             include './library/js/detail.js';

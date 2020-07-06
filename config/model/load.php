@@ -309,6 +309,25 @@ switch ($ref) {
         $sql = "select * from $tableName where rate > 10000000 order by idProduct  LIMIT $start_from, $record_per_page;";
         break;
 //    end ref graphics
+    
+//    start ref monitor
+    case "monitor":
+        $tableName = "tbpcmonitor";
+        $sql = "select * from $tableName order by idProduct  LIMIT $start_from, $record_per_page;";
+        break;
+    case "monitor2":
+        $tableName = "tbpcmonitor";
+        $sql = "select * from $tableName where rate < 2000000 order by idProduct  LIMIT $start_from, $record_per_page;";
+        break;
+    case "monitor26":
+        $tableName = "tbpcmonitor";
+        $sql = "select * from $tableName where rate between 2000000 and 6000000 order by idProduct  LIMIT $start_from, $record_per_page;";
+        break;
+    case "monitor6h":
+        $tableName = "tbpcmonitor";
+        $sql = "select * from $tableName where rate > 6000000 order by idProduct  LIMIT $start_from, $record_per_page;";
+        break;
+//    end ref monitor
     default :
         header("Location: error502.php");
         exit();

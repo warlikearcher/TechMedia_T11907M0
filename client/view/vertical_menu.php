@@ -43,22 +43,15 @@
                                     </div>
                                 </div>
                             </li>
-                            <li><a  href="?view=product&ref=keyboard">Bàn phím</a><span class="glyphicon" id="icon-menu-open">&#xe080;</span>
+                            <li><a  href="?view=product&ref=monitor">Màn hình</a><span class="glyphicon" id="icon-menu-open">&#xe080;</span>
                                 <div class="sub-nav">
                                     <div class="sub-menu">
                                         <div class="line-1 grid-item item1">
-                                            <h3>Bàn phím Gaming</h3>
+                                            <h3>Dựa vào giá</h3>
                                             <ul>
-                                                <li><a  href="?view=product&ref=keyboardRazer">Razer</a></li>
-                                                <li><a  href="?view=product&ref=keyboardLogitech">Logitech</a></li>
-                                                <li><a  href="?view=product&ref=keyboardSteel">SteelSerie</a></li>
-                                                <li><a  href="?view=product&ref=keyboardEDra">E-Dra Serie</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="line-2 grid-item item2">
-                                            <h3>Bàn phím thường</h3>
-                                            <ul>
-                                                <li><a  href="?view=product&ref=keyboardCommon">Common</a></li>
+                                                <li><a  href="?view=product&ref=monitor2">Dưới 2 triệu</a></li>
+                                                <li><a  href="?view=product&ref=monitor26">Từ 2 đến 6 triệu</a></li>
+                                                <li><a  href="?view=product&ref=monitor6h">Trên 6 triệu</a></li>
                                             </ul>
                                         </div>
                                     </div>

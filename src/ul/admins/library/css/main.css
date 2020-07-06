@@ -644,7 +644,11 @@ table.myFormat tfoot  th a{
 #btnTable{
     min-height: 100%;
 }
-#btnTable .btn-success{
+.formBtn{
+    height: 100%!important;
+    width: 100%;
+}
+#btnTable  .btn-success{
     height: 100%;
     width: 100%;
     border: 1px solid grey;
@@ -653,7 +657,7 @@ table.myFormat tfoot  th a{
     color: black;
     font-family: serif;
 }
-#btnTable button:hover{
+#btnTable  button:hover{
     background-color: #5cb85c;
 }
 .AlertSelect{
@@ -666,6 +670,28 @@ table.myFormat tfoot  th a{
     font-size: 3em;
     font-weight: bold;
     color: #5a5c69;
+}
+#formAdd {
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 1px solid gray;
+}
+#formAdd input{
+    width: 100%;
+    height: 2.5em;
+    border: 1px solid grey;
+}
+#formAdd button{
+    width: 100%;
+    margin-top: 20px;
+}
+.content_column{
+    background-color: rgb(235,235,235);
+    text-align: center;
+}
+.example span{
+    font-size: 14px;
+    word-wrap: break-word;
 }
 /*End Add product*/
 

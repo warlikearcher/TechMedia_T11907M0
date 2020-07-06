@@ -78,16 +78,22 @@
             </div>
             <div class="col-md-3 right-menu">
                 <?php
-                if (!empty($_SESSION["cart_item"])) {
-                    $cart_count = count(array_keys($_SESSION["cart_item"]));
-                    ?>
-                    <ul class="nav navbar-nav cart_div" id="list-nav">
-                        <li class="cart" id="buttonCart"><a href="?view=cart">Giỏ Hàng <span class="fa fa-shopping-cart"></span><span>(<?php echo $cart_count; ?>)</span></a></li>
-                    </ul>
-
-                    <?php
+                if (!isset($_SESSION["user-email"])) {
+                    if (!empty($_SESSION["cart_item"])) {
+                        $cart_count = count(array_keys($_SESSION["cart_item"]));
+                    } else {
+                        $cart_count = 0;
+                    }
+                } else {
+                    $email = $_SESSION["user-email"];
+                    $re = mysqli_query($link, "SELECT * FROM cart WHERE email = '$email' GROUP BY nameProduct");
+                    $cart_count = mysqli_num_rows($re);
                 }
                 ?>
+                <ul class="nav navbar-nav cart_div" id="list-nav">
+                    <li class="cart" id="buttonCart"><a href="?view=cart">Giỏ Hàng <span class="fa fa-shopping-cart"></span><span>(<?php echo $cart_count; ?>)</span></a></li>
+                </ul>
+
                 <ul class="nav navbar-nav cart_div" id="list-nav">
                     <li class="menu-list"><a href="?view=orderQuery">Truy vấn đơn hàng</a></li>
                 </ul>

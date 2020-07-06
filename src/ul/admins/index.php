@@ -24,39 +24,7 @@ and open the template in the editor.
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <title>Admins page</title>
-        <script>
-            window.onload = function () {
-
-                var chart = new CanvasJS.Chart("chartContainer", {
-                    animationEnabled: true,
-                    title: {
-                        text: ""
-                    },
-                    axisX: {
-                        crosshair: {
-                            enabled: true,
-                            snapToDataPoint: true
-                        }
-                    },
-                    axisY: {
-                        title: "in Metric Tons",
-                        crosshair: {
-                            enabled: true,
-                            snapToDataPoint: true
-                        }
-                    },
-                    toolTip: {
-                        enabled: false
-                    },
-                    data: [{
-                            type: "area",
-                            dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
-                        }]
-                });
-                chart.render();
-
-            }
-        </script>
+        
     </head>
     <body>
         <div id="wrapper" class="padding-0">
@@ -83,6 +51,9 @@ and open the template in the editor.
                                     break;
                                 case "add_product":
                                     include (__DIR__ . "../view/addProduct.php");
+                                    break;
+                                case "addBanner":
+                                    include (__DIR__ . "../view/addBanner.php");
                                     break;
                             }
                         } else {

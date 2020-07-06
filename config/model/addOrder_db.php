@@ -13,8 +13,8 @@ if (isset($_POST["btnSubmit"]) == FALSE) {
     exit();
 }
 
-
-if (isset($_SESSION["cart_item"])) {
+if (isset($_SESSION["user-email"])) {
+    $email = $_SESSION["user-email"];
     do {
         $randomID = uniqid();
         $sql = "select count( distinct order_id ) = 1 as matched from orders WHERE order_id = '$randomID';";
@@ -22,39 +22,83 @@ if (isset($_SESSION["cart_item"])) {
         $result = mysqli_query($link, $sql);
         $rows = mysqli_fetch_row($result);
     } while ($rows[1] = 0);
+    $cart = mysqli_query($link, "SELECT nameProduct,code,SUM(quantity) as quantitySUM,SUM(price) as priceSUM FROM cart WHERE email = '$email' GROUP BY nameProduct");
     $firstname = $_POST["firstname"];
-    $email = $_POST["email"];
     $phone = $_POST["phone"];
     $address = $_POST["address"];
     $city = $_POST["city"];
     $phone = $_POST["phone"];
-    $state = $_POST["state"];
     $zip = $_POST["zip"];
     $total_final = $_POST["total_final"];
-    
-//    insert 
-    $into = "insert into orders(order_id,name,phone,email,street,city,state,zip_code,total_price) values ('$randomID','$firstname','$phone','$email','$address','$city','$state','$zip','$total_final');";
-//    echo $into;
+    $code_promo = $_POST["code_promo"];
+    $into = "insert into orders(order_id,name,phone,email,street,city,zip_code,total_price,promoCode) values ('$randomID','$firstname','$phone','$email','$address','$city','$zip','$total_final','$code_promo');";
     $r = mysqli_query($link, $into);
     if ($r == TRUE) {
-//        $last_id = mysqli_insert_id($link);
-//        echo 'Last id:' . $last_id;
-        foreach ($_SESSION["cart_item"] as $item) {
-            $item_price = $item["quantity"] * $item["price"];
-            $idProduct = $item["code"];
-            $quantity = $item["quantity"];
-            $name = $item["name"];
+        while ($db = mysqli_fetch_array($cart)) {
+            $item_price = $db["priceSUM"];
+            $idProduct = $db["code"];
+            $quantity = $db["quantitySUM"];
+            $name = $db["nameProduct"];
             $into1 = "insert into orders_item(order_id,idProduct,quantity,list_price,nameProduct) values ('$randomID','$idProduct',$quantity,$item_price,'$name');";
 
             $r = mysqli_query($link, $into1);
+            
+        }
+        $clearCart = mysqli_query($link, "DELETE FROM cart WHERE email= '$email';");
+        header("Location: finishOrder.php?idOrder=$randomID");
+        exit();
+    }
+//    echo $into;
+//    echo $into1;
+//    echo $randomID;
+//    echo $email;
+} else {
+    if (isset($_SESSION["cart_item"])) {
+        do {
+            $randomID = uniqid();
+            $sql = "select count( distinct order_id ) = 1 as matched from orders WHERE order_id = '$randomID';";
+//                    echo $sql;
+            $result = mysqli_query($link, $sql);
+            $rows = mysqli_fetch_row($result);
+        } while ($rows[1] = 0);
+        $firstname = $_POST["firstname"];
+        $email = $_POST["email"];
+        $phone = $_POST["phone"];
+        $address = $_POST["address"];
+        $city = $_POST["city"];
+        $phone = $_POST["phone"];
+        $state = $_POST["state"];
+        $zip = $_POST["zip"];
+        $total_final = $_POST["total_final"];
+
+//    insert 
+        $into = "insert into orders(order_id,name,phone,email,street,city,state,zip_code,total_price) values ('$randomID','$firstname','$phone','$email','$address','$city','$state','$zip','$total_final');";
+//    echo $into;
+        $r = mysqli_query($link, $into);
+        if ($r == TRUE) {
+//        $last_id = mysqli_insert_id($link);
+//        echo 'Last id:' . $last_id;
+            foreach ($_SESSION["cart_item"] as $item) {
+                $item_price = $item["quantity"] * $item["price"];
+                $idProduct = $item["code"];
+                $quantity = $item["quantity"];
+                $name = $item["name"];
+                $into1 = "insert into orders_item(order_id,idProduct,quantity,list_price,nameProduct) values ('$randomID','$idProduct',$quantity,$item_price,'$name');";
+
+                $r = mysqli_query($link, $into1);
 
 //            var_dump($r);
 //            echo $into1;
-        }
+            }
 
-        unset($_SESSION["cart_item"]);
-        header("Location: finishOrder.php?idOrder=$randomID");
+            unset($_SESSION["cart_item"]);
+            header("Location: finishOrder.php?idOrder=$randomID");
+        }
+    } else {
+        header("location: index.php?view=home");
+        exit();
     }
 }
+
 //echo 'Đã có lỗi xảy ra khi xác nhận đơn hàng !!';
 
