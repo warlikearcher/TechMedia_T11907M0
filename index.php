@@ -16,7 +16,7 @@ if (isset($_SESSION["user-email"]) && isset($_SESSION["user-pass"]) && isset($_S
     $role = $_SESSION["user-role"];
     $email = $_SESSION["user-email"];
     $pass = $_SESSION["user-pass"];
-    $sql = "select * from tbusers where EMAIL='$email' and PASSWORD='$pass'";
+    $sql = "select * from tbusers where email='$email' and PASSWORD='$pass'";
     $r = mysqli_query($link, $sql);
     $acc = mysqli_fetch_row($r);
     $name = $acc[4];

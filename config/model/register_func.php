@@ -13,9 +13,8 @@ include_once '../database/connectDB.php';
         } else {
             $pass = $_POST["pass"];
             $name = $_POST["name"];
-            $add = $_POST["add"];
             $phone = $_POST["phone"];
-            $insert = "insert into tbusers (EMAIL, PASSWORD, ROLE, FULLNAME, ADDRESS, PHONE) values ('$email', '$pass', '0', '$name', '$add', '$phone')";
+            $insert = "insert into tbusers (EMAIL, PASSWORD, ROLE, FULLNAME, PHONE) values ('$email', '$pass', '0', '$name', '$phone')";
             mysqli_query($link, $insert);
             echo '<div style="color:green">Đăng ký thành công!</div>';            
         }

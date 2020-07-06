@@ -1,4 +1,4 @@
-<?php ?>
+
 <div class="update-body">
     <div class="update-top-bar padding-0">
         <div class="banner-top top-content-update shadow">
@@ -81,14 +81,13 @@
         <?php } else { ?>
             <?php
             $table = $_POST['idClass'];
-            $sql = "SELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH 
-    FROM information_schema.columns 
-    WHERE table_schema = 'project' 
-    AND table_name = '$table';";
-            $r = mysqli_query($link, $sql);
-            $columnType = mysqli_fetch_all($r);
-
-//           get Class & ID
+//            $sql = "SELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH 
+//    FROM information_schema.columns 
+//    WHERE table_schema = 'project' 
+//    AND table_name = '$table';";
+//            $columnType = mysqli_fetch_all($r);
+//
+////           get Class & ID
             switch ($table) {
                 case "tbgraphicslist":
                     $idClass = "1";
@@ -120,42 +119,43 @@
             }
             $res = mysqli_query($link, "SELECT * FROM $table;");
             $numRow = mysqli_num_rows($res);
+//            $Listcol = mysqli_query($link, $sql);
+            $sql = "select * from $table";
+            $r = mysqli_query($link, $sql);
+            while ($field = mysqli_fetch_field($r)) {
+                $field_name[] = $field->name;
+            }
+            $count = count($field_name);
             ?>
+
             <div id="formAdd" class="shadow-lg">
-                <form>
-                    <h2 class="content_column">Thông tin căn bản:</h2>
-                    <h4>ID sản phẩm: <span><?php echo ($idProduct = $idClass . '_A' . ($numRow + 1)); ?></span></h4>
-                    <input type="hidden" id="idProduct" name="idProduct" value="<?php echo ($idProduct = $idClass . '_A' . ($numRow + 1)); ?>" hidden>
-                    <input type="hidden" id="idClass" name="idClass" value="<?php echo $idClass; ?>" hidden>
-                    <h4>Tên sản phẩm</h4>
-                    <input type="text" id="nameProduct" name="nameProduct" placeholder="Thông tin mới">
-                    <h4>Giá sản phẩm</h4>
-                    <input type="text" id="rate" name="rate" placeholder="Thông tin mới">
-                    <br>
+                <form method="POST" action="">
+                    <input type="hidden" name="tableName" value="<?php echo $table; ?>">
                     <h2 class="content_column">Thông số chung</h2>
-                    <?php foreach ($columnType as $type) { ?>
-                        <h4><?php echo $type[0]; ?></h4>
-                        <i>Ví dụ:  <span></span></i>
-                        <br>
-                        <input type="text" id="adb" placeholder="Thông tin mới">
-                    <?php } ?>
+                    <?php
+                    $numCol = mysqli_num_fields($r);
+                    ?>
+                    <table class="user-input-table">
+                        <tbody>
+                            <?php
+                            for ($i = 0; $i < $count-1; $i++) {
+                                if ($i == 0) {
+                                    echo "<tr>";
+                                    echo '<td class = "user-input-lable"><label>' . $field_name[$i] . '</label></td>';
+                                    echo '<td class = "user-input-field"><input class = "input-field" type = "text" id = "' . $field_name[$i] . '" name = "' . $field_name[$i] . '" value = "' . ($idProduct = $idClass . "_A" . ($numRow+1)) . '"></td>';
+                                    echo "</tr>";
+                                } else {
+                                    echo "<tr>";
+                                    echo '<td class = "user-input-lable"><label>' . $field_name[$i] . '</label></td>';
+                                    echo '<td class = "user-input-field"><input class = "input-field" type = "text" id = "' . $field_name[$i] . '" name = "' . $field_name[$i] . '"></td>';
+                                    echo "</tr>";
+                                }
+                            }
+                            ?>
+                        </tbody>
+                    </table>
+
                     <br>
-                    <h2 class="content_column">Hình ảnh</h2>
-                    <h4>Link hình 1</h4>
-                    <h5 class="example">Ví dụ: <span>image/Image_Product/Graphics_image/card_ASUS_Dual_GeForce_RTX_2060_SUPER_EVO_V2_8GB_1.png</span></h5>
-                    <input type="text" id="photo1" name="photo1" placeholder="Thông tin mới">
-                    <h4>Link hình 2</h4>
-                    <h5 class="example">Ví dụ: <span>image/Image_Product/Graphics_image/card_ASUS_Dual_GeForce_RTX_2060_SUPER_EVO_V2_8GB_2.png</span></h5>
-                    <input type="text" id="photo2" name="photo2" placeholder="Thông tin mới">
-                    <h4>Link hình 3</h4>
-                    <h5 class="example">Ví dụ: <span>image/Image_Product/Graphics_image/card_ASUS_Dual_GeForce_RTX_2060_SUPER_EVO_V2_8GB_3.png</span></h5>
-                    <input type="text" id="photo3" name="photo3" placeholder="Thông tin mới">
-                    <h4>Link hình 4</h4>
-                    <h5 class="example">Ví dụ: <span>image/Image_Product/Graphics_image/card_ASUS_Dual_GeForce_RTX_2060_SUPER_EVO_V2_8GB_4.png</span></h5>
-                    <input type="text" id="photo4" name="photo4" placeholder="Thông tin mới">
-                    <h4>Link hình 5</h4>
-                    <h5 class="example">Ví dụ: <span>image/Image_Product/Graphics_image/card_ASUS_Dual_GeForce_RTX_2060_SUPER_EVO_V2_8GB_5.png</span></h5>
-                    <input type="text" id="photo5" name="photo5" placeholder="Thông tin mới">
                     <button class="btn btn-success buttonSubmit" name="btnOK" type="submit">Xác nhận thêm sản phẩm</button>
                 </form>
             </div>

@@ -4,9 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/WampServer/www/TechMedia/index.php</file>
-            <file>file:/C:/WampServer/www/TechMedia/client/view/vertical_menu.php</file>
-            <file>file:/C:/WampServer/www/TechMedia/client/section_product.php</file>
-            <file>file:/C:/WampServer/www/TechMedia/client/view/header.php</file>
+            <file>file:/C:/WampServer/www/TechMedia/src/ul/admins/index.php</file>
+            <file>file:/C:/WampServer/www/TechMedia/src/ul/admins/config/model/run_addProduct.php</file>
+            <file>file:/C:/WampServer/www/TechMedia/src/ul/admins/view/addProduct.php</file>
+            <file>file:/C:/WampServer/www/TechMedia/src/ul/admins/view/tab.php</file>
+            <file>file:/C:/WampServer/www/TechMedia/client/product_detail.php</file>
         </group>
     </open-files>
 </project-private>

@@ -43,6 +43,11 @@
             <i class="fas fa-fw fa-table"></i>
             <span>Lịch sử đặt hàng</span></a>
     </li>
+    <li class="nav-item padding-0 dashboard-item">
+        <a class="collapse-item" href="config/model/logout_func.php">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Đăng xuất</span></a>
+    </li>
 
 
     <!-- Nav Item - Pages Collapse Menu -->

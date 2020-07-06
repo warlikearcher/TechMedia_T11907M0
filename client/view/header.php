@@ -68,7 +68,7 @@
                         if (isset($_SESSION["user-email"]) && ($role == 0)) {
                             echo '<li class="menu-list"><a href="client/view/customer_info.php" style="color: white; font-family: sans-serif;">' . $name . '</a></li>';
                         } else if (isset($_SESSION["user-email"]) && ($role == 1)) {
-                            echo '<li class="menu-list"><a href="../../src/ul/admins/index.php">Quản lý/a></li>';
+                            echo '<li class="menu-list"><a href="././src/ul/admins/index.php">Quản lý/a></li>';
                         } else {
                             echo '<li class="menu-list"><a href="client/view/user.php">Đăng nhập</a></li>';
                         }

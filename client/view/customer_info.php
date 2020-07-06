@@ -54,19 +54,48 @@ if (isset($_SESSION["user-email"]) && isset($_SESSION["user-pass"]) && isset($_S
                                         case 'cart': include './../../config/model/user-formBox-Cart.php';
                                             break;
                                     }
-                                } else {
+                                }
+                                else {
                                     include './../../config/model/user-formBox-Infor.php';
                                 }
                                 ?>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </main>
-        <footer><?php include'./footer.php'; ?></footer>
-    </body>
-    <?php
-    include '../../library/js/customer_info.js';
-    ?>
-</html>
+
+                    </main>
+                    <footer><?php include'./footer.php'; ?></footer>
+                    </body>
+<?php
+include '../../library/js/customer_info.js';
+?>
+                    </html>
+<script>
+                        document.getElementById("user-input-form").onsubmit = function () {
+                            var IDUser = document.getElementById("code").value;
+                            var code = document.getElementById("code").value;
+                            var table = document.getElementById("table").value;
+                            var EMAIL = document.getElementById("user-email").value;
+                            var GENDER = document.getElementById("user-gender").value;
+                            var DOB = document.getElementById("user-dob").value;
+                            var PHONE = document.getElementById("user-phonenumber").value;
+                            var ADDRESS = document.getElementById("user-address").value;
+                            var ZIPCODE = document.getElementById("user-zipcode").value;
+                            $.post("../../config/model/save_update.php",{IDUser:IDUser,code:code,table:table,EMAIL:EMAIL,GENDER:GENDER,DOB:DOB,PHONE:PHONE,ADDRESS:ADDRESS,ZIPCODE:ZIPCODE}, function(data){
+                                if (data) {
+                                    document.getElementById("result").innerHTML = "Thành công!";
+                                    document.getElementById("result").style.color = "green";
+                                    setTimeout(function(){
+                                        window.location.assign("./customer_info.php");
+                                    },2000);
+                                } else {
+                                    document.getElementById("result").style.color = "red";
+                                    document.getElementById("result").innerHTML = "Lỗi sai";
+                                    setTimeout(function(){
+                                        window.location.assign("./customer_info.php");
+                                    },2000);
+                                }
+                            });
+                            return false;
+                        };
+</script>

@@ -18,7 +18,6 @@
                     <input type="email" class="input-field" name="re-user-email" id="re-user-email" placeholder="Email" required>
                     <input type="password" class="input-field" name="re-user-password" id="re-user-password" placeholder="Password" pattern=".{6,}" title="Password must contain atleast 6 characters!" required>
                     <input type="password" class="input-field" name="re-user-repassword" id="re-user-repassword" placeholder="Verify password" title="Verify password must be the same as Password!" required>
-                    <input type="text" class="input-field" name="re-user-address" id="re-user-address" placeholder="Address" required>
                     <input type="text" class="input-field" name="re-user-phonenumber" id="re-user-phonenumber" placeholder="Phone Number" pattern="[0]+[0-9]{9}" title="Phone number contains 10 numbers and begins with 0">
                     <div class="result" id="re-result"></div>
                     <input type="submit" class="submit-btn" name="register-submit" value="Register">
