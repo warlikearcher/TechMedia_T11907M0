@@ -112,9 +112,9 @@ $numberColumn = mysqli_num_fields($r);
                             echo "<td> $item[8] </td>";
                             echo "<td>" . number_format($item[9], 0) . "</td>";
                             echo "<td> $item[10] </td>";
-                            echo "<td> $item[12] </td>";
                             echo "<td> $item[13] </td>";
-                            echo "<td> $item[11] </td>";
+                            echo "<td> $item[14] </td>";
+                            echo "<td> $item[12] </td>";
                             echo '</tr>';
                         }
                     } else if ($numberRow == 1) {
@@ -131,9 +131,9 @@ $numberColumn = mysqli_num_fields($r);
                         echo "<td> $listProduct[8] </td>";
                         echo "<td>" . number_format($listProduct[9], 0) . "</td>";
                         echo "<td> $listProduct[10] </td>";
-                        echo "<td> $listProduct[12] </td>";
                         echo "<td> $listProduct[13] </td>";
-                        echo "<td> $listProduct[11] </td>";
+                        echo "<td> $listProduct[14] </td>";
+                        echo "<td> $listProduct[12] </td>";
                         echo '</tr>';
                     } else {
                         ?>
@@ -141,7 +141,7 @@ $numberColumn = mysqli_num_fields($r);
                             <td colspan="14" style="text-align: center">
                                 <div>
                                     <h2>Không tìm thấy đơn hàng</h2>
-                                    <i>Reset trong (<span id="time"></span>)</i>
+                                    <a href="index.php?src=History">Reset trong (<span id="time"></span>)</a>
                                 </div>
                             </td>
                         </tr>
@@ -181,11 +181,12 @@ $numberColumn = mysqli_num_fields($r);
                     echo "<td> $item[6] </td>";
                     echo "<td> $item[7] </td>";
                     echo "<td> $item[8] </td>";
-                    echo "<td>" . number_format($item[9], 0) . "</td>";
+                    echo "<td>" . number_format($item[9], 0) . "đ</td>";
                     echo "<td> $item[10] </td>";
-                    echo "<td> $item[12] </td>";
+
                     echo "<td> $item[13] </td>";
-                    echo "<td> $item[11] </td>";
+                    echo "<td> $item[14] </td>";
+                    echo "<td> $item[12] </td>";
                     echo '</tr>';
                 }
             }

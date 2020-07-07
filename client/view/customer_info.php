@@ -10,10 +10,21 @@ if (isset($_SESSION["user-email"]) && isset($_SESSION["user-pass"]) && isset($_S
     $role = $_SESSION["user-role"];
     $email = $_SESSION["user-email"];
     $pass = $_SESSION["user-pass"];
-    $sql = "select * from tbusers where EMAIL='$email' and PASSWORD='$pass'";
+    $sql = "select * from tbusers where email ='$email' and PASSWORD='$pass'";
     $r = mysqli_query($link, $sql);
     $acc = mysqli_fetch_row($r);
     $name = $acc[4];
+}
+if (isset($_GET["action"])) {
+    switch ($_GET["action"]) {
+        case "remove":
+            $idPro = $_GET['id'];
+            $r = mysqli_query($link, "DELETE FROM cart WHERE code= '$idPro';");
+            echo '<script>';
+            echo "window.location.href = 'customer_info.php?action=cart';";
+            echo '</script>';
+            break;
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -54,8 +65,7 @@ if (isset($_SESSION["user-email"]) && isset($_SESSION["user-pass"]) && isset($_S
                                         case 'cart': include './../../config/model/user-formBox-Cart.php';
                                             break;
                                     }
-                                }
-                                else {
+                                } else {
                                     include './../../config/model/user-formBox-Infor.php';
                                 }
                                 ?>
@@ -66,11 +76,11 @@ if (isset($_SESSION["user-email"]) && isset($_SESSION["user-pass"]) && isset($_S
                     </main>
                     <footer><?php include'./footer.php'; ?></footer>
                     </body>
-<?php
-include '../../library/js/customer_info.js';
-?>
+                    <?php
+                    include '../../library/js/customer_info.js';
+                    ?>
                     </html>
-<script>
+                    <script>
                         document.getElementById("user-input-form").onsubmit = function () {
                             var IDUser = document.getElementById("code").value;
                             var code = document.getElementById("code").value;
@@ -81,21 +91,21 @@ include '../../library/js/customer_info.js';
                             var PHONE = document.getElementById("user-phonenumber").value;
                             var ADDRESS = document.getElementById("user-address").value;
                             var ZIPCODE = document.getElementById("user-zipcode").value;
-                            $.post("../../config/model/save_update.php",{IDUser:IDUser,code:code,table:table,EMAIL:EMAIL,GENDER:GENDER,DOB:DOB,PHONE:PHONE,ADDRESS:ADDRESS,ZIPCODE:ZIPCODE}, function(data){
+                            $.post("../../config/model/save_update.php", {IDUser: IDUser, code: code, table: table, EMAIL: EMAIL, GENDER: GENDER, DOB: DOB, PHONE: PHONE, ADDRESS: ADDRESS, ZIPCODE: ZIPCODE}, function (data) {
                                 if (data) {
                                     document.getElementById("result").innerHTML = "Thành công!";
                                     document.getElementById("result").style.color = "green";
-                                    setTimeout(function(){
+                                    setTimeout(function () {
                                         window.location.assign("./customer_info.php");
-                                    },2000);
+                                    }, 2000);
                                 } else {
                                     document.getElementById("result").style.color = "red";
                                     document.getElementById("result").innerHTML = "Lỗi sai";
-                                    setTimeout(function(){
+                                    setTimeout(function () {
                                         window.location.assign("./customer_info.php");
-                                    },2000);
+                                    }, 2000);
                                 }
                             });
                             return false;
                         };
-</script>
+                    </script>

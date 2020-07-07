@@ -19,14 +19,13 @@ switch ($id_table) {
         $nameTable = 'tbspeaklist';
         break;
     case "6":
-        $nameTable = '';
+        $nameTable = 'tbmainboard';
         break;
     case "7":
         $nameTable = 'tbpccaselist';
         break;
     case "8":
-        $nameTable = '';
-//            $sql = "select * from $aa where idProduct = '$id' ";
+        $nameTable = 'tbpcmonitor';
         break;
     case "9":
         $nameTable = 'tbramlist';

@@ -273,7 +273,7 @@ $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
                     <div class="grid-container">
 
                         <?php foreach ((array) $rows as $values) : ?>
-                            <form method="POST" action="index.php?action=add&id=<?php echo $values["idProduct"]; ?>">
+                        <form method="POST" action="index.php?view=product&ref=<?php echo $ref;?>&action=add&id=<?php echo $values["idProduct"]; ?>">
                                 <div class="grid-item">
                                     <div class="block_item height">
                                         <ul class="item-inf padding-0">

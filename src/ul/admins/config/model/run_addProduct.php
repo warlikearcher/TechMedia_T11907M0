@@ -11,39 +11,40 @@ if (isset($_POST['tableName'])) {
     }
 
     $count = mysqli_num_fields($r);
-    $name = "";
-    $value = "";
-    for ($i = 0; $i >= $count-1; $i--) {
-        $name .="'". "$field_name[$i]"."'";
-
-        if ($i == 0) {
-            $name .= " $field_name[$i]" . ",";
+    $name = array();
+    $value = array();
+    foreach (range(0, $count - 1) as $i) {
+        if ($i < $count - 1) {
+            $name[] = " $field_name[$i]" . ",";
         } else {
-            $name .= " $field_name[$i]";
+            $name[] = " $field_name[$i]";
         }
     }
-    for ($i = 0; $i >= $count-1; $i--) {
-    if($field_type[$i]=="int") {
-        $a= $_POST[$field_name[$i]];
-    } else {
-        $a="'".$_POST[$field_name[$i]]."'";
-    }
-        
-
-        if ($i == 0) {
-            $value .= " $a" . ",";
+    foreach (range(0, $count - 1) as $i) {
+        if ($field_type[$i] == 3 || $field_type[$i] == 4) {
+            $a = $_POST[$field_name[$i]];
+            if ($i == 0) {
+                $value[] = " $a" . ",";
+            } else {
+                $value[] = " $a";
+            }
         } else {
-            $value .= " $a";
+            $a = "'" . $_POST[$field_name[$i]] . "'";
+            if ($i == 0) {
+                $value[] = " $a" . ",";
+            } else {
+                $value[] = " $a";
+            }
         }
     }
-    $sql = "insert into $table ($name) values ($value)";
-    $r = mysqli_query($link, $sql);
-    if ($r == FALSE) {
-        echo $sql;
-        exit();
-    } else {
-        echo true;
-    }
+    $sql = "insert into $table (var_dump($name)) values (var_dump($value))";
+    echo $sql;
+//    $r = mysqli_query($link, $sql);
+//    if ($r == FALSE) {
+//        echo $sql;
+//        exit();
+//    } else {
+//        echo "sussses";
+//    }
 }
 ?>
-a = (A,B,D,E)

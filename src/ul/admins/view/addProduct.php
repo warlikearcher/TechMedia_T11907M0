@@ -129,7 +129,7 @@
             ?>
 
             <div id="formAdd" class="shadow-lg">
-                <form method="POST" action="">
+                <form method="POST" action="././config/model/run_addProduct.php">
                     <input type="hidden" name="tableName" value="<?php echo $table; ?>">
                     <h2 class="content_column">Thông số chung</h2>
                     <?php
@@ -138,13 +138,19 @@
                     <table class="user-input-table">
                         <tbody>
                             <?php
-                            for ($i = 0; $i < $count-1; $i++) {
+                            for ($i = 0; $i < $count-2; $i++) {
                                 if ($i == 0) {
                                     echo "<tr>";
                                     echo '<td class = "user-input-lable"><label>' . $field_name[$i] . '</label></td>';
                                     echo '<td class = "user-input-field"><input class = "input-field" type = "text" id = "' . $field_name[$i] . '" name = "' . $field_name[$i] . '" value = "' . ($idProduct = $idClass . "_A" . ($numRow+1)) . '"></td>';
                                     echo "</tr>";
-                                } else {
+                                }else if($i == 1){
+                                    echo "<tr>";
+                                    echo '<td class = "user-input-lable"><label>' . $field_name[$i] . '</label></td>';
+                                    echo '<td class = "user-input-field"><input class = "input-field" type = "text" id = "' . $field_name[$i] . '" name = "' . $field_name[$i] . '" value = "' .$idClass. '"></td>';
+                                    echo "</tr>";
+                                }
+                                else {
                                     echo "<tr>";
                                     echo '<td class = "user-input-lable"><label>' . $field_name[$i] . '</label></td>';
                                     echo '<td class = "user-input-field"><input class = "input-field" type = "text" id = "' . $field_name[$i] . '" name = "' . $field_name[$i] . '"></td>';

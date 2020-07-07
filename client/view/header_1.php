@@ -1,4 +1,22 @@
-
+<?php
+$email = $_SESSION["user-email"];
+$sq = "SELECT nameProduct,code,SUM(quantity) as quantitySUM,SUM(price) as priceSUM FROM cart WHERE email = '$email' GROUP BY nameProduct";
+$r = mysqli_query($link, $sq);
+//check cart + load cart
+if ($num = mysqli_num_rows($r) > 0) {
+    while ($row = mysqli_fetch_array($r)) {
+        $itemArray = array(
+            'name' => $row[1],
+            'code' => $row[2],
+            'quantity' => $row["quantitySUM"],
+            'price' => $row["priceSUM"]
+                )
+        ;
+    }
+} else {
+    $cart_count = 0;
+}
+?>  
 <!--Start Header-->
 <div class="web-header">
     <div class="container">
@@ -65,12 +83,12 @@
                         <li class="menu-list"><a href="index.php?view=news&id=16">Khuyến mãi</a></li>
                         <li class="menu-list"><a href="">Liên hệ</a></li>                      
                         <?php
-                        if (isset($_SESSION["user-email"]) && ($role==0)){
-                        echo '<li class="menu-list"><a href="customer_info.php" style="color: white; font-family: sans-serif;">'.$name.'</a></li>';
-                        } else if (isset($_SESSION["user-email"])&& ($role==1)) {
-                        echo '<li class="menu-list"><a href="../../src/ul/admins/index.php">Quản lý/a></li>';
+                        if (isset($_SESSION["user-email"]) && ($role == 0)) {
+                            echo '<li class="menu-list"><a href="customer_info.php" style="color: white; font-family: sans-serif;">' . $name . '</a></li>';
+                        } else if (isset($_SESSION["user-email"]) && ($role == 1)) {
+                            echo '<li class="menu-list"><a href="../../src/ul/admins/index.php">Quản lý/a></li>';
                         } else {
-                            echo '<li class="menu-list"><a href="client/view/user.php">Đăng nhập</a></li>';                         
+                            echo '<li class="menu-list"><a href="client/view/user.php">Đăng nhập</a></li>';
                         }
                         ?>
                     </ul>
@@ -78,16 +96,13 @@
             </div>
             <div class="col-md-3 right-menu">
                 <?php
-                if (!empty($_SESSION["cart_item"])) {
-                    $cart_count = count(array_keys($_SESSION["cart_item"]));
-                    ?>
-                    <ul class="nav navbar-nav cart_div" id="list-nav">
-                        <li class="cart" id="buttonCart"><a href="?view=cart">Giỏ Hàng <span class="fa fa-shopping-cart"></span><span>(<?php echo $cart_count; ?>)</span></a></li>
-                    </ul>
-
-                    <?php
-                }
+                $email = $_SESSION["user-email"];
+                $re = mysqli_query($link, "SELECT * FROM cart WHERE email = '$email' GROUP BY nameProduct");
+                $cart_count = mysqli_num_rows($re);
                 ?>
+                <ul class="nav navbar-nav cart_div" id="list-nav">
+                    <li class="cart" id="buttonCart"><a href="?view=cart">Giỏ Hàng <span class="fa fa-shopping-cart"></span><span>(<?php echo $cart_count; ?>)</span></a></li>
+                </ul>
                 <ul class="nav navbar-nav cart_div" id="list-nav">
                     <li class="menu-list"><a href="?view=orderQuery">Truy vấn đơn hàng</a></li>
                 </ul>

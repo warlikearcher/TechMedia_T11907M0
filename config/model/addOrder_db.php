@@ -26,9 +26,14 @@ if (isset($_SESSION["user-email"])) {
     $firstname = $_POST["firstname"];
     $phone = $_POST["phone"];
     $address = $_POST["address"];
-    $city = $_POST["city"];
+    $city = $_POST["taskOption"];
+    switch ($city) {
+        case "HCM":
+            $zip = 63000;
+            break;
+    }
     $phone = $_POST["phone"];
-    $zip = $_POST["zip"];
+
     $total_final = $_POST["total_final"];
     $code_promo = $_POST["code_promo"];
     $into = "insert into orders(order_id,name,phone,email,street,city,zip_code,total_price,promoCode) values ('$randomID','$firstname','$phone','$email','$address','$city','$zip','$total_final','$code_promo');";
@@ -41,17 +46,14 @@ if (isset($_SESSION["user-email"])) {
             $name = $db["nameProduct"];
             $into1 = "insert into orders_item(order_id,idProduct,quantity,list_price,nameProduct) values ('$randomID','$idProduct',$quantity,$item_price,'$name');";
 
-            $r = mysqli_query($link, $into1);
-            
+            $r1 = mysqli_query($link, $into1);
+            if ($r1 == TRUE) {
+                $clearCart = mysqli_query($link, "DELETE FROM cart WHERE email= '$email';");
+                header("Location: finishOrder.php?idOrder=$randomID");
+                exit();
+            }
         }
-        $clearCart = mysqli_query($link, "DELETE FROM cart WHERE email= '$email';");
-        header("Location: finishOrder.php?idOrder=$randomID");
-        exit();
     }
-//    echo $into;
-//    echo $into1;
-//    echo $randomID;
-//    echo $email;
 } else {
     if (isset($_SESSION["cart_item"])) {
         do {
@@ -65,19 +67,23 @@ if (isset($_SESSION["user-email"])) {
         $email = $_POST["email"];
         $phone = $_POST["phone"];
         $address = $_POST["address"];
-        $city = $_POST["city"];
+        $city = $_POST["taskOption"];
+        switch ($city) {
+            case "HCM":
+                $zip = 63000;
+                break;
+            default :
+                $zip = 60000;
+                break;
+        }
         $phone = $_POST["phone"];
-        $state = $_POST["state"];
-        $zip = $_POST["zip"];
         $total_final = $_POST["total_final"];
 
 //    insert 
-        $into = "insert into orders(order_id,name,phone,email,street,city,state,zip_code,total_price) values ('$randomID','$firstname','$phone','$email','$address','$city','$state','$zip','$total_final');";
-//    echo $into;
+        $into = "insert into orders(order_id,name,phone,email,street,city,zip_code,total_price) values ('$randomID','$firstname','$phone','$email','$address','$city',$zip,$total_final);";
         $r = mysqli_query($link, $into);
         if ($r == TRUE) {
-//        $last_id = mysqli_insert_id($link);
-//        echo 'Last id:' . $last_id;
+
             foreach ($_SESSION["cart_item"] as $item) {
                 $item_price = $item["quantity"] * $item["price"];
                 $idProduct = $item["code"];
@@ -85,14 +91,13 @@ if (isset($_SESSION["user-email"])) {
                 $name = $item["name"];
                 $into1 = "insert into orders_item(order_id,idProduct,quantity,list_price,nameProduct) values ('$randomID','$idProduct',$quantity,$item_price,'$name');";
 
-                $r = mysqli_query($link, $into1);
-
-//            var_dump($r);
-//            echo $into1;
+                $r1 = mysqli_query($link, $into1);
+                if ($r1 == TRUE) {
+                    unset($_SESSION["cart_item"]);
+                    header("Location: finishOrder.php?idOrder=$randomID");
+                    exit();
+                }
             }
-
-            unset($_SESSION["cart_item"]);
-            header("Location: finishOrder.php?idOrder=$randomID");
         }
     } else {
         header("location: index.php?view=home");

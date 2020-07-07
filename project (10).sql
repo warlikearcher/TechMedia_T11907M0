@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3308
--- Generation Time: Jul 06, 2020 at 09:51 AM
+-- Generation Time: Jul 07, 2020 at 06:11 PM
 -- Server version: 8.0.18
 -- PHP Version: 7.3.12
 
@@ -43,9 +43,43 @@ CREATE TABLE IF NOT EXISTS `cart` (
 --
 
 INSERT INTO `cart` (`email`, `nameProduct`, `code`, `quantity`, `price`) VALUES
+('tranhoa@gmail.com', 'Cooler Master MasterBox TD500 Mesh White ARGB with controller', '7_A03', 1, 2220000),
+('tranhoa@gmail.com', 'Cooler Master MasterBox TD500 Mesh White ARGB with controller', '7_A03', 1, 2220000),
+('tranhoa@gmail.com', 'ASUS Phoenix', '1_A02', 1, 4220000),
+('tranhoa@gmail.com', 'Corsair Dominator', '9_A01', 1, 3300000),
+('tranhoa@gmail.com', 'card-ASUS-Dual-GeForce-RTX-2060-SUPER-EVO-V2-8GB', '1_A01', 1, 11780000),
+('tranhoa@gmail.com', 'Gigabyte H310M H', '6_A01', 1, 1699000),
+('tranhoa@gmail.com', 'Cooler Master Wraith Ripper AMD TR4', '2_A01', 1, 3740000),
+('tranhoa@gmail.com', 'Acer Predator X35 - 35in cong VA 180Hz', '8_A01', 1, 90990000),
+('tranhoa@gmail.com', 'Ryzen 3 3100', '3_A01', 1, 2490000),
+('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
+('tranhoa@gmail.com', 'HP Pavilion Gaming 15', '4_A01', 1, 19990000),
+('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
+('tranhoa@gmail.com', 'Asus TUF Gaming FX505', '4_A03', 1, 18190000),
+('tranhoa@gmail.com', 'Palit GeForce RTX 2060 GamingPro OC 6GB GDDR6', '1_A10', 1, 9490000),
+('tranhoa@gmail.com', 'HP Pavilion Gaming 15', '4_A01', 1, 19990000),
+('tranhoa@gmail.com', 'HP Pavilion Gaming 15', '4_A01', 1, 19990000),
+('tranhoa@gmail.com', 'HP Pavilion Gaming 15', '4_A01', 1, 19990000),
+('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
+('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
+('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
+('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
+('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
+('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
+('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
+('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
+('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
+('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
+('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
 ('tranhoa@gmail.com', 'HP Pavilion Gaming 15', '4_A01', 1, 19990000),
 ('tranhoa@gmail.com', 'Asus TUF Gaming FX505', '4_A03', 1, 18190000),
-('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000);
+('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
+('tranhoa@gmail.com', 'Acer Predator Triton 500', '4_A05', 1, 49990000),
+('tranhoa@gmail.com', 'Lenovo Ideapad L340', '4_A06', 1, 15800000),
+('tranhoa@gmail.com', 'Dell G3 15 3590', '4_A08', 1, 28990000),
+('tranhoa@gmail.com', 'Asus TUF Gaming FX505', '4_A03', 1, 18190000),
+('tranhoa@gmail.com', 'CPU Pentium Gold 5400', '3_A12', 1, 1450000),
+('tranhoa@gmail.com', 'Ryzen 7 3700X', '3_A06', 1, 7500000);
 
 -- --------------------------------------------------------
 
@@ -106,7 +140,17 @@ INSERT INTO `orders` (`order_id`, `customer_id`, `name`, `phone`, `email`, `stre
 ('5f02048cd1bcc', NULL, 'Tráº§n HÃ²a', '0909132456', 'tranhoa@gmail.com', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', '', '', '', 26943000, NULL, NULL, '2020-07-05 16:49:16'),
 ('5f0205c92e633', NULL, 'Tráº§n HÃ²a', '0909132456', 'tranhoa@gmail.com', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', 'HCM', '', '630000', 26943000, NULL, NULL, '2020-07-05 16:54:33'),
 ('5f0206d3a67cd', NULL, 'Tráº§n HÃ²a', '0909132456', 'tranhoa@gmail.com', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', 'HCM', '', '630000', 26943000, 'saigon', NULL, '2020-07-05 16:58:59'),
-('5f020a5974e0b', NULL, 'Tráº§n HÃ²a', '0909132456', 'tranhoa@gmail.com', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', 'HCM', '', '630000', 3498000, 'saigon', NULL, '2020-07-05 17:14:01');
+('5f020a5974e0b', NULL, 'Tráº§n HÃ²a', '0909132456', 'tranhoa@gmail.com', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', 'HCM', '', '630000', 3498000, 'saigon', NULL, '2020-07-05 17:14:01'),
+('5f035bfcb0ed1', NULL, 'Nguyễn Văn Trần', '1234567890', 'mmosuper25@gmail.com', 'TDP 4, T.T Quang Phu', 'HCM', '', '63000', 18190000, NULL, NULL, '2020-07-06 17:20:04'),
+('5f035d50f2ba0', NULL, 'Nguyễn Văn Trần', '1234567890', 'mmosuper25@gmail.com', 'TDP 4, T.T Quang Phu', 'HCM', '', '63000', 18190000, NULL, NULL, '2020-07-06 17:20:17'),
+('5f035dd707feb', NULL, 'Nguyễn Văn Trần', '1234567890', 'mmosuper25@gmail.com', 'TDP 4, T.T Quang Phu', 'HN', '', '60000', 40180000, NULL, NULL, '2020-07-06 17:22:31'),
+('5f035df61a3d4', NULL, 'Nguyễn Văn Trần', '1234567890', 'mmosuper25@gmail.com', 'TDP 4, T.T Quang Phu', 'HCM', '', '63000', 40180000, NULL, NULL, '2020-07-06 17:23:02'),
+('5f03614aae2db', NULL, 'Nguyễn Văn Trần', '1234567890', 'mmosuper25@gmail.com', 'TDP 4, T.T Quang Phu', 'HCM', '', '63000', 40180000, NULL, NULL, '2020-07-06 17:37:14'),
+('5f04a50ff0ae5', NULL, 'Hòa', '0358818164', 'warlikearcher@gmail.com', 'phường 14', 'HN', '', '60000', 64512000, NULL, NULL, '2020-07-07 16:38:39'),
+('5f04a5d23631a', NULL, 'Hòa', '0358818164', 'warlikearcher@gmail.com', 'phường 14', 'DT', '', '60000', 32970000, NULL, NULL, '2020-07-07 16:41:54'),
+('5f04a6ec76782', NULL, 'Hòa', '0358818164', 'warlikearcher@gmail.com', 'phường 14', 'DT', '', '60000', 32970000, NULL, NULL, '2020-07-07 16:46:36'),
+('5f04a750eddc4', NULL, 'Hòa', '0358818164', 'warlikearcher@gmail.com', 'phường 14', 'DT', '', '60000', 32970000, NULL, NULL, '2020-07-07 16:48:16'),
+('5f04a78a04e86', NULL, 'Trần Minh', '0358818164', 'mmosuper25@gmail.com', 'TDP 4, T.T Quang Phu', 'HCM', '', '63000', 10290000, NULL, NULL, '2020-07-07 16:49:14');
 
 -- --------------------------------------------------------
 
@@ -125,7 +169,7 @@ CREATE TABLE IF NOT EXISTS `orders_item` (
   PRIMARY KEY (`item_id`),
   KEY `idProduct` (`idProduct`),
   KEY `order_id` (`order_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
 -- Dumping data for table `orders_item`
@@ -156,7 +200,22 @@ INSERT INTO `orders_item` (`order_id`, `item_id`, `idProduct`, `quantity`, `list
 ('5f0206d3a67cd', 22, '3_A12', 1, 1450000, 'CPU Pentium Gold 5400'),
 ('5f0206d3a67cd', 23, '4_A03', 1, 18190000, 'Asus TUF Gaming FX505'),
 ('5f0206d3a67cd', 24, '1_A05', 1, 5290000, 'GALAX GeForce GTX 1650 Super EX 4GB GDDR6'),
-('5f020a5974e0b', 25, '3_A14', 1, 3860000, 'CPU I5-9400F');
+('5f020a5974e0b', 25, '3_A14', 1, 3860000, 'CPU I5-9400F'),
+('5f035d50f2ba0', 26, '4_A03', 1, 18190000, 'Asus TUF Gaming FX505'),
+('5f035df61a3d4', 27, '4_A03', 1, 18190000, 'Asus TUF Gaming FX505'),
+('5f035df61a3d4', 28, '4_A04', 1, 21990000, 'Asus TUF Gaming A15 FA506II AL012T'),
+('5f03614aae2db', 29, '4_A03', 1, 18190000, 'Asus TUF Gaming FX505'),
+('5f03614aae2db', 30, '4_A04', 1, 21990000, 'Asus TUF Gaming A15 FA506II AL012T'),
+('5f04a50ff0ae5', 31, '6_A05', 8, 25592000, 'ASUS ROG STRIX B360-F GAMING'),
+('5f04a50ff0ae5', 32, '4_A03', 1, 18190000, 'Asus TUF Gaming FX505'),
+('5f04a50ff0ae5', 33, '3_A12', 1, 1450000, 'CPU Pentium Gold 5400'),
+('5f04a50ff0ae5', 34, '3_A06', 1, 7500000, 'Ryzen 7 3700X'),
+('5f04a50ff0ae5', 35, '1_A01', 1, 11780000, 'card-ASUS-Dual-GeForce-RTX-2060-SUPER-EVO-V2-8GB'),
+('5f04a6ec76782', 36, '9_A04', 1, 1080000, 'Corsair Vangeance'),
+('5f04a6ec76782', 37, '2_A02', 1, 2900000, 'Corsair A500 Dual Fan CPU Cooler'),
+('5f04a6ec76782', 38, '4_A08', 1, 28990000, 'Dell G3 15 3590'),
+('5f04a750eddc4', 39, '9_A04', 1, 1080000, 'Corsair Vangeance'),
+('5f04a78a04e86', 40, '3_A12', 1, 1450000, 'CPU Pentium Gold 5400');
 
 -- --------------------------------------------------------
 
@@ -472,8 +531,9 @@ CREATE TABLE IF NOT EXISTS `tbmainboard` (
   `photo4` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `photo5` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `dateIn` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`idProduct`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  PRIMARY KEY (`idProduct`),
+  KEY `class_frk_mainboard` (`idClass`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `tbmainboard`
@@ -481,9 +541,9 @@ CREATE TABLE IF NOT EXISTS `tbmainboard` (
 
 INSERT INTO `tbmainboard` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Tong quan`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `dateIn`) VALUES
 ('6_A01', 6, 'Gigabyte H310M H', 1699000, 'Socket	LGA1151\r\nChipset	Intel® H310 Express Chipset\r\nCPU (hỗ trợ tối đa)	Support for 9th and 8th Generation Intel® Core™ i9 processors/Intel® Core™ i7 processors/Intel® Core™ i5 processors/Intel® Core™ i3 processors/Intel® Pentium® processors/Intel® Celeron® processors\r\nBIOS	\r\n1 x 128 Mbit flash\r\nUse of licensed AMI UEFI BIOS\r\nPnP 1.0a, DMI 2.7, WfM 2.0, SM BIOS 2.7, ACPI 5.0\r\nOS hỗ trợ	Support for Windows 10 64-bit\r\n\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	32 GB\r\n\r\nSố khe cắm	2\r\nKênh bộ nhớ	Dual\r\nRAM	Support for DDR4 2666/2400/2133 MHz memory modules\r\n\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nMicro ATX Form Factor\r\n22.6cm x 17.4cm\r\nĐồ Họa và Âm Thanh\r\nAudio	\r\nRealtek® ALC887 codec\r\nHigh Definition Audio\r\n2/4/5.1/7.1-channel\r\n* To configure 7.1-channel audio, you have to use an HD front panel audio module and enable the multi-channel audio feature through the audio driver.\r\n\r\nKết Nối Mạng\r\nLAN	Realtek® GbE LAN chip (10/100/1000 Mbit)\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\nRJ45	\r\nUSB 2.0	4\r\nUSB 3.1	2 x USB 3.1 Gen 1 ports\r\nCổng Audio	3 x audio jacks\r\nVGA	1 x D-Sub port\r\nHDMI	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	4\r\nPCI-EX1	2\r\nPCI-EX16\r\n', 'image/Image_Product/Mainboard_image/Gigabyte%20Z390%20AORUS%20Xtreme%20(2).jpg', 'image/Image_Product/Mainboard_image/Gigabyte%20Z390%20AORUS%20Xtreme%20(3).jpg', 'image/Image_Product/Mainboard_image/Gigabyte%20Z390%20AORUS%20Xtreme%20(4).jpg', 'image/Image_Product/Mainboard_image/Gigabyte%20Z390%20AORUS%20Xtreme%20(5).jpg', '', '2020-07-06 06:14:04'),
-('6_A02', 6, 'ASRock H310M-HDV', 1670000, 'Socket	Socket 1151\r\nChipset	Intel® H310\r\nCPU (hỗ trợ tối đa)	Supports 8th Generation Intel® Core™ Processors\r\nBIOS	\r\n128Mb AMI UEFI Legal BIOS with multilingual GUI support\r\nACPI 6.0 Compliant wake up events\r\nSMBIOS 2.7 Support\r\nDRAM, PCH 1.05V Voltage Multi-adjustment\r\nOS hỗ trợ	Microsoft® Windows® 10 64-bit\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	32 GB\r\nSố khe cắm	2\r\nKênh bộ nhớ	Dual\r\nRAM	DDR4 2666 / 2400 / 2133\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nMicro ATX Form Factor\r\n7.5-in x 7.4-in, 19.1 cm x 18.8 cm\r\nSolid Capacitor design\r\nĐồ Họa và Âm Thanh\r\nAudio	7.1 CH HD Audio (Realtek ALC887 Audio Codec)\r\nKết Nối Mạng\r\nLAN	\r\nPCIE x1 Gigabit LAN 10/100/1000 Mb/s\r\n1 x Realtek RTL8111H\r\nSupports Wake-On-LAN\r\nSupports Lightning/ESD Protection\r\nSupports Energy Efficient Ethernet 802.3az\r\nSupports PXE\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\nRJ45	\r\nUSB 2.0	\r\nMặt trước: đang cập nhật\r\nMặt sau: 4\r\nUSB 3.1	\r\nMặt trước: đang cập nhật\r\nMặt sau: 2 x Gen1\r\nCổng Audio	HD Audio Jacks: Line in / Front Speaker / Microphone\r\nVGA	\r\nDVI-D	\r\nHDMI	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	4\r\nPCI-EX1	\r\nPCI-EX16\r\n', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20.jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20(2).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20(3).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20(3).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20(4).jpg', '2020-07-06 06:46:45'),
+('6_A02', 6, 'ASRock H310M-HDV', 1670000, 'Socket	Socket 1151\r\nChipset	Intel® H310\r\nCPU (hỗ trợ tối đa)	Supports 8th Generation Intel® Core™ Processors\r\nBIOS	\r\n128Mb AMI UEFI Legal BIOS with multilingual GUI support\r\nACPI 6.0 Compliant wake up events\r\nSMBIOS 2.7 Support\r\nDRAM, PCH 1.05V Voltage Multi-adjustment\r\nOS hỗ trợ	Microsoft® Windows® 10 64-bit\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	32 GB\r\nSố khe cắm	2\r\nKênh bộ nhớ	Dual\r\nRAM	DDR4 2666 / 2400 / 2133\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nMicro ATX Form Factor\r\n7.5-in x 7.4-in, 19.1 cm x 18.8 cm\r\nSolid Capacitor design\r\nĐồ Họa và Âm Thanh\r\nAudio	7.1 CH HD Audio (Realtek ALC887 Audio Codec)\r\nKết Nối Mạng\r\nLAN	\r\nPCIE x1 Gigabit LAN 10/100/1000 Mb/s\r\n1 x Realtek RTL8111H\r\nSupports Wake-On-LAN\r\nSupports Lightning/ESD Protection\r\nSupports Energy Efficient Ethernet 802.3az\r\nSupports PXE\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\nRJ45	\r\nUSB 2.0	\r\nMặt trước: đang cập nhật\r\nMặt sau: 4\r\nUSB 3.1	\r\nMặt trước: đang cập nhật\r\nMặt sau: 2 x Gen1\r\nCổng Audio	HD Audio Jacks: Line in / Front Speaker / Microphone\r\nVGA	\r\nDVI-D	\r\nHDMI	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	4\r\nPCI-EX1	\r\nPCI-EX16\r\n', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV.jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20(2).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20(3).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20(4).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20(5).jpg', '2020-07-06 06:46:45'),
 ('6_A03', 6, 'Asus Prime H310M-F R2.0', 1390000, 'Socket	Socket 1151\r\nChipset	Intel® H310\r\nCPU (hỗ trợ tối đa)	9th / 8th Gen Intel® Core™, Pentium® Gold and Celeron® Processors\r\nBIOS	64 Mb Flash ROM, UEFI AMI BIOS, PnP, SM BIOS 3.1, ACPI 6.1, Multi-languageBIOS, ASUS EZ Flash 3, CrashFree BIOS 3, F6 Qfan Control, F3 MyFavorites, Last Modified log, F12 PrintScreen, and ASUS DRAM SPD (SerialPresence Detect) memory information\r\nOS hỗ trợ	Windows® 10 64-bit\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	32GB\r\nSố khe cắm	2 x DIMM\r\nKênh bộ nhớ	Dual\r\nRAM	DDR4 2666/2400/2133 MHz Non-ECC, Un-buffered Memory\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nuATX Form Factor\r\n21.34 cm x 17.78 cm\r\nĐồ Họa và Âm Thanh\r\nAudio	Realtek® ALC887 8-Channel High Definition Audio CODEC\r\nCard đồ họa tích hợp	Integrated Graphics Processor- Intel® HD Graphics support\r\nKết Nối Mạng\r\nLAN	Realtek® RTL8111H, 1 x Gigabit LAN Controller(s)\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\n1 x PS/2 keyboard (purple)\r\n1 x PS/2 mouse (green)\r\nRJ45	\r\nUSB 2.0	6 x USB 2.0\r\nUSB 3.1	4 x USB 3.1 Gen 1\r\nCổng Audio	3 x Audio jack(s)\r\nDVI-D	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	4\r\nPCI-EX1	1 x PCIe 2.0 x1\r\nPCI-EX16	1 x PCIe 3.0/2.0 x16\r\n', 'image/Image_Product/Mainboard_image/Mainboard_ASUS%20Prime%20B460M-A%20(2).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASUS%20Prime%20B460M-A%20(3).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASUS%20Prime%20B460M-A%20(4).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASUS%20Prime%20B460M-A%20(5).jpg', '', '2020-07-06 06:51:54'),
-('6_A04', 6, 'ASRock B360 Gaming K4', 2789000, 'Socket	LGA 1151-v2\r\nChipset	Intel® B360\r\nCPU (hỗ trợ tối đa)	Supports 8th Generation Intel® Core™ Processors\r\nBIOS	\r\n128Mb AMI UEFI Legal BIOS with multilingual GUI support\r\nACPI 6.0 Compliant wake up events\r\nSMBIOS 2.7 Support\r\nCPU Core/Cache, GT Core/Cache, DRAM, PCH 1.0V, VCCIO, VCCST, VCCSA, VCCPLL, CPU Internal PLL, GT PLL, Ring PLL, System Agent PLL, Memory Controller PLL Voltage Multi-adjustment\r\nOS hỗ trợ	Microsoft® Windows® 10 64-bit\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	64 GB\r\nSố khe cắm	4\r\nKênh bộ nhớ	Dual\r\nRAM	DDR4 2666 / 2400 / 2133\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nATX Form Factor\r\n12.0-in x 9.6-in, 30.5 cm x 24.4 cm\r\nĐồ Họa và Âm Thanh\r\nAudio	7.1 CH HD Audio with Content Protection (Realtek ALC1220 Audio Codec)\r\nCông nghệ đa card đồ họa	Supports AMD Quad CrossFireX™ and CrossFireX™\r\nKết Nối Mạng\r\nLAN	\r\nGigabit LAN 10/100/1000 Mb/s\r\nGiga PHY Intel® I219V\r\nSupports Wake-On-LAN\r\nSupports Lightning/ESD Protection\r\nSupports Energy Efficient Ethernet 802.3az\r\nSupports PXE\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\nRJ45	\r\nUSB 2.0	\r\nMặt trước: đang cập nhật\r\nMặt sau: 2\r\nUSB 3.1	\r\nMặt trước: đang cập nhật\r\nMặt sau: 1 x Gen2 Type-A, 2 x Gen1\r\nUSB-C	\r\nMặt trước: đang cập nhật\r\nMặt sau: 1 x Gen2 Type-C\r\nCổng Audio	\r\nHD Audio Jacks: Rear Speaker / Central / Bass / Line in / Front Speaker / Microphone (Gold Audio Jacks)\r\n1 x Optical SPDIF Out Port\r\nVGA	\r\nHDMI	\r\nDisplay Port	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	6\r\nM.2 SLOT	2\r\nPCI-EX1	4\r\nPCI-EX16	2\r\n', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20.jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20(3).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20(4).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20(5).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20(2).jpg', '2020-07-06 06:51:54'),
+('6_A04', 6, 'ASRock B360 Gaming K4', 2789000, 'Socket	LGA 1151-v2\r\nChipset	Intel® B360\r\nCPU (hỗ trợ tối đa)	Supports 8th Generation Intel® Core™ Processors\r\nBIOS	\r\n128Mb AMI UEFI Legal BIOS with multilingual GUI support\r\nACPI 6.0 Compliant wake up events\r\nSMBIOS 2.7 Support\r\nCPU Core/Cache, GT Core/Cache, DRAM, PCH 1.0V, VCCIO, VCCST, VCCSA, VCCPLL, CPU Internal PLL, GT PLL, Ring PLL, System Agent PLL, Memory Controller PLL Voltage Multi-adjustment\r\nOS hỗ trợ	Microsoft® Windows® 10 64-bit\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	64 GB\r\nSố khe cắm	4\r\nKênh bộ nhớ	Dual\r\nRAM	DDR4 2666 / 2400 / 2133\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nATX Form Factor\r\n12.0-in x 9.6-in, 30.5 cm x 24.4 cm\r\nĐồ Họa và Âm Thanh\r\nAudio	7.1 CH HD Audio with Content Protection (Realtek ALC1220 Audio Codec)\r\nCông nghệ đa card đồ họa	Supports AMD Quad CrossFireX™ and CrossFireX™\r\nKết Nối Mạng\r\nLAN	\r\nGigabit LAN 10/100/1000 Mb/s\r\nGiga PHY Intel® I219V\r\nSupports Wake-On-LAN\r\nSupports Lightning/ESD Protection\r\nSupports Energy Efficient Ethernet 802.3az\r\nSupports PXE\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\nRJ45	\r\nUSB 2.0	\r\nMặt trước: đang cập nhật\r\nMặt sau: 2\r\nUSB 3.1	\r\nMặt trước: đang cập nhật\r\nMặt sau: 1 x Gen2 Type-A, 2 x Gen1\r\nUSB-C	\r\nMặt trước: đang cập nhật\r\nMặt sau: 1 x Gen2 Type-C\r\nCổng Audio	\r\nHD Audio Jacks: Rear Speaker / Central / Bass / Line in / Front Speaker / Microphone (Gold Audio Jacks)\r\n1 x Optical SPDIF Out Port\r\nVGA	\r\nHDMI	\r\nDisplay Port	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	6\r\nM.2 SLOT	2\r\nPCI-EX1	4\r\nPCI-EX16	2\r\n', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4.jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20(2).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20(3).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20(4).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20(5).jpg', '2020-07-06 06:51:54'),
 ('6_A05', 6, 'ASUS ROG STRIX B360-F GAMING', 3199000, 'Socket	1151\r\nChipset	Intel® B360\r\nBIOS	1 x 128 Mb Flash ROM, UEFI AMI BIOS, PnP, SM BIOS 3.1, ACPI 6.1, Multi-language BIOS, ASUS EZ Flash 3, CrashFree BIOS 3, Secure Erase, User Profile, F6 Qfan Control, F3 My Favorites, Last Modified log, F12 PrintScreen, , F4 AURA ON/OFF and F9 Search\r\nOS hỗ trợ	Windows® 10 64-bit\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	64 GB\r\nSố khe cắm	4\r\nKênh bộ nhớ	Dual\r\nRAM	2666/2400/2133 MHz Không ECC, Không Đệm Bộ nhớ\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nATX Form Factor\r\n30.5 cm x 24.4 cm\r\nĐồ Họa và Âm Thanh\r\nAudio	ROG SupremeFX 8-Channel High Definition Audio CODEC S1220A\r\nCông nghệ đa card đồ họa	Supports AMD 2-Way CrossFireX Technology\r\nKết Nối Mạng\r\nLAN	\r\nIntel® I219V, 1 x Gigabit LAN Controller\r\nAnti-surge LANGuard\r\nROG GameFirst Technology\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\nRJ45	\r\nUSB 2.0	6 x USB 2.0 port(s) (4 at back panel, black, 2 at mid-board)\r\nUSB 3.1	\r\n2 x USB 3.1 Gen 2 port(s) (2 at back panel, red, Type-A, Support 3A power output)\r\n2 x USB 3.1 Gen 1 port(s) (2 at mid-board)\r\nUSB-C	1 x USB 3.1 Gen 2 port(s) (1 at back panel, black, USB Type-CTM, Support 3A power output)\r\nCổng Audio	\r\n1 x Optical S/PDIF out\r\n5 x Audio jack(s)\r\nDVI-D	\r\nHDMI	\r\nDisplay Port	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	6\r\nM.2 SLOT	2\r\nPCI-EX1	4\r\nPCI-EX4	\r\nPCI-EX16\r\n', 'image\\Image_Product\\Mainboard_image\\Mainboard_ASRock B360 Gaming K4.jpg', 'image\\Image_Product\\Mainboard_image\\Mainboard_ASRock B360 Gaming K4 (2).jpg', 'image\\Image_Product\\Mainboard_image\\Mainboard_ASRock B360 Gaming K4 (3).jpg', 'image\\Image_Product\\Mainboard_image\\Mainboard_ASRock B360 Gaming K4 (4).jpg', 'image\\Image_Product\\Mainboard_image\\Mainboard_ASRock B360 Gaming K4 (5).jpg', '2020-07-06 06:54:40');
 
 -- --------------------------------------------------------
@@ -566,20 +626,21 @@ INSERT INTO `tbpccaselist` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Hỗ
 
 DROP TABLE IF EXISTS `tbpcmonitor`;
 CREATE TABLE IF NOT EXISTS `tbpcmonitor` (
-  `idProduct` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `idProduct` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `idClass` int(100) NOT NULL,
-  `nameProduct` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `nameProduct` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `rate` int(100) NOT NULL,
   `Tong quan` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `Cong ket noi` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `photo1` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `photo2` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `photo3` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `photo4` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `photo5` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `photo1` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
+  `photo2` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
+  `photo3` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
+  `photo4` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
+  `photo5` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `DateIn` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`idProduct`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  PRIMARY KEY (`idProduct`),
+  KEY `idClass` (`idClass`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tbpcmonitor`
@@ -587,15 +648,15 @@ CREATE TABLE IF NOT EXISTS `tbpcmonitor` (
 
 INSERT INTO `tbpcmonitor` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Tong quan`, `Cong ket noi`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `DateIn`) VALUES
 ('8_A01', 8, 'Acer Predator X35 - 35in cong VA 180Hz', 90990000, '-Kích thước màn hình :35-inch\r\n-Độ phân giải :UW-QHD 3440 x 1440\r\n-Tỉ lệ màn hình :21:9\r\n-Góc nhìn :178° / 178°\r\n-Độ sáng:\r\n    1000 Nit - Peak (HDR Mode)\r\n    600 Nit - Native\r\n\r\n-Tấm nền :Vertical A', '-HDMI 	\r\n-USB 3.0 	\r\n-Displayport ver 1.4\r\n', 'image/Image_Product/Monitor-image/PCMonitor_Acer_1a.png', 'image/Image_Product/Monitor-image/PCMonitor_Acer_1b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_1c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_1d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_1e.png', '0000-00-00 00:00:00'),
+('8_A010', 8, 'LG 34GL750 34inch IPS 144Hz cong', 14990000, '-Kích thước màn hình :	34-inch cong\r\n-Độ phân giải :	UWFHD 2560 x 1080\r\n-Tỉ lệ màn hình :21:9\r\n-Góc nhìn :178º (R/L), 178º (U/D)\r\n-Độ sáng :300cd (typ) / 240cd (Min)\r\n-Tấm nền :IPS Haze 1%, 3H\r\n-Kích ', '-Displayport ver 1.2 	\r\n-HDMI :2 x HDMI 2.0\r\n-3.5mm 	', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2a.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2b.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2c.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2d.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2e.png', '0000-00-00 00:00:00'),
 ('8_A02', 8, 'Acer HA270B - 27in IPS FHD', 4590000, 'Kích thước màn hình :27-inch\r\n-Độ phân giải :FHD 1920 x 1080\r\n-Tỉ lệ màn hình :16:9\r\n-Góc nhìn :178° / 178°\r\n-Mật độ điểm ảnh ( PPI ) :81 ppi\r\n-Độ sáng \"250 nits\r\n-Tấm nền :IPS\r\n-Kích cỡ điểm ảnh :0.3', '-HDMI 	1 x HDMI 1.4\r\n-3.5mm 	\r\n-D-Sub 	\r\n', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_2a.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_2b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_2c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_2d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_2e.png', '0000-00-00 00:00:00'),
 ('8_A03', 8, 'ASUS ROG Swift PG65UQ - 65in 4K UHD 144Hz', 169990000, '-Kích thước màn hình :64.5“\r\n-Độ phân giải :UHD 3840x2160\r\n-Tỉ lệ màn hình :16:9\r\n-Góc nhìn :178°(H)/178°(V)\r\n-Mật độ điểm ảnh ( PPI ) :68 ppi\r\n-Độ sáng :1000 cd/㎡ (Peak)\r\n-Tấm nền :VA\r\n-Kích cỡ điểm ', '-HDMI :4 x HDMI 2.0\r\n-USB 3.0 :2\r\n-Displayport ver 1.4 	\r\n', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_1a.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_1b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_1c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_1d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_1e.png', '0000-00-00 00:00:00'),
 ('8_A04', 8, 'ASUS ROG Strix XG49VQ - 49in DFHD 144Hz', 26490000, '-Kích thước màn hình :Super ultra-wide 49-inch (124.46cm) cong 1800R\r\n-Độ phân giải :	DFHD 3840x1080\r\n-Tỉ lệ màn hình :32:9\r\n-Góc nhìn :178°(H)/178°(V)\r\n-Độ sáng :450 cd/㎡ (Typical)\r\n-Tấm nền :VA\r\n-Kí', 'Displayport ver 1.2 	\r\nHDMI :\r\n    HDMI(v2.0) x 1\r\n    HDMI 1.4 x 2\r\nUSB 3.0 :2\r\n', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_2a.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_2b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_2c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_2d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_2e.png', '0000-00-00 00:00:00'),
-('8_A05', 8, 'Dell UltraSharp 27 4K HDR Monitor UP2718Q', 38020000, '-Kích thước màn hình :\"27\"\r\n-Độ phân giải :3840 x 2160\r\n-Tỉ lệ màn hình	16:9\r\n-Độ sáng :400 cd/m² (typical), 1,000 cd/m² (peak)\r\n-Kích cỡ điểm ảnh :0.1554 mm x 0.1554 mm\r\n-Độ phản hồi :6ms (gray to gr', '-Displayport ver 1.2 	\r\n-Mini Displayport Ver 1.2 	\r\n-HDMI : 2 cổng', 'Image_Product/Monitor-image/PCMonitor_Dell_1a.png', 'Image_Product/Monitor-image/PCMonitor_Dell_1b.png', 'Image_Product/Monitor-image/PCMonitor_Dell_1c.png', 'Image_Product/Monitor-image/PCMonitor_Dell_1d.png', 'Image_Product/Monitor-image/PCMonitor_Dell_1e.png', '0000-00-00 00:00:00'),
+('8_A05', 8, 'Dell UltraSharp 27 4K HDR Monitor UP2718Q', 38020000, '-Kích thước màn hình :\"27\"\r\n-Độ phân giải :3840 x 2160\r\n-Tỉ lệ màn hình	16:9\r\n-Độ sáng :400 cd/m² (typical), 1,000 cd/m² (peak)\r\n-Kích cỡ điểm ảnh :0.1554 mm x 0.1554 mm\r\n-Độ phản hồi :6ms (gray to gr', '-Displayport ver 1.2 	\r\n-Mini Displayport Ver 1.2 	\r\n-HDMI : 2 cổng', 'image/Image_Product/Monitor-image/PCMonitor_Dell_1a.png', 'image/Image_Product/Monitor-image/PCMonitor_Dell_1b.png', 'image/Image_Product/Monitor-image/PCMonitor_Dell_1c.png', 'image/Image_Product/Monitor-image/PCMonitor_Dell_1d.png', 'image/Image_Product/Monitor-image/PCMonitor_Dell_1e.png', '0000-00-00 00:00:00'),
 ('8_A06', 8, 'Dell Ultrasharp U2419HC', 6230000, '-Thương hiệu :Dell\r\n-Sản xuất tại :Trung Quốc\r\n-Kích thước :	\r\n    With stand (H x W x D): 34.84 - 47.84 x 53.85 x 16.5 cm\r\n    Without stand (H x W x D): 31.37 x 53.85 x 3.9 cm\r\n-Model: U2419HC\r\n-Màn', '-HDMI, Displayport, USB 3.0, USB C', 'Image/Image_Product/Monitor-image/PCMonitor_Dell_2a.png', 'Image/Image_Product/Monitor-image/PCMonitor_Dell_2b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Dell_2c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Dell_2d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Dell_2e.png', '0000-00-00 00:00:00'),
-('8_A07', 8, 'SamSung LC49RG90SSE - 49in cong 2K 120Hz', 42989000, '-Kích Thước Màn Hình : 48.8\"\r\n-Dạng Màn Hình : Cong ( Curved ) 1800R\r\n-Độ Phân Giải : 5120 x 1440\r\n-Tỷ Lệ Khung Hình : 32 : 9\r\n-Tấm Nền : VA\r\n-Thời Gian Đáp Ứng : 4 (GTG)\r\n-Tần Số Quét : 120Hz\r\n-Độ Sá', '-Cổng mở rộng: 4 x USB 2.0\r\n-Cổng xuất hình: 1 x HDMI 2.0 , 2 x DisplayPort 1.4  ', 'Image_Product/Monitor-image/PCMonitor_Samsung_1a.png', 'Image_Product/Monitor-image/PCMonitor_Samsung_1b.png', 'Image_Product/Monitor-image/PCMonitor_Samsung_1c.png', 'Image_Product/Monitor-image/PCMonitor_Samsung_1d.png', 'Image_Product/Monitor-image/PCMonitor_Samsung_1e.png', '0000-00-00 00:00:00'),
+('8_A07', 8, 'SamSung LC49RG90SSE - 49in cong 2K 120Hz', 42989000, '-Kích Thước Màn Hình : 48.8\"\r\n-Dạng Màn Hình : Cong ( Curved ) 1800R\r\n-Độ Phân Giải : 5120 x 1440\r\n-Tỷ Lệ Khung Hình : 32 : 9\r\n-Tấm Nền : VA\r\n-Thời Gian Đáp Ứng : 4 (GTG)\r\n-Tần Số Quét : 120Hz\r\n-Độ Sá', '-Cổng mở rộng: 4 x USB 2.0\r\n-Cổng xuất hình: 1 x HDMI 2.0 , 2 x DisplayPort 1.4  ', 'image/Image_Product/Monitor-image/PCMonitor_Samsung_1a.png', 'image/Image_Product/Monitor-image/PCMonitor_Samsung_1b.png', 'image/Image_Product/Monitor-image/PCMonitor_Samsung_1c.png', 'image/Image_Product/Monitor-image/PCMonitor_Samsung_1d.png', 'image/Image_Product/Monitor-image/PCMonitor_Samsung_1e.png', '0000-00-00 00:00:00'),
 ('8_A08', 8, 'SamSung LS34J550 - 34in 2k', 14989000, '-Screen Size (Inch):34.1\r\n-Flat / Curved	Flat\r\n-Active Display Size (HxV) (mm)	799.8 x 334.8 mm\r\n-Tỷ lệ khung hình:21:9\r\n-Tấm nền:VA\r\n-Độ sáng:300cd/m2\r\n-Độ sáng (Tối thiểu):250cd/m2\r\n-Contrast Ratio ', '-Display Port: 1 x DP 1.2\r\n-HDMI: 1 x HDMI 2.0; 1 x HDMI 1.4\r\n', 'Image/Image_Product/Monitor-image/PCMonitor_Samsung_2a.png', 'Image/Image_Product/Monitor-image/PCMonitor_Samsung_2b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Samsung_2c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Samsung_2d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Samsung_2e.png', '0000-00-00 00:00:00'),
-('8_A09', 8, 'LG UltraGear 27GL850 Nano IPS 144Hz', 16000000, '-Kích thước màn hình :	27-inch\r\n-Độ phân giải :	QHD 2560 x 1440\r\n-Tỉ lệ màn hình :16:9\r\n-Góc nhìn :178˚(R/L), 178˚(U/D)\r\n-Mật độ điểm ảnh ( PPI ) :109 ppi\r\n-Độ sáng :350cd (Điển hình)/280cd (Tối thiểu', '-HDMI: 	2 x HDMI 2.0\r\n-USB 3.0 :	\r\n    2 x USB 3.0 (downstream)\r\n    1 x USB 3.0 (upstream)\r\n', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1a.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1b.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1c.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1d.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1e.png', '0000-00-00 00:00:00'),
-('8_A010', 8, 'LG 34GL750 34inch IPS 144Hz cong', 14990000, '-Kích thước màn hình :	34-inch cong\r\n-Độ phân giải :	UWFHD 2560 x 1080\r\n-Tỉ lệ màn hình :21:9\r\n-Góc nhìn :178º (R/L), 178º (U/D)\r\n-Độ sáng :300cd (typ) / 240cd (Min)\r\n-Tấm nền :IPS Haze 1%, 3H\r\n-Kích ', '-Displayport ver 1.2 	\r\n-HDMI :2 x HDMI 2.0\r\n-3.5mm 	', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2a.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2b.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2c.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2d.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2e.png', '0000-00-00 00:00:00');
+('8_A09', 8, 'LG UltraGear 27GL850 Nano IPS 144Hz', 16000000, '-Kích thước màn hình :	27-inch\r\n-Độ phân giải :	QHD 2560 x 1440\r\n-Tỉ lệ màn hình :16:9\r\n-Góc nhìn :178˚(R/L), 178˚(U/D)\r\n-Mật độ điểm ảnh ( PPI ) :109 ppi\r\n-Độ sáng :350cd (Điển hình)/280cd (Tối thiểu', '-HDMI: 	2 x HDMI 2.0\r\n-USB 3.0 :	\r\n    2 x USB 3.0 (downstream)\r\n    1 x USB 3.0 (upstream)\r\n', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1a.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1b.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1c.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1d.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1e.png', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -768,7 +829,7 @@ CREATE TABLE IF NOT EXISTS `tbusers` (
 INSERT INTO `tbusers` (`IDUser`, `email`, `PASSWORD`, `ROLE`, `FULLNAME`, `Address`, `PHONE`, `GENDER`, `DOB`, `PROVINCE`, `JOIN-DATE`) VALUES
 (2, 'thanhtan.scout@gmail.com', '12345678', 1, 'Trần Thanh Tân', '1234567890', '0987654321', 1, NULL, 'HCM', '0000-00-00 00:00:00'),
 (3, 'tbtram206@gmail.com', 'tranthanhtanyeu', 0, 'TrÆ°Æ¡ng Báº£o TrÃ¢m', '75 ThÃ nh ThÃ¡i', '0917182943', 0, NULL, 'HCM', '0000-00-00 00:00:00'),
-(4, 'tranhoa@gmail.com', '12345678', 0, 'Trần Hòa', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', '0909132456', 1, NULL, 'HCM', '0000-00-00 00:00:00'),
+(4, 'tranhoa@gmail.com', '12345678', 0, 'Trần Hòa', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', '0909132456', 0, NULL, 'HCM', '0000-00-00 00:00:00'),
 (5, 'nguyenthiphuonghuyen5755@gmail.com', '12345678', 0, 'Nguyễn Thị Phương Huyền', '580 CMT 8', '0908123456', NULL, NULL, '', '0000-00-00 00:00:00');
 
 --
@@ -776,10 +837,10 @@ INSERT INTO `tbusers` (`IDUser`, `email`, `PASSWORD`, `ROLE`, `FULLNAME`, `Addre
 --
 
 --
--- Constraints for table `orders`
+-- Constraints for table `orders_item`
 --
-ALTER TABLE `orders`
-  ADD CONSTRAINT `order_id_item` FOREIGN KEY (`order_id`) REFERENCES `orders_item` (`order_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE `orders_item`
+  ADD CONSTRAINT `item_id_order` FOREIGN KEY (`order_id`) REFERENCES `orders` (`order_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
 -- Constraints for table `tbcpulist`
@@ -800,10 +861,22 @@ ALTER TABLE `tblaptoplist`
   ADD CONSTRAINT `class_frk_tblaptop` FOREIGN KEY (`idClass`) REFERENCES `tblistclass` (`idClass`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
+-- Constraints for table `tbmainboard`
+--
+ALTER TABLE `tbmainboard`
+  ADD CONSTRAINT `class_frk_mainboard` FOREIGN KEY (`idClass`) REFERENCES `tblistclass` (`idClass`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+--
 -- Constraints for table `tbpccaselist`
 --
 ALTER TABLE `tbpccaselist`
   ADD CONSTRAINT `class_frk_pc_case` FOREIGN KEY (`idClass`) REFERENCES `tblistclass` (`idClass`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+--
+-- Constraints for table `tbpcmonitor`
+--
+ALTER TABLE `tbpcmonitor`
+  ADD CONSTRAINT `class_frk_monitor` FOREIGN KEY (`idClass`) REFERENCES `tblistclass` (`idClass`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
 -- Constraints for table `tbradiatorslist`

@@ -52,50 +52,33 @@ if (isset($_SESSION["user-email"])) {
         $cart_count = 0;
     }
     //    add cart
-    if (isset($_GET["action"])) {
-        switch ($_GET["action"]) {
-            case "add":
-                $code = $_GET["id"];
-                $r = mysqli_query($link, "SELECT
+    if (isset($_GET['view']) && isset($_GET['ref'])) {
+        $view = $_GET['view'];
+        $reff = $_GET['ref'];
+        if (isset($_GET["action"])) {
+            switch ($_GET["action"]) {
+                case "add":
+                    $code = $_GET["id"];
+                    $searchItem = "SELECT
     *
 FROM
-    (
-        (
-        SELECT
-            tbcpulist.idProduct,
-            tbcpulist.nameProduct,
-            tbcpulist.photo1,
-            tbcpulist.rate
-        FROM
-            tbcpulist
-    )
-UNION
+(
     (
     SELECT
         tbgraphicslist.idProduct,
         tbgraphicslist.nameProduct,
-        tbgraphicslist.photo1,
-        tbgraphicslist.rate
+        tbgraphicslist.rate,
+        tbgraphicslist.photo1
     FROM
         tbgraphicslist
 )
 UNION
     (
     SELECT
-        tblaptoplist.idProduct,
-        tblaptoplist.nameProduct,
-        tblaptoplist.photo1,
-        tblaptoplist.rate
-    FROM
-        tblaptoplist
-)
-UNION
-    (
-    SELECT
         tbramlist.idProduct,
         tbramlist.nameProduct,
-        tbramlist.photo1,
-        tbramlist.rate
+        tbramlist.rate,
+        tbramlist.photo1
     FROM
         tbramlist
 )
@@ -104,33 +87,227 @@ UNION
     SELECT
         tbradiatorslist.idProduct,
         tbradiatorslist.nameProduct,
-        tbradiatorslist.photo1,
-        tbradiatorslist.rate
+        tbradiatorslist.rate,
+        tbradiatorslist.photo1
     FROM
         tbradiatorslist
 )
+UNION
+    (
+    SELECT
+        tbmainboard.idProduct,
+        tbmainboard.nameProduct,
+        tbmainboard.rate,
+        tbmainboard.photo1
+    FROM
+        tbmainboard
+)
+UNION
+    (
+    SELECT
+        tbpccaselist.idProduct,
+        tbpccaselist.nameProduct,
+        tbpccaselist.rate,
+        tbpccaselist.photo1
+    FROM
+        tbpccaselist
+)
+UNION
+    (
+    SELECT
+        tbspeaklist.idProduct,
+        tbspeaklist.nameProduct,
+        tbspeaklist.rate,
+        tbspeaklist.photo1
+    FROM
+        tbspeaklist
+)
+UNION
+(
+    SELECT
+        tbcpulist.idProduct,
+        tbcpulist.nameProduct,
+        tbcpulist.rate,
+        tbcpulist.photo1
+    FROM
+        tbcpulist
+)
+UNION
+    (
+    SELECT
+        tblaptoplist.idProduct,
+        tblaptoplist.nameProduct,
+        tblaptoplist.rate,
+        tblaptoplist.photo1
+    FROM
+        tblaptoplist
+)
+UNION
+    (
+    SELECT
+        tbpcmonitor.idProduct,
+        tbpcmonitor.nameProduct,
+        tbpcmonitor.rate,
+        tbpcmonitor.photo1
+    FROM
+        tbpcmonitor
+)
     ) AS r
 WHERE
-    r.idProduct ='" . $_GET["id"] . "'");
-                $item = mysqli_fetch_row($r);
-                $nameProduct = $item[1];
-                $code = $item[0];
-                $price = $item[3];
-                $quantity = 1;
-                $resu = mysqli_query($link, "INSERT INTO cart (email, nameProduct,code,quantity,price)
-VALUES ('$email','$nameProduct','$code',$quantity,$price);");
+    r.idProduct ='" . $_GET["id"] . "'";
+                    $r = mysqli_query($link, $searchItem);
+                    $item = mysqli_fetch_row($r);
+                    $nameProduct = $item[1];
+                    $code = $item[0];
+                    $price = $item[2];
+                    $quantity = 1;
+                    $addSQL = "INSERT INTO cart (email, nameProduct,code,quantity,price)
+VALUES ('$email','$nameProduct','$code',$quantity,$price);";
+                    $resu = mysqli_query($link, $addSQL);
+                    if ($resu == TRUE) {
+                        echo "<script>";
+                        echo "window.location.href = 'index.php?view=$view&ref=$reff';";
+                        echo "</script>";
+                    }
+                    break;
 
-                break;
-            case "remove":
-                $idPro = $_GET['id'];
-                $r = mysqli_query($link, "DELETE FROM cart WHERE code= '$idPro';");
-                break;
-            case "empty":
-                $r = mysqli_query($link, "DELETE FROM cart WHERE email= '$email';");
-                break;
+                case "remove":
+                    $idPro = $_GET['id'];
+                    $r = mysqli_query($link, "DELETE FROM cart WHERE code= '$idPro';");
+                    break;
+                case "empty":
+                    $r = mysqli_query($link, "DELETE FROM cart WHERE email= '$email';");
+                    break;
+            }
+        }
+    } else {
+        if (isset($_GET["action"])) {
+            switch ($_GET["action"]) {
+                case "add":
+                    $code = $_GET["id"];
+                    $searchItem = "SELECT
+    *
+FROM
+(
+    (
+    SELECT
+        tbgraphicslist.idProduct,
+        tbgraphicslist.nameProduct,
+        tbgraphicslist.rate,
+        tbgraphicslist.photo1
+    FROM
+        tbgraphicslist
+)
+UNION
+    (
+    SELECT
+        tbramlist.idProduct,
+        tbramlist.nameProduct,
+        tbramlist.rate,
+        tbramlist.photo1
+    FROM
+        tbramlist
+)
+UNION
+    (
+    SELECT
+        tbradiatorslist.idProduct,
+        tbradiatorslist.nameProduct,
+        tbradiatorslist.rate,
+        tbradiatorslist.photo1
+    FROM
+        tbradiatorslist
+)
+UNION
+    (
+    SELECT
+        tbmainboard.idProduct,
+        tbmainboard.nameProduct,
+        tbmainboard.rate,
+        tbmainboard.photo1
+    FROM
+        tbmainboard
+)
+UNION
+    (
+    SELECT
+        tbpccaselist.idProduct,
+        tbpccaselist.nameProduct,
+        tbpccaselist.rate,
+        tbpccaselist.photo1
+    FROM
+        tbpccaselist
+)
+UNION
+    (
+    SELECT
+        tbspeaklist.idProduct,
+        tbspeaklist.nameProduct,
+        tbspeaklist.rate,
+        tbspeaklist.photo1
+    FROM
+        tbspeaklist
+)
+UNION
+(
+    SELECT
+        tbcpulist.idProduct,
+        tbcpulist.nameProduct,
+        tbcpulist.rate,
+        tbcpulist.photo1
+    FROM
+        tbcpulist
+)
+UNION
+    (
+    SELECT
+        tblaptoplist.idProduct,
+        tblaptoplist.nameProduct,
+        tblaptoplist.rate,
+        tblaptoplist.photo1
+    FROM
+        tblaptoplist
+)
+UNION
+    (
+    SELECT
+        tbpcmonitor.idProduct,
+        tbpcmonitor.nameProduct,
+        tbpcmonitor.rate,
+        tbpcmonitor.photo1
+    FROM
+        tbpcmonitor
+)
+    ) AS r
+WHERE
+    r.idProduct ='" . $_GET["id"] . "'";
+                    $r = mysqli_query($link, $searchItem);
+                    $item = mysqli_fetch_row($r);
+                    $nameProduct = $item[1];
+                    $code = $item[0];
+                    $price = $item[2];
+                    $quantity = 1;
+                    $addSQL = "INSERT INTO cart (email, nameProduct,code,quantity,price)
+VALUES ('$email','$nameProduct','$code',$quantity,$price);";
+                    $resu = mysqli_query($link, $addSQL);
+                    if ($resu == TRUE) {
+                        echo "<script>";
+                        echo "window.location.href = 'index.php';";
+                        echo "</script>";
+                    }
+                    break;
+                case "remove":
+                    $idPro = $_GET['id'];
+                    $r = mysqli_query($link, "DELETE FROM cart WHERE code= '$idPro';");
+                    break;
+                case "empty":
+                    $r = mysqli_query($link, "DELETE FROM cart WHERE email= '$email';");
+                    break;
+            }
         }
     }
-    
+
+
 //    check promo code
     if (isset($_POST["add_promo"])) {
         $code_promo = $_POST["promo_code"];
@@ -167,43 +344,23 @@ VALUES ('$email','$nameProduct','$code',$quantity,$price);");
                     $productByCode = $db_handle->runQuery("SELECT
     *
 FROM
-    (
-        (
-        SELECT
-            tbcpulist.idProduct,
-            tbcpulist.nameProduct,
-            tbcpulist.photo1,
-            tbcpulist.rate
-        FROM
-            tbcpulist
-    )
-UNION
+(
     (
     SELECT
         tbgraphicslist.idProduct,
         tbgraphicslist.nameProduct,
-        tbgraphicslist.photo1,
-        tbgraphicslist.rate
+        tbgraphicslist.rate,
+        tbgraphicslist.photo1
     FROM
         tbgraphicslist
 )
 UNION
     (
     SELECT
-        tblaptoplist.idProduct,
-        tblaptoplist.nameProduct,
-        tblaptoplist.photo1,
-        tblaptoplist.rate
-    FROM
-        tblaptoplist
-)
-UNION
-    (
-    SELECT
         tbramlist.idProduct,
         tbramlist.nameProduct,
-        tbramlist.photo1,
-        tbramlist.rate
+        tbramlist.rate,
+        tbramlist.photo1
     FROM
         tbramlist
 )
@@ -212,10 +369,70 @@ UNION
     SELECT
         tbradiatorslist.idProduct,
         tbradiatorslist.nameProduct,
-        tbradiatorslist.photo1,
-        tbradiatorslist.rate
+        tbradiatorslist.rate,
+        tbradiatorslist.photo1
     FROM
         tbradiatorslist
+)
+UNION
+    (
+    SELECT
+        tbmainboard.idProduct,
+        tbmainboard.nameProduct,
+        tbmainboard.rate,
+        tbmainboard.photo1
+    FROM
+        tbmainboard
+)
+UNION
+    (
+    SELECT
+        tbpccaselist.idProduct,
+        tbpccaselist.nameProduct,
+        tbpccaselist.rate,
+        tbpccaselist.photo1
+    FROM
+        tbpccaselist
+)
+UNION
+    (
+    SELECT
+        tbspeaklist.idProduct,
+        tbspeaklist.nameProduct,
+        tbspeaklist.rate,
+        tbspeaklist.photo1
+    FROM
+        tbspeaklist
+)
+UNION
+(
+    SELECT
+        tbcpulist.idProduct,
+        tbcpulist.nameProduct,
+        tbcpulist.rate,
+        tbcpulist.photo1
+    FROM
+        tbcpulist
+)
+UNION
+    (
+    SELECT
+        tblaptoplist.idProduct,
+        tblaptoplist.nameProduct,
+        tblaptoplist.rate,
+        tblaptoplist.photo1
+    FROM
+        tblaptoplist
+)
+UNION
+    (
+    SELECT
+        tbpcmonitor.idProduct,
+        tbpcmonitor.nameProduct,
+        tbpcmonitor.rate,
+        tbpcmonitor.photo1
+    FROM
+        tbpcmonitor
 )
     ) AS r
 WHERE
@@ -245,6 +462,7 @@ WHERE
                         $_SESSION["cart_item"] = $itemArray;
                     }
                 }
+
                 break;
             case "remove":
                 if (!empty($_SESSION["cart_item"])) {
@@ -265,7 +483,7 @@ WHERE
     }
 }
 //end add cart
-if(isset($_GET['view']) && $_GET['view'] == 'product'){
+if (isset($_GET['view']) && $_GET['view'] == 'product') {
     include './config/model/pagination.php';
 }
 if (isset($_POST["submitCart"])) {
@@ -315,66 +533,66 @@ and open the template in the editor.
 
     </head>
     <body>
-<?php include 'client/view/header.php'; ?>
+        <?php include 'client/view/header.php'; ?>
 
         <main>
-        <?php
-        if (!isset($_GET['view'])) {
-            $view = "";
-        } else {
-            $view = $_GET['view'];
-        }
-        switch ($view) {
-            case "home":
-                include 'client/view/vertical_menu.php';
-                include 'client/view/section.php';
-                break;
+            <?php
+            if (!isset($_GET['view'])) {
+                $view = "";
+            } else {
+                $view = $_GET['view'];
+            }
+            switch ($view) {
+                case "home":
+                    include 'client/view/vertical_menu.php';
+                    include 'client/view/section.php';
+                    break;
 
-            case "review":
-                include 'client/view/review.php';
-                break;
-            case "product":
-                include 'client/section_product.php';
-                break;
-            case "detail":
-                include 'client/product_detail.php';
-                break;
-            case "promo":
-                include 'client/view/promo.php';
-                break;
-            case "contact":
-                include 'client/view/contact.php';
-                break;
-            case "user":
-                include 'client/view/user.php';
-                break;
-            case "cart":
-                include 'client/view/cart_view.php';
-                break;
-            case "payment":
-                include 'client/view/payment.php';
-                break;
-            case "news":
-                include 'client/view/news.php';
-                break;
-            case "orderQuery":
-                include 'client/view/orderQuery.php';
-                break;
-            default :
-                include 'client/view/vertical_menu.php';
-                include 'client/view/section.php';
-                break;
-        }
+                case "introduce":
+                    include 'client/view/introduce.php';
+                    break;
+                case "product":
+                    include 'client/section_product.php';
+                    break;
+                case "detail":
+                    include 'client/product_detail.php';
+                    break;
+                case "promo":
+                    include 'client/view/promo.php';
+                    break;
+                case "contact":
+                    include 'client/view/contact.php';
+                    break;
+                case "user":
+                    include 'client/view/user.php';
+                    break;
+                case "cart":
+                    include 'client/view/cart_view.php';
+                    break;
+                case "payment":
+                    include 'client/view/payment.php';
+                    break;
+                case "news":
+                    include 'client/view/news.php';
+                    break;
+                case "orderQuery":
+                    include 'client/view/orderQuery.php';
+                    break;
+                default :
+                    include 'client/view/vertical_menu.php';
+                    include 'client/view/section.php';
+                    break;
+            }
 //            if (isset($error) && $error = 'error') {
 //                header('Location: error505.php');
 //                exit();
 //            }
-        ?>
+            ?>
         </main>
 
-            <?php
-            include 'client/view/footer.php';
-            ?>
+        <?php
+        include 'client/view/footer.php';
+        ?>
         <?php
         if ($view == 'detail') {
             include './library/js/detail.js';

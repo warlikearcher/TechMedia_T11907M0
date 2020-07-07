@@ -1,4 +1,5 @@
 <?php
+
 $sql_a = "(
     SELECT
         tbgraphicslist.idProduct,
@@ -94,4 +95,12 @@ UNION
 ORDER BY
     RAND()
 LIMIT 0, 6;";
+
+
+//load_top 4 
+$sql_test = "SELECT idProduct,COUNT(*) as count FROM orders_item GROUP BY nameProduct ORDER BY count DESC limit 0,4";
+$result_t = mysqli_query($link, $sql_test);
+
+
+
 
