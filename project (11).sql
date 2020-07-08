@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3308
--- Generation Time: Jul 07, 2020 at 06:11 PM
+-- Generation Time: Jul 08, 2020 at 06:22 AM
 -- Server version: 8.0.18
 -- PHP Version: 7.3.12
 
@@ -43,43 +43,17 @@ CREATE TABLE IF NOT EXISTS `cart` (
 --
 
 INSERT INTO `cart` (`email`, `nameProduct`, `code`, `quantity`, `price`) VALUES
-('tranhoa@gmail.com', 'Cooler Master MasterBox TD500 Mesh White ARGB with controller', '7_A03', 1, 2220000),
-('tranhoa@gmail.com', 'Cooler Master MasterBox TD500 Mesh White ARGB with controller', '7_A03', 1, 2220000),
-('tranhoa@gmail.com', 'ASUS Phoenix', '1_A02', 1, 4220000),
-('tranhoa@gmail.com', 'Corsair Dominator', '9_A01', 1, 3300000),
-('tranhoa@gmail.com', 'card-ASUS-Dual-GeForce-RTX-2060-SUPER-EVO-V2-8GB', '1_A01', 1, 11780000),
-('tranhoa@gmail.com', 'Gigabyte H310M H', '6_A01', 1, 1699000),
-('tranhoa@gmail.com', 'Cooler Master Wraith Ripper AMD TR4', '2_A01', 1, 3740000),
-('tranhoa@gmail.com', 'Acer Predator X35 - 35in cong VA 180Hz', '8_A01', 1, 90990000),
-('tranhoa@gmail.com', 'Ryzen 3 3100', '3_A01', 1, 2490000),
-('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
 ('tranhoa@gmail.com', 'HP Pavilion Gaming 15', '4_A01', 1, 19990000),
-('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
-('tranhoa@gmail.com', 'Asus TUF Gaming FX505', '4_A03', 1, 18190000),
-('tranhoa@gmail.com', 'Palit GeForce RTX 2060 GamingPro OC 6GB GDDR6', '1_A10', 1, 9490000),
-('tranhoa@gmail.com', 'HP Pavilion Gaming 15', '4_A01', 1, 19990000),
-('tranhoa@gmail.com', 'HP Pavilion Gaming 15', '4_A01', 1, 19990000),
-('tranhoa@gmail.com', 'HP Pavilion Gaming 15', '4_A01', 1, 19990000),
-('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
-('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
-('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
-('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
-('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
-('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
-('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
-('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
-('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
-('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
-('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
-('tranhoa@gmail.com', 'HP Pavilion Gaming 15', '4_A01', 1, 19990000),
-('tranhoa@gmail.com', 'Asus TUF Gaming FX505', '4_A03', 1, 18190000),
-('tranhoa@gmail.com', 'Acer Nitro 5 AN515', '4_A02', 1, 17490000),
-('tranhoa@gmail.com', 'Acer Predator Triton 500', '4_A05', 1, 49990000),
-('tranhoa@gmail.com', 'Lenovo Ideapad L340', '4_A06', 1, 15800000),
-('tranhoa@gmail.com', 'Dell G3 15 3590', '4_A08', 1, 28990000),
-('tranhoa@gmail.com', 'Asus TUF Gaming FX505', '4_A03', 1, 18190000),
 ('tranhoa@gmail.com', 'CPU Pentium Gold 5400', '3_A12', 1, 1450000),
-('tranhoa@gmail.com', 'Ryzen 7 3700X', '3_A06', 1, 7500000);
+('tranhoa@gmail.com', 'Ryzen 3 3100', '3_A01', 1, 2490000),
+('tranhoa@gmail.com', 'Asus TUF Gaming FX505', '4_A03', 1, 18190000),
+('tranhoa@gmail.com', 'ASUS ROG Ryujin 240 RGB AIO Liquid CPU Cooler', '2_A04', 1, 5990000),
+('tranhoa@gmail.com', 'Patriot-Viper-8gb', '9_A10', 1, 1200000),
+('tranhoa@gmail.com', 'Palit GeForce RTX 2060 GamingPro OC 6GB GDDR6', '1_A10', 1, 9490000),
+('tranhoa@gmail.com', 'CPU I5-9400F', '3_A14', 1, 3860000),
+('tranhoa@gmail.com', 'ASRock B360 Gaming K4', '6_A04', 1, 2789000),
+('tranhoa@gmail.com', 'Asus TUF Gaming FX505', '4_A03', 1, 18190000),
+('tranhoa@gmail.com', 'CPU Pentium Gold 5400', '3_A12', 1, 1450000);
 
 -- --------------------------------------------------------
 
@@ -137,10 +111,10 @@ INSERT INTO `orders` (`order_id`, `customer_id`, `name`, `phone`, `email`, `stre
 ('5ef4d6791cd6f', NULL, 'Nguyễn Văn Trần', '1234567890', 'mmosuper25@gmail.com', 'TDP 4, T.T Quang Phu', 'Huyen Cu MGar', 'Dak Lak', '630000', 20014000, NULL, 'POD', '2020-06-25 16:53:13'),
 ('5ef4dbeca5c0e', NULL, 'Nguyễn Văn Trần', '1231231231', 'mmosuper25@gmail.com', 'TDP 4, T.T Quang Phu', 'Huyen Cu MGar', 'Dak Lak', '630000', 20014000, NULL, 'POD', '2020-06-25 17:16:28'),
 ('5efde363371ac', NULL, 'ABC', '1234567890', 'mmosuper25@gmail.com', 'TDP 4, T.T Quang Phu', 'Huyen Cu MGar', 'Dak Lak', '630000', 38204000, NULL, 'POD', '2020-07-02 13:38:43'),
-('5f02048cd1bcc', NULL, 'Tráº§n HÃ²a', '0909132456', 'tranhoa@gmail.com', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', '', '', '', 26943000, NULL, NULL, '2020-07-05 16:49:16'),
-('5f0205c92e633', NULL, 'Tráº§n HÃ²a', '0909132456', 'tranhoa@gmail.com', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', 'HCM', '', '630000', 26943000, NULL, NULL, '2020-07-05 16:54:33'),
-('5f0206d3a67cd', NULL, 'Tráº§n HÃ²a', '0909132456', 'tranhoa@gmail.com', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', 'HCM', '', '630000', 26943000, 'saigon', NULL, '2020-07-05 16:58:59'),
-('5f020a5974e0b', NULL, 'Tráº§n HÃ²a', '0909132456', 'tranhoa@gmail.com', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', 'HCM', '', '630000', 3498000, 'saigon', NULL, '2020-07-05 17:14:01'),
+('5f02048cd1bcc', NULL, 'tran Hoa', '0909132456', 'tranhoa@gmail.com', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', '', '', '', 26943000, NULL, NULL, '2020-07-05 16:49:16'),
+('5f0205c92e633', NULL, 'Tran Hoa', '0909132456', 'tranhoa@gmail.com', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', 'HCM', '', '630000', 26943000, NULL, NULL, '2020-07-05 16:54:33'),
+('5f0206d3a67cd', NULL, 'Tran Hoa', '0909132456', 'tranhoa@gmail.com', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', 'HCM', '', '630000', 26943000, 'saigon', NULL, '2020-07-05 16:58:59'),
+('5f020a5974e0b', NULL, 'Tran Hoa', '0909132456', 'tranhoa@gmail.com', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', 'HCM', '', '630000', 3498000, 'saigon', NULL, '2020-07-05 17:14:01'),
 ('5f035bfcb0ed1', NULL, 'Nguyễn Văn Trần', '1234567890', 'mmosuper25@gmail.com', 'TDP 4, T.T Quang Phu', 'HCM', '', '63000', 18190000, NULL, NULL, '2020-07-06 17:20:04'),
 ('5f035d50f2ba0', NULL, 'Nguyễn Văn Trần', '1234567890', 'mmosuper25@gmail.com', 'TDP 4, T.T Quang Phu', 'HCM', '', '63000', 18190000, NULL, NULL, '2020-07-06 17:20:17'),
 ('5f035dd707feb', NULL, 'Nguyễn Văn Trần', '1234567890', 'mmosuper25@gmail.com', 'TDP 4, T.T Quang Phu', 'HN', '', '60000', 40180000, NULL, NULL, '2020-07-06 17:22:31'),
@@ -150,7 +124,8 @@ INSERT INTO `orders` (`order_id`, `customer_id`, `name`, `phone`, `email`, `stre
 ('5f04a5d23631a', NULL, 'Hòa', '0358818164', 'warlikearcher@gmail.com', 'phường 14', 'DT', '', '60000', 32970000, NULL, NULL, '2020-07-07 16:41:54'),
 ('5f04a6ec76782', NULL, 'Hòa', '0358818164', 'warlikearcher@gmail.com', 'phường 14', 'DT', '', '60000', 32970000, NULL, NULL, '2020-07-07 16:46:36'),
 ('5f04a750eddc4', NULL, 'Hòa', '0358818164', 'warlikearcher@gmail.com', 'phường 14', 'DT', '', '60000', 32970000, NULL, NULL, '2020-07-07 16:48:16'),
-('5f04a78a04e86', NULL, 'Trần Minh', '0358818164', 'mmosuper25@gmail.com', 'TDP 4, T.T Quang Phu', 'HCM', '', '63000', 10290000, NULL, NULL, '2020-07-07 16:49:14');
+('5f04a78a04e86', NULL, 'Trần Minh', '0358818164', 'mmosuper25@gmail.com', 'TDP 4, T.T Quang Phu', 'HCM', '', '63000', 10290000, NULL, NULL, '2020-07-07 16:49:14'),
+('5f053d7307279', NULL, 'Tran Hoa', '0909132456', 'tranhoa@gmail.com', '580 CMT', 'HCM', '', '63000', 508207200, 'newbie', NULL, '2020-07-08 03:28:51');
 
 -- --------------------------------------------------------
 
@@ -169,7 +144,7 @@ CREATE TABLE IF NOT EXISTS `orders_item` (
   PRIMARY KEY (`item_id`),
   KEY `idProduct` (`idProduct`),
   KEY `order_id` (`order_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
 --
 -- Dumping data for table `orders_item`
@@ -215,7 +190,8 @@ INSERT INTO `orders_item` (`order_id`, `item_id`, `idProduct`, `quantity`, `list
 ('5f04a6ec76782', 37, '2_A02', 1, 2900000, 'Corsair A500 Dual Fan CPU Cooler'),
 ('5f04a6ec76782', 38, '4_A08', 1, 28990000, 'Dell G3 15 3590'),
 ('5f04a750eddc4', 39, '9_A04', 1, 1080000, 'Corsair Vangeance'),
-('5f04a78a04e86', 40, '3_A12', 1, 1450000, 'CPU Pentium Gold 5400');
+('5f04a78a04e86', 40, '3_A12', 1, 1450000, 'CPU Pentium Gold 5400'),
+('5f053d7307279', 41, '7_A03', 2, 4440000, 'Cooler Master MasterBox TD500 Mesh White ARGB with controller');
 
 -- --------------------------------------------------------
 
@@ -239,7 +215,7 @@ CREATE TABLE IF NOT EXISTS `promo_code` (
 
 INSERT INTO `promo_code` (`idPromo`, `promoCode`, `promoValue`, `totalUse`, `detail`) VALUES
 (1, 'newbie', 0.2, 1, 'Mã giảm giá 20% cho thành viên mới (Áp dụng 1 lần)'),
-(2, 'saigon', 0.1, 2, 'Mã giảm giá 10% (áp dụng 2 lần)');
+(2, 'saigon', 0.1, 3, 'Mã giảm giá 10% (áp dụng 3 lần)');
 
 -- --------------------------------------------------------
 
@@ -278,7 +254,7 @@ INSERT INTO `tbarticles` (`id_articles`, `title`, `linkImage`, `post`, `author`,
 (13, 'Soi cấu hình đề nghị và tối thiểu chơi Valorant: N', 'Image/Image_Product/News/new13.jpg', 'Dù chưa được phát hành chính thức ở Việt Nam nhưng những ngày gần đây, cái tên Valorant đang liên tục được nhắc đến trong các cộng đồng game thủ e-sport. Vậy trò chơi này sẽ yêu cầu cấu hình như thế nào và có gì hấp dẫn mà lại được quan tâm đến vậy?\r\n\r\nĐiều cần nhắc đến đầu tiên, cha đẻ của Valorant chính là Riot Games, đội ngũ đứng sau thành công của League of Legends trong suốt một thập kỷ qua. Luôn sáng tạo, tràn đầy nhiệt huyết và được chống lưng bởi Tập đoàn giải trí lớn nhất thế giới thời điểm hiện tại Tencent. Người chơi hoàn toàn có thể tin tưởng vào tương lai tươi sáng của tựa game này.\r\n\r\nGameplay lạ mà quen\r\nMỗi lớp nhân vật trong Valorant đều có bộ skill riêng biệt, có thể được dùng để tấn công đối thủ, hòa lẫn vào môi trường hay hỗ trợ đồng đội một cách hiệu quả …vv… người chơi tùy ý lựa chọn nhân vật phù hợp với sở thích và tính cách của mình. Nghe qua thì rất giống người anh em đã quá thành công League of Legends nhưng điểm khác biệt lớn nhất chính là Valorant sẽ khai thác góc nhìn thứ nhất chứ không phải từ trên xuống. Đây là điểm mấu chốt mà Riot Games đã liên tục nhắc đến trong những lần giới thiệu dự án trước đây.\r\n\r\nVẫn là 5 đấu 5, tuy nhiên Valorant sẽ có chế độ chính đầu tiên là tấn công – phòng thủ mục tiêu với các kĩ năng riêng của từng nhân vật, những kỹ năng này có thể hoán đổi, thay thế tùy thích bằng cách mua-bán tại cửa hàng (dùng tiền mỗi vòng để mua kĩ năng và súng), từ đó yêu cầu các game thủ phải giao tiếp với nhau để mua đúng kĩ năng để tạo ra các combo hoàn hảo cho mỗi vòng đấu, tránh tình trạng trên bảo dưới không nghe phổ biến trong những tựa game bắn súng trước đây.\r\n\r\nThiết kế nhân vật phong cách Anime\r\nVăn hóa Nhật Bản, Nam Triều Tiên (Hàn Quốc) vẫn đang có những tác động mạnh mẽ đến cuộc sống của giới trẻ Việt Nam nói riêng và Á Đông nói chung, nên không có gì khó hiểu khi Riot Games đã lựa chọn phương án xây dựng nhân vật theo hướng này. Trong Valorant, người chơi sẽ dễ dàng nhận ra những đường nét quen thuộc vẫn thường thấy trong các bộ phim hoạt hình Nhật Bản vài năm trở lại đây, đi kèm với đó là các bộ trang phục chất lừ, phá cách của các nhân vật. Một yếu tố nữa ảnh hưởng đến điều này chính là giới trẻ Nam Triều Tiên nổi tiếng thích chơi các tựa game bắn súng góc nhìn thứ nhất, bạn dự đoán sẽ mất bao lâu để chúng ta có một team Valorant hardcore, chuyên nghiệp đến từ xứ sở Cao Ly?\r\n\r\nMiễn phí và yêu cầu phần cứng cực nhẹ\r\nDù hay đến mấy nhưng nếu tính phí đồng thời yêu cầu cấu hình quá khó nhằn thì tựa game của bạn sớm muộn rồi cũng trở thành dead game, hai sai lầm trên chính là những gì mà PUBG phiên bản PC đã trải qua và đến hiện tại thì tựa game trên đã rơi vào cảnh vô phương cứu chữa, mặc cho ban đầu nó là cái tên đầy tiềm năng trong làng e-sport thế giới.\r\n\r\nTất nhiên, Valorant dưới tay Riot Games sẽ không thể đi vào vết xe đổ đó, bằng chứng là ngay từ đầu, Riot đã tuyên bố đây sẽ là một tựa game miễn phí, đồng thời cũng cho ra cấu hình yêu cầu ở mức không tưởng – đến một chiếc laptop từ thời 2011 cũng có thể chơi được.\r\n\r\nCụ thể, cấu hình tối thiểu chơi Valorant mức 30 khung hình/giây sẽ bao gồm:\r\n\r\n– CPU: Intel Core i3-370M\r\n\r\n– Card đồ họa: Intel HD 3000\r\n\r\n– RAM: 2GB\r\n\r\n– Hệ điều hành: Windows 7 32-bit\r\n\r\nCấu hình lý tưởng trong năm 2020 để chơi Valorant\r\nNhờ sự dễ tính đã thành truyền thống của Riot, không khó cho các game thủ khi tìm mua những linh kiện để bắt đầu hành trình go pro với Valorant, một chiếc máy đủ khả năng kéo số khung hình trên giây của tựa game này lên hơn 144 trong năm 2020 thực chất nằm trong tầm với của tất cả mọi người.', 'Admin', '2020-06-26 17:00:00'),
 (14, 'Ác mộng với tản nhiệt của AMD Ryzen sắp kết thúc ?', 'image/Image_Product/News/tan_nhiet_cua_AMD_sap_ket_thuc.jpg', 'Nếu gần đây bạn từng build máy sử dụng CPU Ryzen hoặc là nâng cấp tản nhiệt, bạn sẽ gặp phải vấn đề chỉ gặp phải ở socket AM4: CPU có thể sẽ bị dính vào tản nhiệt và bị kéo ra khỏi socket, kể cả khi chốt giữ không bị lỏng/hỏng.\r\n\r\nMột giải pháp mới cho vấn đề này đã xuất hiện trên diễn đàn Chiphell, cụ thể là tản nhiệt ProArtist Desserts2. Tản này đi kèm một bracket giúp giữ lại CPU khi bạn lôi tản nhiệt ra. Nó không tiếp xúc hay cản trở nên hiệu năng tản nhiệt không bị ảnh hưởng.\r\n\r\nGiải pháp này chưa trở nên phổ biến toàn cầu bởi hiện tại nó chỉ có tại Trung Quốc nhưng hi vọng là các nhà sản xuất tản nhiệt hoặc chính AMD quan tâm sản xuất và đóng gói kèm các tản nhiệt của họ.\r\n\r\nTại sao tôi phải mong các nhà sản xuất tản nhiệt quan tâm bởi vì đây không phải một vấn đề lớn. Đầu tiên phải nói, không phải ai cũng thay tản nhiệt CPU và cho dù có, điều đó cũng không diễn ra thường xuyên. Thứ hai là vấn đề này có thể được giải quyết bằng cách xoay tản nhiệt trong khi tháo ra hoặc bật máy 1 lúc để keo tản nóng lên và rời ra dễ dàng. Nhưng nói qua cũng phải nói lại, với các tester như chúng tôi thì bracket này thật sự rất quý giá.\r\n\r\nTrong quá trình thử nghiệm các chip Ryzen 3000 XT mới và chưa rút CPU ra khỏi socket lần nào. Tuy nhiên trong quá khứ việc này đã từng xảy ra và điều đó không vui vẻ gì, nếu không muốn nói là tương đối đau tim. Nếu điều đó xảy ra với bạn, hãy cố gắng đừng làm cong chân CPU khi tách chúng ra khỏi tản nhiệt, việc bẻ thằng các chân không dễ dàng chút nào đâu.\r\n\r\nMột điều cần lưu ý là AMD có thể sẽ thay socket vào năm sau để mở đường cho Zen 4 (CPU ra mắt năm sau mới là Zen 3). Hi vọng là miếng bracket này không cần thiết trên socket AM5 (hay bất cứ tên gì mà AMD đặt cho nó).', 'Tham khảo: PCGamer', '2020-06-30 17:00:00'),
 (15, 'Giảm giá, nhân đôi XP&RP mừng ngày 4/7 trong GTA O', 'image/Image_Product/News/Giam_gia_nha_doi_XP.png', 'Dành cho anh em chưa biết, ngày 4/7 là ngày Quốc Khánh của nước Mỹ. Do đó, các sự kiện trong game nhân dịp này cũng sẽ rất tưng bừng, nhất là với các tựa game đặt máy chủ tại nước này.\r\n\r\nGTA Online về cơ bản không chỉ có máy chủ đặt tại Hoa Kì nhưng nhìn chung các sự kiện giảm giá và nhân đôi, nhân ba XP, RP đều theo múi giờ và văn hóa Mỹ.\r\n\r\nBởi vậy, để kỉ niệm ngày 4/7 năm nay, GTA Online có các ưu đãi trong game như sau:\r\n\r\nCác ưu đãi nổi bật\r\n- Nhân đôi XP, RP với các nhiệm vụ Missile Base\r\n\r\n- Phần thưởng Western Sovereign khi quay Lucky Wheel trong Diamond Casino (cái này bị chặn tại Việt Nam, anh em cần fake dip mới có thể quay được)\r\n\r\n- Giảm giá Mammoth Avengers and Customizations 60%: Chiếc máy bay này hữu dụng nhất (bên cạnh vũ khí) là trong các nhiệm vụ Warehouse – giúp ae thu hồi 3 Crate chỉ trong 1 lượt duy nhất.\r\n\r\n- Giảm giá Yachts 50%: Sau khi nâng cấp Air Defense thì anh em có thể yên tâm AFK khi bị treo bounty trên đầu cho đến khi hết bounty bởi khi người chơi khác lên tàu, họ sẽ không thể sử dụng vũ khí, cách duy nhất là sử dụng máy bay bắn hạ bạn thì đã có Air Defense lo liệu rồi.\r\n\r\n- Giảm giá 50% Arcade: mua cái này anh em sẽ không bị Lester gọi mỗi khi vào trong game nữa. Ngoài ra thì ae có thể kiếm tiền từ nó nhưng không nhiều.', 'Hữu Nhân', '2020-07-01 17:00:00'),
-(16, 'Tổng hợp mã giảm giá khuyến mãi', 'image/Image_Product/News/magiamgia.png', 'Mã giảm giá cho thành viên\r\n\r\n- Mã giảm giá 20% đơn hàng đầu tiên đối với mỗi tài khoản: newbie \r\n      (Mã giảm giá chỉ có hiệu lực sử dụng 1 lần cho mỗi tài khoản)\r\n\r\n\r\n- Mã giảm giá 10% đơn hàng : saigon\r\n  (Mã giảm giá có hiệu lực sử dụng 2 lần cho mỗi tài khoản)', 'Eric', '2020-07-03 17:00:00');
+(16, 'Tổng hợp mã giảm giá khuyến mãi', 'image/Image_Product/News/magiamgia.png', 'Mã giảm giá cho thành viên\r\n\r\n- Mã giảm giá 20% đơn hàng đầu tiên đối với mỗi tài khoản: newbie \r\n      (Mã giảm giá chỉ có hiệu lực sử dụng 1 lần cho mỗi tài khoản)\r\n\r\n\r\n- Mã giảm giá 10% đơn hàng : saigon\r\n  (Mã giảm giá có hiệu lực sử dụng 3 lần cho mỗi tài khoản)', 'Eric', '2020-07-03 17:00:00');
 
 -- --------------------------------------------------------
 
@@ -313,28 +289,28 @@ INSERT INTO `tbbanner` (`id`, `url`, `timeUpload`) VALUES
 
 DROP TABLE IF EXISTS `tbcpulist`;
 CREATE TABLE IF NOT EXISTS `tbcpulist` (
-  `idProduct` varchar(30) COLLATE utf8mb4_vietnamese_ci NOT NULL,
+  `idProduct` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `idClass` int(100) NOT NULL,
   `nameProduct` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `rate` int(11) NOT NULL,
   `Manufacturer` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Processor number` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Processor_number` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `Lithography` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `Efficiency` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Number of cores` int(100) DEFAULT NULL,
-  `Number of threads` int(100) DEFAULT NULL,
-  `Processor base frequency` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Maximum turbo frequency` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Number_of_cores` int(100) DEFAULT NULL,
+  `Number_of_threads` int(100) DEFAULT NULL,
+  `Processor_base_frequency` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Maximum_turbo_frequency` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `Caching` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Power consumption (TDP)` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Memory parameters` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Memory types` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Extended options` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `PCI Express version` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Package specifications` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Power_consumption` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Memory_parameters` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Memory_types` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Extended_options` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `PCI Express_version` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Package_specifications` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `Socket support` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Thermal solution specification` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `DateIn` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `Thermal_solution_specification` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `DateIn` date DEFAULT NULL,
   `photo1` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo2` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo3` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
@@ -350,25 +326,50 @@ CREATE TABLE IF NOT EXISTS `tbcpulist` (
 -- Dumping data for table `tbcpulist`
 --
 
-INSERT INTO `tbcpulist` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Manufacturer`, `Processor number`, `Lithography`, `Efficiency`, `Number of cores`, `Number of threads`, `Processor base frequency`, `Maximum turbo frequency`, `Caching`, `Power consumption (TDP)`, `Memory parameters`, `Memory types`, `Extended options`, `PCI Express version`, `Package specifications`, `Socket support`, `Thermal solution specification`, `DateIn`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`) VALUES
-('3_A01', 3, 'Ryzen 3 3100', 2490000, 'AMD', 'Ryzen ™ 3 3100', 'TSMC 7nm FinFET', NULL, 4, 8, '3.6 GHz', '3.9 GHz', '16 MB', '65 W', NULL, 'DDR4-3200 MHz', NULL, 'PCIe 4.0', NULL, 'AM4', 'Wraith Stealth', '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_Ryzen%203%203100.jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%203%203100%20(2).jpg', '', '', ''),
-('3_A02', 3, 'Athlon 3000G CPU', 1360000, 'AMD', 'AMD Athlon ™ 3000G', '14nm', NULL, 2, 4, '3.5 GHz', NULL, '4MB', '35 W', NULL, NULL, NULL, NULL, NULL, 'AM4', NULL, '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_Athlon%203000G.jpg', '', '', '', ''),
-('3_A03', 3, 'Ryzen 5 3500 CPU', 3100000, 'AMD', 'AMD Ryzen ™ 5 3500', '7nm', '', 6, 6, '3.6 GHz', '4.1 GHz', '16 MB', '65W', NULL, NULL, NULL, NULL, NULL, 'AM4', NULL, '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_Ryzen%205%203500%20(2).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%205%203500%20(3).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%205%203500.jpg', '', ''),
-('3_A04', 3, 'Ryzen 3 3300X', 3060000, 'AMD', 'AMD Ryzen ™ 3 3300X', 'TSMC 7nm FinFET', '', 4, 8, '3.8 GHz', '4.3 GHz', '16 MB', '65 W', NULL, 'DDR4-3200 MHz', NULL, 'PCIe® 4.0', NULL, 'AM4', NULL, '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_Ryzen%203%203300X%20(2).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%203%203300X.jpg', '', '', ''),
-('3_A05', 3, 'Ryzen 5 3500X', 3790000, 'AMD', 'AMD Ryzen ™ 5 3500X', 'TSMC 7nm FinFET', NULL, 6, 6, '3.6 GHz', '4.1 GHz', '32 MB', '65 W', NULL, 'DDR4 3200MHz', NULL, NULL, NULL, 'AM4', NULL, '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_Ryzen%205%203500X%20(2).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%205%203500X%20(3).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%205%203500X.jpg', '', ''),
-('3_A06', 3, 'Ryzen 7 3700X', 7500000, 'AMD', 'AMD Ryzen ™ 7 3700X', 'TSMC 7nm FinFET', NULL, 8, 16, '3.6GHz', '4.4GHz', 'L2 Cache 4MB, L3 Cache 32MB', '65W', NULL, 'DDR4 3200MHz', NULL, NULL, NULL, NULL, NULL, '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_Ryzen%207%203700X%20(3).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%207%203700X%20(2).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%207%203700X.jpg', '', ''),
-('3_A07', 3, 'Ryzen 9 3900X', 12400000, 'AMD', 'AMD Ryzen 9 3900X', 'TSMC 7nm FinFET', NULL, 12, 24, ' 3.8GHz', NULL, NULL, '105W', NULL, 'DDR4 3200MHz', NULL, NULL, NULL, NULL, NULL, '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_Ryzen%209%203900X%20(2).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%209%203900X%20(3).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%209%203900X.jpg', '', ''),
-('3_A08', 3, 'Ryzen 9 3950X', 18900000, 'AMD', 'AMD Ryzen ™ 9 3950X', 'TSMC 7nm FinFET', NULL, 16, 32, '3.5GHz', '4.7GHz', '64MB', '105W', NULL, 'DDR4 3200MHz', NULL, NULL, NULL, 'AM4', NULL, '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_Ryzen%209%203950X%20(2).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%209%203950X%20(3).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%209%203950X.jpg', '', ''),
-('3_A09', 3, 'CPU i3-9100F', 1715000, 'Intel', 'Intel®i3-9100F', '14nm', NULL, 4, 4, '3.60Ghz', '4.20Ghz', '6Mb', '65W', NULL, NULL, NULL, '3.0', NULL, 'LGA1151', NULL, '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_i3-9100F.jpg', '', '', '', ''),
-('3_A10', 3, 'CPU i3-9100', 1745000, 'Intel', 'Intel®i3-9100', '14 nm', NULL, 4, 4, '3.60 GHz', '4.20 GHz', '6 MB Intel® Smart', '65 W', NULL, 'DDR4-2400', NULL, '3.0', NULL, 'FCLGA1151', NULL, '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_i3-9100.jpg', '', '', '', ''),
-('3_A11', 3, 'CPU Pentium Gold 5500', 1450000, 'Intel', 'Intel®Gold 5500', '14 nm', NULL, 2, 4, '3.70 GHz', NULL, '4 MB SmartCache', '58 W', NULL, 'DDR4-2400', NULL, '3.0', NULL, 'FCLGA1151', 'PCG 2015C (65W)', '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_Pentium%20Gold%20G5500.jpg', '', '', '', ''),
-('3_A12', 3, 'CPU Pentium Gold 5400', 1450000, 'Intel', 'Intel® Pentium® Series Gold ', '14 nm', NULL, 2, 4, '3.70 GHz', NULL, '4 MB SmartCache', '58 W', NULL, 'DDR4-2400', NULL, '3.0', NULL, 'FCLGA1151', 'PCG 2015C (65W)', '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_Pentium%20Gold%20G5400.jpg', '', '', '', ''),
-('3_A13', 3, 'CPU i5-9600K', 5050000, 'Intel', 'Intel® Core ™ i5-9600K', '14 nm', NULL, 6, 6, '3.10 GHz', '4.60 GHz', '9 MB Intel® Smart Cache', '65 W', NULL, 'DDR4-2666', NULL, '3.0', NULL, 'FCLGA1151 ', ' PCG 2015C (65W)', '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_i5-9600.jpg', 'image/Image_Product/CPU_Image/CPU_i5-9600K.jpg', '', '', ''),
-('3_A14', 3, 'CPU I5-9400F', 3860000, 'Intel', 'Intel® Core ™ i5-9400F', '14 nm', NULL, 6, 6, '2.90 GHz', '4.10 GHz', '9 MB Intel® Smart Cache', '65 W', NULL, 'DDR4-2666', NULL, '3.0', NULL, 'FCLGA1151', 'PCG 2015C (65W)', '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_i5_9400F.jpg', '', '', '', ''),
-('3_A15', 3, 'CPU i5-9600KF', 4600000, 'Intel', 'Intel® Core ™ i5-9600KF', '14 nm', NULL, 6, 6, '3.70 GHz', '4.60 GHz', '9 MB Intel® Smart Cache', '95 W', NULL, 'DDR4-2666', NULL, '3.0', NULL, 'FCLGA1151 ', 'PCG 2015D (130W)', '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_i5-9600KF.jpg', '', '', '', ''),
-('3_A16', 3, 'CPU i7-9700', 8799000, 'Intel', 'Intel® Core ™ i7-9700', '14 nm', NULL, 8, 8, '3.00 GHz', '4.70 GHz', '12 MB SmartCache', '65 W', NULL, 'DDR4-2666', NULL, '3.0', NULL, 'FCLGA1151 ', 'PCG 2015C (65W)', '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_i7_9700.jpg', '', '', '', ''),
-('3_A17', 3, 'CPU i7-9700F', 7999000, 'Intel', 'Intel® Core ™i7-9700F', '14 nm', NULL, 8, 8, '3.00 GHz', '4.70 GHz', '12 MB SmartCache', '65 W', NULL, 'DDR4-2666', NULL, '3.0 ', NULL, 'FCLGA1151 ', 'PCG 2015C (65W)', '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_i7_9700F.jpg', '', '', '', ''),
-('3_A18', 3, 'CPU I7-9700KF ', 9690000, 'Intel', 'Intel® Core ™ i7-9700KF ', '14 nm', NULL, 8, 8, '3.60 GHz', '4.90 GHz', ' 12 MB Smart Cache', '95 W', NULL, 'DDR4-2666', NULL, '3.0', NULL, 'FCLGA1151 ', 'PCG 2015D (130W)', '0000-00-00 00:00:00', 'image/Image_Product/CPU_Image/CPU_i7_9700KF.jpg', '', '', '', '');
+INSERT INTO `tbcpulist` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Manufacturer`, `Processor_number`, `Lithography`, `Efficiency`, `Number_of_cores`, `Number_of_threads`, `Processor_base_frequency`, `Maximum_turbo_frequency`, `Caching`, `Power_consumption`, `Memory_parameters`, `Memory_types`, `Extended_options`, `PCI Express_version`, `Package_specifications`, `Socket support`, `Thermal_solution_specification`, `DateIn`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`) VALUES
+('3_A01', 3, 'Ryzen 3 3100', 2490000, 'AMD', 'Ryzen ™ 3 3100', 'TSMC 7nm FinFET', NULL, 4, 8, '3.6 GHz', '3.9 GHz', '16 MB', '65 W', NULL, 'DDR4-3200 MHz', NULL, 'PCIe 4.0', NULL, 'AM4', 'Wraith Stealth', '0000-00-00', 'image/Image_Product/CPU_Image/CPU_Ryzen%203%203100.jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%203%203100%20(2).jpg', '', '', ''),
+('3_A02', 3, 'Athlon 3000G CPU', 1360000, 'AMD', 'AMD Athlon ™ 3000G', '14nm', NULL, 2, 4, '3.5 GHz', NULL, '4MB', '35 W', NULL, NULL, NULL, NULL, NULL, 'AM4', NULL, '0000-00-00', 'image/Image_Product/CPU_Image/CPU_Athlon%203000G.jpg', '', '', '', ''),
+('3_A03', 3, 'Ryzen 5 3500 CPU', 3100000, 'AMD', 'AMD Ryzen ™ 5 3500', '7nm', '', 6, 6, '3.6 GHz', '4.1 GHz', '16 MB', '65W', NULL, NULL, NULL, NULL, NULL, 'AM4', NULL, '0000-00-00', 'image/Image_Product/CPU_Image/CPU_Ryzen%205%203500%20(2).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%205%203500%20(3).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%205%203500.jpg', '', ''),
+('3_A04', 3, 'Ryzen 3 3300X', 3060000, 'AMD', 'AMD Ryzen ™ 3 3300X', 'TSMC 7nm FinFET', '', 4, 8, '3.8 GHz', '4.3 GHz', '16 MB', '65 W', NULL, 'DDR4-3200 MHz', NULL, 'PCIe® 4.0', NULL, 'AM4', NULL, '0000-00-00', 'image/Image_Product/CPU_Image/CPU_Ryzen%203%203300X%20(2).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%203%203300X.jpg', '', '', ''),
+('3_A05', 3, 'Ryzen 5 3500X', 3790000, 'AMD', 'AMD Ryzen ™ 5 3500X', 'TSMC 7nm FinFET', NULL, 6, 6, '3.6 GHz', '4.1 GHz', '32 MB', '65 W', NULL, 'DDR4 3200MHz', NULL, NULL, NULL, 'AM4', NULL, '0000-00-00', 'image/Image_Product/CPU_Image/CPU_Ryzen%205%203500X%20(2).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%205%203500X%20(3).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%205%203500X.jpg', '', ''),
+('3_A06', 3, 'Ryzen 7 3700X', 7500000, 'AMD', 'AMD Ryzen ™ 7 3700X', 'TSMC 7nm FinFET', NULL, 8, 16, '3.6GHz', '4.4GHz', 'L2 Cache 4MB, L3 Cache 32MB', '65W', NULL, 'DDR4 3200MHz', NULL, NULL, NULL, NULL, NULL, '0000-00-00', 'image/Image_Product/CPU_Image/CPU_Ryzen%207%203700X%20(3).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%207%203700X%20(2).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%207%203700X.jpg', '', ''),
+('3_A07', 3, 'Ryzen 9 3900X', 12400000, 'AMD', 'AMD Ryzen 9 3900X', 'TSMC 7nm FinFET', NULL, 12, 24, ' 3.8GHz', NULL, NULL, '105W', NULL, 'DDR4 3200MHz', NULL, NULL, NULL, NULL, NULL, '0000-00-00', 'image/Image_Product/CPU_Image/CPU_Ryzen%209%203900X%20(2).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%209%203900X%20(3).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%209%203900X.jpg', '', ''),
+('3_A08', 3, 'Ryzen 9 3950X', 18900000, 'AMD', 'AMD Ryzen ™ 9 3950X', 'TSMC 7nm FinFET', NULL, 16, 32, '3.5GHz', '4.7GHz', '64MB', '105W', NULL, 'DDR4 3200MHz', NULL, NULL, NULL, 'AM4', NULL, '0000-00-00', 'image/Image_Product/CPU_Image/CPU_Ryzen%209%203950X%20(2).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%209%203950X%20(3).jpg', 'image/Image_Product/CPU_Image/CPU_Ryzen%209%203950X.jpg', '', ''),
+('3_A09', 3, 'CPU i3-9100F', 1715000, 'Intel', 'Intel®i3-9100F', '14nm', NULL, 4, 4, '3.60Ghz', '4.20Ghz', '6Mb', '65W', NULL, NULL, NULL, '3.0', NULL, 'LGA1151', NULL, '0000-00-00', 'image/Image_Product/CPU_Image/CPU_i3-9100F.jpg', '', '', '', ''),
+('3_A10', 3, 'CPU i3-9100', 1745000, 'Intel', 'Intel®i3-9100', '14 nm', NULL, 4, 4, '3.60 GHz', '4.20 GHz', '6 MB Intel® Smart', '65 W', NULL, 'DDR4-2400', NULL, '3.0', NULL, 'FCLGA1151', NULL, '0000-00-00', 'image/Image_Product/CPU_Image/CPU_i3-9100.jpg', '', '', '', ''),
+('3_A11', 3, 'CPU Pentium Gold 5500', 1450000, 'Intel', 'Intel®Gold 5500', '14 nm', NULL, 2, 4, '3.70 GHz', NULL, '4 MB SmartCache', '58 W', NULL, 'DDR4-2400', NULL, '3.0', NULL, 'FCLGA1151', 'PCG 2015C (65W)', '0000-00-00', 'image/Image_Product/CPU_Image/CPU_Pentium%20Gold%20G5500.jpg', '', '', '', ''),
+('3_A12', 3, 'CPU Pentium Gold 5400', 1450000, 'Intel', 'Intel® Pentium® Series Gold ', '14 nm', NULL, 2, 4, '3.70 GHz', NULL, '4 MB SmartCache', '58 W', NULL, 'DDR4-2400', NULL, '3.0', NULL, 'FCLGA1151', 'PCG 2015C (65W)', '0000-00-00', 'image/Image_Product/CPU_Image/CPU_Pentium%20Gold%20G5400.jpg', '', '', '', ''),
+('3_A13', 3, 'CPU i5-9600K', 5050000, 'Intel', 'Intel® Core ™ i5-9600K', '14 nm', NULL, 6, 6, '3.10 GHz', '4.60 GHz', '9 MB Intel® Smart Cache', '65 W', NULL, 'DDR4-2666', NULL, '3.0', NULL, 'FCLGA1151 ', ' PCG 2015C (65W)', '0000-00-00', 'image/Image_Product/CPU_Image/CPU_i5-9600.jpg', 'image/Image_Product/CPU_Image/CPU_i5-9600K.jpg', '', '', ''),
+('3_A14', 3, 'CPU I5-9400F', 3860000, 'Intel', 'Intel® Core ™ i5-9400F', '14 nm', NULL, 6, 6, '2.90 GHz', '4.10 GHz', '9 MB Intel® Smart Cache', '65 W', NULL, 'DDR4-2666', NULL, '3.0', NULL, 'FCLGA1151', 'PCG 2015C (65W)', '0000-00-00', 'image/Image_Product/CPU_Image/CPU_i5_9400F.jpg', '', '', '', ''),
+('3_A15', 3, 'CPU i5-9600KF', 4600000, 'Intel', 'Intel® Core ™ i5-9600KF', '14 nm', NULL, 6, 6, '3.70 GHz', '4.60 GHz', '9 MB Intel® Smart Cache', '95 W', NULL, 'DDR4-2666', NULL, '3.0', NULL, 'FCLGA1151 ', 'PCG 2015D (130W)', '0000-00-00', 'image/Image_Product/CPU_Image/CPU_i5-9600KF.jpg', '', '', '', ''),
+('3_A16', 3, 'CPU i7-9700', 8799000, 'Intel', 'Intel® Core ™ i7-9700', '14 nm', NULL, 8, 8, '3.00 GHz', '4.70 GHz', '12 MB SmartCache', '65 W', NULL, 'DDR4-2666', NULL, '3.0', NULL, 'FCLGA1151 ', 'PCG 2015C (65W)', '0000-00-00', 'image/Image_Product/CPU_Image/CPU_i7_9700.jpg', '', '', '', ''),
+('3_A17', 3, 'CPU i7-9700F', 7999000, 'Intel', 'Intel® Core ™i7-9700F', '14 nm', NULL, 8, 8, '3.00 GHz', '4.70 GHz', '12 MB SmartCache', '65 W', NULL, 'DDR4-2666', NULL, '3.0 ', NULL, 'FCLGA1151 ', 'PCG 2015C (65W)', '0000-00-00', 'image/Image_Product/CPU_Image/CPU_i7_9700F.jpg', '', '', '', ''),
+('3_A18', 3, 'CPU I7-9700KF ', 9690000, 'Intel', 'Intel® Core ™ i7-9700KF ', '14 nm', NULL, 8, 8, '3.60 GHz', '4.90 GHz', ' 12 MB Smart Cache', '95 W', NULL, 'DDR4-2666', NULL, '3.0', NULL, 'FCLGA1151 ', 'PCG 2015D (130W)', '0000-00-00', 'image/Image_Product/CPU_Image/CPU_i7_9700KF.jpg', '', '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbfeedback`
+--
+
+DROP TABLE IF EXISTS `tbfeedback`;
+CREATE TABLE IF NOT EXISTS `tbfeedback` (
+  `IDUser` int(11) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `User` varchar(50) NOT NULL,
+  `Role` tinyint(1) NOT NULL,
+  PRIMARY KEY (`IDUser`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `tbfeedback`
+--
+
+INSERT INTO `tbfeedback` (`IDUser`, `Email`, `User`, `Role`) VALUES
+(0, 'leniaa123456@gmail.com', 'kean', 1),
+(2, 'Trickst6r@gmail.com', ' Nhan', 1),
+(3, 'thanhtan.scout@gmail.com', 'Thanh Tan', 0),
+(4, 'nguyenthiphuonghuyen5755@gmail.com', 'Huyen', 1);
 
 -- --------------------------------------------------------
 
@@ -382,32 +383,32 @@ CREATE TABLE IF NOT EXISTS `tbgraphicslist` (
   `idClass` int(100) NOT NULL,
   `nameProduct` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `rate` int(100) NOT NULL,
-  `Graphic processor` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Memory (GB)` int(100) DEFAULT NULL,
-  `Bus memory` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Number of source pins` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Memory clock (MHz)` int(100) DEFAULT NULL,
-  `Base GPU clock(MHz)` int(100) DEFAULT NULL,
-  `GPU Boost Clock(MHz)` int(100) DEFAULT NULL,
-  `Gaming Mode (Default) (MHz)` int(100) DEFAULT NULL,
-  `Standard communication` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Number of cooling fans` int(100) DEFAULT NULL,
-  `Cuda Core` int(100) DEFAULT NULL,
-  `The maximum number of screens` int(100) DEFAULT NULL,
-  `Maximum export resolution` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Recommended power source` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Supports OpenGL version` float DEFAULT NULL,
+  `Graphic_processor` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Memory_GB` int(100) DEFAULT NULL,
+  `Bus_memory` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Number_of_source_pins` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Memory_clock_MHz` int(100) DEFAULT NULL,
+  `Base_GPU_clock_MHz` int(100) DEFAULT NULL,
+  `GPU_Boost_Clock_MHz` int(100) DEFAULT NULL,
+  `Gaming_Mode_Default_MHz` int(100) DEFAULT NULL,
+  `Standard_communication` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Number_of_cooling_fans` int(100) DEFAULT NULL,
+  `Cuda_Core` int(100) DEFAULT NULL,
+  `The_maximum_number_of_screens` int(100) DEFAULT NULL,
+  `Maximum_export_resolution` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Recommended_power_source` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Supports_OpenGL_version` float DEFAULT NULL,
   `DVI` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `HDMI` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `Displayport` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Support HDCP` float DEFAULT NULL,
-  `Card size` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Support_HDCP` float DEFAULT NULL,
+  `Card_size` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo1` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo2` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo3` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo4` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo5` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `DateIn` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `DateIn` date DEFAULT NULL,
   PRIMARY KEY (`idProduct`),
   KEY `tblistclass` (`idClass`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
@@ -416,17 +417,17 @@ CREATE TABLE IF NOT EXISTS `tbgraphicslist` (
 -- Dumping data for table `tbgraphicslist`
 --
 
-INSERT INTO `tbgraphicslist` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Graphic processor`, `Memory (GB)`, `Bus memory`, `Number of source pins`, `Memory clock (MHz)`, `Base GPU clock(MHz)`, `GPU Boost Clock(MHz)`, `Gaming Mode (Default) (MHz)`, `Standard communication`, `Number of cooling fans`, `Cuda Core`, `The maximum number of screens`, `Maximum export resolution`, `Recommended power source`, `Supports OpenGL version`, `DVI`, `HDMI`, `Displayport`, `Support HDCP`, `Card size`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `DateIn`) VALUES
-('1_A01', 1, 'card-ASUS-Dual-GeForce-RTX-2060-SUPER-EVO-V2-8GB', 11780000, 'NVIDIA® GeForce RTX 2060 SOPER™', 8, '256-bit', '1x8-pin', 14000, 1470, 1680, 1650, 'PCI Express 3.0', 2, 2176, 4, '7680x4320', '550W', 4.6, '1xDVI-D', '1xHDMI-2.0b', '', 2.2, '24.2x13x5.3cm-2.5 slot', 'image/Image_Product/Graphics_image/card_ASUS_Dual_GeForce_RTX_2060_SUPER_EVO_V2_8GB_1.png', 'image/Image_Product/Graphics_image/card_ASUS_Dual_GeForce_RTX_2060_SUPER_EVO_V2_8GB_2.png', 'image/Image_Product/Graphics_image/card_ASUS_Dual_GeForce_RTX_2060_SUPER_EVO_V2_8GB_3.png', 'image/Image_Product/Graphics_image/card_ASUS_Dual_GeForce_RTX_2060_SUPER_EVO_V2_8GB_4.png', 'image/Image_Product/Graphics_image/card_ASUS_Dual_GeForce_RTX_2060_SUPER_EVO_V2_8GB_5.png', '0000-00-00 00:00:00'),
-('1_A02', 1, 'ASUS Phoenix', 4220000, 'NVIDIA® GeForce GTX 1650', 4, '128-bit', '', 8002, 1515, 1695, 1665, 'PCI Express 3.0', 2, 896, 3, '7680x4320', '300W', 4.6, '1 x DVI-D', '1 x HDMI 2.0b', 'v1.4', 2.2, '19 x 11 x 3.8 cm, 2 slot', 'image/Image_Product/Graphics_image/card_ASUS_Phoenix_4gb_1.png', 'image/Image_Product/Graphics_image/card_ASUS_Phoenix_4gb_2.png', 'image/Image_Product/Graphics_image/card_ASUS_Phoenix_4gb_3.png', 'image/Image_Product/Graphics_image/card_ASUS_Phoenix_4gb_4.png', NULL, '0000-00-00 00:00:00'),
-('1_A03', 1, 'ASUS ROG Strix GeForce RTX 2080', 47880000, 'NVIDIA® GeForce RTX™ 2080 Ti', 11, '352-bit', '2 x 8-pin', 14800, 1350, 1770, 1740, 'PCI Express 3.0', 3, 4352, 4, '7680x4320', '650W', 4.6, NULL, '2 x HDMI 2.0b', '2 x v1.4', 2.2, '30.5 x 13 x 5.4 cm, 2.7 slot', 'image/Image_Product/Graphics_image/card_ASUS_ROG_Strix_GeForce_RTX_2080_1.png', 'image/Image_Product/Graphics_image/card_ASUS_ROG_Strix_GeForce_RTX_2080_2.png', 'image/Image_Product/Graphics_image/card_ASUS_ROG_Strix_GeForce_RTX_2080_3.png', 'image/Image_Product/Graphics_image/card_ASUS_ROG_Strix_GeForce_RTX_2080_4.png', 'image/Image_Product/Graphics_image/card_ASUS_ROG_Strix_GeForce_RTX_2080_5.png', '0000-00-00 00:00:00'),
-('1_A04', 1, 'GALAX GeForce GTX 1650 EX 4GB GDDR5', 4490000, 'GeForce® GTX 1650', 4, '128-bit', '', 8000, 1485, 1680, 1695, 'PCIe 3.0 x16', 2, 896, 3, '7680 x 4320', '300W', 4.6, '1 x DVI-D', '1 x HDMI 2.0b', NULL, 2.2, '181 x 97 x 33 mm', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_EX_4GB_GDDR5_1.png', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_EX_4GB_GDDR5_2.png', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_EX_4GB_GDDR5_3.png', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_EX_4GB_GDDR5_4.png', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_EX_4GB_GDDR5_6.png', '0000-00-00 00:00:00'),
-('1_A05', 1, 'GALAX GeForce GTX 1650 Super EX 4GB GDDR6', 5290000, 'GeForce® GTX 1650 Super', 4, '128-bit', '', 12000, 1530, 1740, 1755, 'PCIE 3.0', 2, 1280, 3, NULL, '350W', 4.6, '1 x DVI-D', '1 x HDMI 2.0b', NULL, 2.2, '212 x 126 x 41 mm', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_Super_EX_4GB_GDDR6_1.png', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_Super_EX_4GB_GDDR6_2.png', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_Super_EX_4GB_GDDR6_3.png', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_Super_EX_4GB_GDDR6_4.png', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_Super_EX_4GB_GDDR6_5.png', '0000-00-00 00:00:00'),
-('1_A06', 1, 'Gigabyte GeForce GTX 1650 OC', 4150000, 'GeForce® GTX 1650', 4, '128-Bit', NULL, 8002, NULL, 1710, 1665, 'PCI-E 3.0 x 16', 2, 896, 3, '7680x4320', '300W', NULL, NULL, '2.0b *2', '1.4 *1', NULL, 'L=191 W=112 H=36 mm', 'image/Image_Product/Graphics_image/card_Gigabyte_GeForce_GTX_1650_OC_4GB_1.png', 'image/Image_Product/Graphics_image/card_Gigabyte_GeForce_GTX_1650_OC_4GB_2.png', 'image/Image_Product/Graphics_image/card_Gigabyte_GeForce_GTX_1650_OC_4GB_3.png', 'image/Image_Product/Graphics_image/card_Gigabyte_GeForce_GTX_1650_OC_4GB_4.png', 'image/Image_Product/Graphics_image/card_Gigabyte_GeForce_GTX_1650_OC_4GB_5.png', '0000-00-00 00:00:00'),
-('1_A07', 1, 'Gigabyte Radeon RX 570 Gaming', 3290000, 'Radeon RX570', 4, '256-bit', '1 x 8-pin', 7000, 1255, 1255, 1244, 'PCI Express 3.0', 2, NULL, 5, '7680x4320', '450W', 4.5, NULL, 'HDMI 2.0*1', 'v1.4	*3', NULL, 'H=40 L=232 W=116 mm', 'image/Image_Product/Graphics_image/card_Gigabyte_Radeon_RX_570_Gaming_4G_1.png', 'image/Image_Product/Graphics_image/card_Gigabyte_Radeon_RX_570_Gaming_4G_2.png', 'image/Image_Product/Graphics_image/card_Gigabyte_Radeon_RX_570_Gaming_4G_3.png', 'image/Image_Product/Graphics_image/card_Gigabyte_Radeon_RX_570_Gaming_4G_4.png', 'image/Image_Product/Graphics_image/card_Gigabyte_Radeon_RX_570_Gaming_4G_5.png', '0000-00-00 00:00:00'),
-('1_A08', 1, 'MSI Geforce GTX 1050Ti 4GT OCV1', 3799000, 'NVIDIA® GeForce® GTX 1050 Ti', 4, '128-bit', NULL, 7008, 1341, 1455, NULL, 'PCI Express 3.0x16', 2, NULL, 3, '2560x1600', '300W', NULL, 'DL-DVI-D', NULL, NULL, NULL, '215 x 112 x 38 mm', 'image/Image_Product/Graphics_image/card_MSI_Geforce_GTX_1050Ti_4GT_OCV1_1.png', 'image/Image_Product/Graphics_image/card_MSI_Geforce_GTX_1050Ti_4GT_OCV1_2.png', 'image/Image_Product/Graphics_image/card_MSI_Geforce_GTX_1050Ti_4GT_OCV1_3.png', 'image/Image_Product/Graphics_image/card_MSI_Geforce_GTX_1050Ti_4GT_OCV1_4.png', 'image/Image_Product/Graphics_image/card_MSI_Geforce_GTX_1050Ti_4GT_OCV1_5.png', '0000-00-00 00:00:00'),
-('1_A09', 1, 'Palit GeForce GT 1030 2GB GDDR5', 2060000, 'GeForce® GT 1030', 2, '64-bit', NULL, 6000, 1227, 1468, NULL, 'PCI-E 3.0x4', 2, 384, NULL, '4096x2160@60Hz', '300W', 4.5, 'Single-Link DVI-D', 'HDMI 2.0', NULL, NULL, '145 x 112 x 20mm', 'image/Image_Product/Graphics_image/card_Palit_GeForce_GT_1030_2GB_GDDR5_1.png', 'image/Image_Product/Graphics_image/card_Palit_GeForce_GT_1030_2GB_GDDR5_2.png', 'image/Image_Product/Graphics_image/card_Palit_GeForce_GT_1030_2GB_GDDR5_3.png', 'image/Image_Product/Graphics_image/card_Palit_GeForce_GT_1030_2GB_GDDR5_4.png', 'image/Image_Product/Graphics_image/card_Palit_GeForce_GT_1030_2GB_GDDR5_5.png', '0000-00-00 00:00:00'),
-('1_A10', 1, 'Palit GeForce RTX 2060 GamingPro OC 6GB GDDR6', 9490000, 'GeForce® GTX 2060', 6, '192bit', '8-pin x 1', 14000, 1365, 1830, NULL, 'PCI-E 3.0 x 16', 2, 1920, 3, '7680x4320@60Hz', '500W', 4.5, '', 'HDMI 2.0b', NULL, NULL, '235 x 112 x 40 mm', 'image/Image_Product/Graphics_image/card_Palit_GeForce_RTX_2060_GamingPro_OC_6GB_GDDR6_1.png', 'image/Image_Product/Graphics_image/card_Palit_GeForce_RTX_2060_GamingPro_OC_6GB_GDDR6_2.png', 'image/Image_Product/Graphics_image/card_Palit_GeForce_RTX_2060_GamingPro_OC_6GB_GDDR6_3.png', 'image/Image_Product/Graphics_image/card_Palit_GeForce_RTX_2060_GamingPro_OC_6GB_GDDR6_4.png', 'image/Image_Product/Graphics_image/card_Palit_GeForce_RTX_2060_GamingPro_OC_6GB_GDDR6_5.png', '0000-00-00 00:00:00');
+INSERT INTO `tbgraphicslist` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Graphic_processor`, `Memory_GB`, `Bus_memory`, `Number_of_source_pins`, `Memory_clock_MHz`, `Base_GPU_clock_MHz`, `GPU_Boost_Clock_MHz`, `Gaming_Mode_Default_MHz`, `Standard_communication`, `Number_of_cooling_fans`, `Cuda_Core`, `The_maximum_number_of_screens`, `Maximum_export_resolution`, `Recommended_power_source`, `Supports_OpenGL_version`, `DVI`, `HDMI`, `Displayport`, `Support_HDCP`, `Card_size`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `DateIn`) VALUES
+('1_A01', 1, 'card ASUS Dual GeForce RTX 2060 SUPER EVO V2 8GB', 11780000, 'NVIDIA® GeForce RTX 2060 SOPER™', 8, '256-bit', '1x8-pin', 14000, 1470, 1680, 1650, 'PCI Express 3.0', 2, 2176, 4, '7680x4320', '550W', 4.6, '1xDVI-D', '1xHDMI-2.0b', '', 2.2, '24.2x13x5.3cm-2.5 slot', 'image/Image_Product/Graphics_image/card_ASUS_Dual_GeForce_RTX_2060_SUPER_EVO_V2_8GB_1.png', 'image/Image_Product/Graphics_image/card_ASUS_Dual_GeForce_RTX_2060_SUPER_EVO_V2_8GB_2.png', 'image/Image_Product/Graphics_image/card_ASUS_Dual_GeForce_RTX_2060_SUPER_EVO_V2_8GB_3.png', 'image/Image_Product/Graphics_image/card_ASUS_Dual_GeForce_RTX_2060_SUPER_EVO_V2_8GB_4.png', 'image/Image_Product/Graphics_image/card_ASUS_Dual_GeForce_RTX_2060_SUPER_EVO_V2_8GB_5.png', '0000-00-00'),
+('1_A02', 1, 'ASUS Phoenix', 4220000, 'NVIDIA® GeForce GTX 1650', 4, '128-bit', '', 8002, 1515, 1695, 1665, 'PCI Express 3.0', 2, 896, 3, '7680x4320', '300W', 4.6, '1 x DVI-D', '1 x HDMI 2.0b', 'v1.4', 2.2, '19 x 11 x 3.8 cm, 2 slot', 'image/Image_Product/Graphics_image/card_ASUS_Phoenix_4gb_1.png', 'image/Image_Product/Graphics_image/card_ASUS_Phoenix_4gb_2.png', 'image/Image_Product/Graphics_image/card_ASUS_Phoenix_4gb_3.png', 'image/Image_Product/Graphics_image/card_ASUS_Phoenix_4gb_4.png', NULL, '0000-00-00'),
+('1_A03', 1, 'ASUS ROG Strix GeForce RTX 2080', 47880000, 'NVIDIA® GeForce RTX™ 2080 Ti', 11, '352-bit', '2 x 8-pin', 14800, 1350, 1770, 1740, 'PCI Express 3.0', 3, 4352, 4, '7680x4320', '650W', 4.6, NULL, '2 x HDMI 2.0b', '2 x v1.4', 2.2, '30.5 x 13 x 5.4 cm, 2.7 slot', 'image/Image_Product/Graphics_image/card_ASUS_ROG_Strix_GeForce_RTX_2080_1.png', 'image/Image_Product/Graphics_image/card_ASUS_ROG_Strix_GeForce_RTX_2080_2.png', 'image/Image_Product/Graphics_image/card_ASUS_ROG_Strix_GeForce_RTX_2080_3.png', 'image/Image_Product/Graphics_image/card_ASUS_ROG_Strix_GeForce_RTX_2080_4.png', 'image/Image_Product/Graphics_image/card_ASUS_ROG_Strix_GeForce_RTX_2080_5.png', '0000-00-00'),
+('1_A04', 1, 'GALAX GeForce GTX 1650 EX 4GB GDDR5', 4490000, 'GeForce® GTX 1650', 4, '128-bit', '', 8000, 1485, 1680, 1695, 'PCIe 3.0 x16', 2, 896, 3, '7680 x 4320', '300W', 4.6, '1 x DVI-D', '1 x HDMI 2.0b', NULL, 2.2, '181 x 97 x 33 mm', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_EX_4GB_GDDR5_1.png', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_EX_4GB_GDDR5_2.png', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_EX_4GB_GDDR5_3.png', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_EX_4GB_GDDR5_4.png', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_EX_4GB_GDDR5_6.png', '0000-00-00'),
+('1_A05', 1, 'GALAX GeForce GTX 1650 Super EX 4GB GDDR6', 5290000, 'GeForce® GTX 1650 Super', 4, '128-bit', '', 12000, 1530, 1740, 1755, 'PCIE 3.0', 2, 1280, 3, NULL, '350W', 4.6, '1 x DVI-D', '1 x HDMI 2.0b', NULL, 2.2, '212 x 126 x 41 mm', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_Super_EX_4GB_GDDR6_1.png', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_Super_EX_4GB_GDDR6_2.png', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_Super_EX_4GB_GDDR6_3.png', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_Super_EX_4GB_GDDR6_4.png', 'image/Image_Product/Graphics_image/card_GALAX_GeForce_GTX_1650_Super_EX_4GB_GDDR6_5.png', '0000-00-00'),
+('1_A06', 1, 'Gigabyte GeForce GTX 1650 OC', 4150000, 'GeForce® GTX 1650', 4, '128-Bit', NULL, 8002, NULL, 1710, 1665, 'PCI-E 3.0 x 16', 2, 896, 3, '7680x4320', '300W', NULL, NULL, '2.0b *2', '1.4 *1', NULL, 'L=191 W=112 H=36 mm', 'image/Image_Product/Graphics_image/card_Gigabyte_GeForce_GTX_1650_OC_4GB_1.png', 'image/Image_Product/Graphics_image/card_Gigabyte_GeForce_GTX_1650_OC_4GB_2.png', 'image/Image_Product/Graphics_image/card_Gigabyte_GeForce_GTX_1650_OC_4GB_3.png', 'image/Image_Product/Graphics_image/card_Gigabyte_GeForce_GTX_1650_OC_4GB_4.png', 'image/Image_Product/Graphics_image/card_Gigabyte_GeForce_GTX_1650_OC_4GB_5.png', '0000-00-00'),
+('1_A07', 1, 'Gigabyte Radeon RX 570 Gaming', 3290000, 'Radeon RX570', 4, '256-bit', '1 x 8-pin', 7000, 1255, 1255, 1244, 'PCI Express 3.0', 2, NULL, 5, '7680x4320', '450W', 4.5, NULL, 'HDMI 2.0*1', 'v1.4	*3', NULL, 'H=40 L=232 W=116 mm', 'image/Image_Product/Graphics_image/card_Gigabyte_Radeon_RX_570_Gaming_4G_1.png', 'image/Image_Product/Graphics_image/card_Gigabyte_Radeon_RX_570_Gaming_4G_2.png', 'image/Image_Product/Graphics_image/card_Gigabyte_Radeon_RX_570_Gaming_4G_3.png', 'image/Image_Product/Graphics_image/card_Gigabyte_Radeon_RX_570_Gaming_4G_4.png', 'image/Image_Product/Graphics_image/card_Gigabyte_Radeon_RX_570_Gaming_4G_5.png', '0000-00-00'),
+('1_A08', 1, 'MSI Geforce GTX 1050Ti 4GT OCV1', 3799000, 'NVIDIA® GeForce® GTX 1050 Ti', 4, '128-bit', NULL, 7008, 1341, 1455, NULL, 'PCI Express 3.0x16', 2, NULL, 3, '2560x1600', '300W', NULL, 'DL-DVI-D', NULL, NULL, NULL, '215 x 112 x 38 mm', 'image/Image_Product/Graphics_image/card_MSI_Geforce_GTX_1050Ti_4GT_OCV1_1.png', 'image/Image_Product/Graphics_image/card_MSI_Geforce_GTX_1050Ti_4GT_OCV1_2.png', 'image/Image_Product/Graphics_image/card_MSI_Geforce_GTX_1050Ti_4GT_OCV1_3.png', 'image/Image_Product/Graphics_image/card_MSI_Geforce_GTX_1050Ti_4GT_OCV1_4.png', 'image/Image_Product/Graphics_image/card_MSI_Geforce_GTX_1050Ti_4GT_OCV1_5.png', '0000-00-00'),
+('1_A09', 1, 'Palit GeForce GT 1030 2GB GDDR5', 2060000, 'GeForce® GT 1030', 2, '64-bit', NULL, 6000, 1227, 1468, NULL, 'PCI-E 3.0x4', 2, 384, NULL, '4096x2160@60Hz', '300W', 4.5, 'Single-Link DVI-D', 'HDMI 2.0', NULL, NULL, '145 x 112 x 20mm', 'image/Image_Product/Graphics_image/card_Palit_GeForce_GT_1030_2GB_GDDR5_1.png', 'image/Image_Product/Graphics_image/card_Palit_GeForce_GT_1030_2GB_GDDR5_2.png', 'image/Image_Product/Graphics_image/card_Palit_GeForce_GT_1030_2GB_GDDR5_3.png', 'image/Image_Product/Graphics_image/card_Palit_GeForce_GT_1030_2GB_GDDR5_4.png', 'image/Image_Product/Graphics_image/card_Palit_GeForce_GT_1030_2GB_GDDR5_5.png', '0000-00-00'),
+('1_A10', 1, 'Palit GeForce RTX 2060 GamingPro OC 6GB GDDR6', 9490000, 'GeForce® GTX 2060', 6, '192bit', '8-pin x 1', 14000, 1365, 1830, NULL, 'PCI-E 3.0 x 16', 2, 1920, 3, '7680x4320@60Hz', '500W', 4.5, '', 'HDMI 2.0b', NULL, NULL, '235 x 112 x 40 mm', 'image/Image_Product/Graphics_image/card_Palit_GeForce_RTX_2060_GamingPro_OC_6GB_GDDR6_1.png', 'image/Image_Product/Graphics_image/card_Palit_GeForce_RTX_2060_GamingPro_OC_6GB_GDDR6_2.png', 'image/Image_Product/Graphics_image/card_Palit_GeForce_RTX_2060_GamingPro_OC_6GB_GDDR6_3.png', 'image/Image_Product/Graphics_image/card_Palit_GeForce_RTX_2060_GamingPro_OC_6GB_GDDR6_4.png', 'image/Image_Product/Graphics_image/card_Palit_GeForce_RTX_2060_GamingPro_OC_6GB_GDDR6_5.png', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -440,29 +441,28 @@ CREATE TABLE IF NOT EXISTS `tblaptoplist` (
   `idClass` int(100) NOT NULL,
   `nameProduct` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `rate` int(100) NOT NULL,
-  `CPU technology` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `CPU type` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Multiplication / thread` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `L3 Cache` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `CPU speed` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Maximum speed (Turbo)` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Screen size` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `CPU_technology` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `CPU_type` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Multiplication_thread` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `L3_Cache` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `CPU_speed` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Maximum_speed_Turbo` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Screen_size` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `Resolution` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Display technology` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Display_technology` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `SSD` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `RAM` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Type of RAM` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Number of RAM slots` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `RAM Bus speed` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Maximum RAM support` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Scalable hard drive` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Type_of_RAM` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Number_of_RAM_slots` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `RAM_Bus_speed` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Maximum_RAM_support` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Scalable_hard_drive` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo1` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `photo2` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `photo3` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `photo4` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `photo5` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
-  `DateIn` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `manufacturer` varchar(50) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `DateIn` date DEFAULT NULL,
   PRIMARY KEY (`idProduct`),
   KEY `tblistclass` (`idClass`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
@@ -471,17 +471,17 @@ CREATE TABLE IF NOT EXISTS `tblaptoplist` (
 -- Dumping data for table `tblaptoplist`
 --
 
-INSERT INTO `tblaptoplist` (`idProduct`, `idClass`, `nameProduct`, `rate`, `CPU technology`, `CPU type`, `Multiplication / thread`, `L3 Cache`, `CPU speed`, `Maximum speed (Turbo)`, `Screen size`, `Resolution`, `Display technology`, `SSD`, `RAM`, `Type of RAM`, `Number of RAM slots`, `RAM Bus speed`, `Maximum RAM support`, `Scalable hard drive`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `DateIn`, `manufacturer`) VALUES
-('4_A01', 4, 'HP Pavilion Gaming 15', 19990000, 'AMD Ryzen ™ Processors', 'AMD Ryzen 5 3550H', '4 times 8 threads', '4 MB', '2.10 GHz', '3.70 GHz', '15.6-inch', 'FHD (1920 x 1080) 144Hz', 'IPS anti-glare micro-edge WLED-backlit', '128 GB NVme Pcie 3x4', '8 GB', 'DDR4', '2 slots', '2666 MHz', '32 GB', 'Yes', 'image/Image_Product/GamingLaptop_Image/4_A01_a.png', 'image/Image_Product/GamingLaptop_Image/4_A01_b.png', 'image/Image_Product/GamingLaptop_Image/4_A01_c.png', 'image/Image_Product/GamingLaptop_Image/4_A01_d.png', 'image/Image_Product/GamingLaptop_Image/4_A01_e.png', '0000-00-00 00:00:00', 'HP'),
-('4_A02', 4, 'Acer Nitro 5 AN515', 17490000, 'AMD', 'AMD Ryzen 5 - 3550H', '4 times 8 threads', ' 4 MB SmartCache', '2.1 GHz', '3.7 GHz', '15.6-inch', 'Full HD (1920 x 1080)', 'Acer ComfyView IPS LED LCD', '256 GB PCIe NVMe', '8 GB', 'DDR4', ' 2 slots', '2400 MHz', '32 GB', 'Yes', 'image/Image_Product/GamingLaptop_Image/4_A02_a.png', 'image/Image_Product/GamingLaptop_Image/4_A02_b.png', 'image/Image_Product/GamingLaptop_Image/4_A02_c.png', 'image/Image_Product/GamingLaptop_Image/4_A02_d.png', 'image/Image_Product/GamingLaptop_Image/4_A02_e.png', '0000-00-00 00:00:00', 'Acer'),
-('4_A03', 4, 'Asus TUF Gaming FX505', 18190000, 'AMD', 'AMD Ryzen 7', '4 times 8 threads', '4 MB SmartCache', '2.1GHz', '3.70 GHz', '15.6-inch', 'FHD (1920 x 1080)', 'IPS 120Hz Non-Glare, Wide View, Narrow Bezel', '512 GB', '8 GB', 'DDR4', '2 slots', '2666 MHz', '32 GB', 'Yes', 'image/Image_Product/GamingLaptop_Image/4_A03_a.png', 'image/Image_Product/GamingLaptop_Image/4_A03_b.png', 'image/Image_Product/GamingLaptop_Image/4_A03_c.png', 'image/Image_Product/GamingLaptop_Image/4_A03_d.png', 'image/Image_Product/GamingLaptop_Image/4_A03_e.png', '0000-00-00 00:00:00', 'Asus'),
-('4_A04', 4, 'Asus TUF Gaming A15 FA506II AL012T', 21990000, 'AMD', 'AMD Ryzen 5 - 4600H', '6 times 12 threads', '8 MB', '3.0 GHz', '4.0 GHz', '15.6-inch', 'FHD (1920 x 1080) 16: 9', 'Value IPS-level, 250nits, 1000: 1, 144Hz, 45% NTSC, 65.5% sRGB, anti-glare display', '512GB M.2 NVMe ™ PCIe® 3.0', '8 GB', 'DDR4', '2 slots', '3200 MHz', '32 GB', 'Yes', 'image/Image_Product/GamingLaptop_Image/4_A04_a.png', 'image/Image_Product/GamingLaptop_Image/4_A04_b.png', 'image/Image_Product/GamingLaptop_Image/4_A04_c.png', 'image/Image_Product/GamingLaptop_Image/4_A04_d.png', 'image/Image_Product/GamingLaptop_Image/4_A04_e.png', '0000-00-00 00:00:00', 'Asus'),
-('4_A05', 4, 'Acer Predator Triton 500', 49990000, 'Comet Lake - 10th generation', 'Intel® Core ™ i7-10875H', '8 times 16 threads', '16 MB Intel® Smart Cache', '2.30 GHz', '5.10 GHz', '15.6-inch', 'Full HD 1920 x 1080', 'IPS technology.Acer ComfyViewTM LED-backlit TFT LCD,supporting 144Hz,3 ms Overdrive', '512GB PCIe NVMe SSD RAID0', '32 GB', 'DDR4', '2 slots', '2933 MHz', '64 GB', '2 SSD slots to upgrade up to 1TB SSD / 1 slot', 'image/Image_Product/GamingLaptop_Image/4_A05_a.png', 'image/Image_Product/GamingLaptop_Image/4_A05_b.png', 'image/Image_Product/GamingLaptop_Image/4_A05_c.png', 'image/Image_Product/GamingLaptop_Image/4_A05_d.png', 'image/Image_Product/GamingLaptop_Image/4_A05_e.png', '0000-00-00 00:00:00', 'Acer'),
-('4_A06', 4, 'Lenovo Ideapad L340', 15800000, 'Coffee Lake - 9th generation', 'Intel® Core ™ i5-9300H', '4 times 8 threads', '8 MB SmartCache', '2.40 GHz', '4.10 GHz', '15.6-inch', 'FHD (1920 x 1080)', 'IPS, antiglare, 250 nits, 45% color gamut', '256GB NVME', '8 GB', 'DDR4', '1 slot', '2666MHz', '16 GB', NULL, 'image/Image_Product/GamingLaptop_Image/4_A06_a.png', 'image/Image_Product/GamingLaptop_Image/4_A06_b.png', 'image/Image_Product/GamingLaptop_Image/4_A06_c.png', 'image/Image_Product/GamingLaptop_Image/4_A06_d.png', 'image/Image_Product/GamingLaptop_Image/4_A06_e.png', '0000-00-00 00:00:00', 'Lenovo'),
-('4_A07', 4, 'Lenovo Legion Y730-15ICH', 38000000, 'Coffee Lake - 8th generation', 'Intel® Core ™ \r\n i7 -8750H', '6 times 12 threads', '9 MB SmartCache', '2.20 GHz', '4.10 GHz', '15.6-inch', 'FHD (1920 x 1080)', 'IPS anti-glare, 60 Hz refresh', '256 GB', '16 GB', 'DDR4', '2 slots', '2666MHz', '32 GB', 'Yes', 'image/Image_Product/GamingLaptop_Image/4_A07_a.png', 'image/Image_Product/GamingLaptop_Image/4_A07_b.png', 'image/Image_Product/GamingLaptop_Image/4_A07_c.png', 'image/Image_Product/GamingLaptop_Image/4_A07_d.png', 'image/Image_Product/GamingLaptop_Image/4_A07_e.png', '0000-00-00 00:00:00', 'Lenovo'),
-('4_A08', 4, 'Dell G3 15 3590', 28990000, 'Coffee Lake - 9th generation', 'Intel® Core ™ i7-9750H', '6 times 12 threads', '12 MB SmartCache', '2.60 GHz', '4.50 GHz', '15.6-inch', 'FHD (1920 x 1080)', 'Anti-glare LED Backlit Non-touch Narrow Border WVA Display', '512 GB', '2 x 4 GB', 'DDR4', '2 slots', '2666 MHz', '32 GB', 'Yes', 'image/Image_Product/GamingLaptop_Image/4_A08_a.png', 'image/Image_Product/GamingLaptop_Image/4_A08_b.png', 'image/Image_Product/GamingLaptop_Image/4_A08_c.png', 'image/Image_Product/GamingLaptop_Image/4_A08_d.png', 'image/Image_Product/GamingLaptop_Image/4_A08_e.png', '0000-00-00 00:00:00', 'Dell'),
-('4_A09', 4, 'Dell Vostro 7570', 30190000, 'Kaby Lake, 7th generation', 'Intel Core i7 -7700HQ', '6 times 12 threads', '12 MB SmartCache', '2.8GHz', 'upto 3.8GHz', '15.6-inch', 'FHD 1920 x 1080', 'IPS Anti-Glare LED Backlit Display', NULL, '8GB', 'DDR4', NULL, '2400MHz', '32GB', 'No', 'image/Image_Product/GamingLaptop_Image/4_A09_a.png', 'image/Image_Product/GamingLaptop_Image/4_A09_b.png', 'image/Image_Product/GamingLaptop_Image/4_A09_c.png', 'image/Image_Product/GamingLaptop_Image/4_A09_d.png', 'image/Image_Product/GamingLaptop_Image/4_A09_e.png', '0000-00-00 00:00:00', 'Dell'),
-('4_A10', 4, 'HP Omen', 44990000, 'Coffee Lake - 9th generation', 'Intel® Core ™ i7-9750H', '6 times 12 thread', ' 12 MB Intel® Smart Cache', '2.60 GHz', '4.50 GHz', '15.6-inch', 'FHD (1920 x 1080)', '240 Hz IPS anti-glare micro-edge WLED-backlit', '512 GB PCIe® NVMe ™ M.2', '1 x 16 GB', 'DDR4', '2 slots', '2666 MHz', '32 GB', 'No', 'image/Image_Product/GamingLaptop_Image/4_A10_a.png', 'image/Image_Product/GamingLaptop_Image/4_A10_b.png', 'image/Image_Product/GamingLaptop_Image/4_A10_c.png', 'image/Image_Product/GamingLaptop_Image/4_A10_d.png', 'image/Image_Product/GamingLaptop_Image/4_A10_e.png', '0000-00-00 00:00:00', 'HP');
+INSERT INTO `tblaptoplist` (`idProduct`, `idClass`, `nameProduct`, `rate`, `CPU_technology`, `CPU_type`, `Multiplication_thread`, `L3_Cache`, `CPU_speed`, `Maximum_speed_Turbo`, `Screen_size`, `Resolution`, `Display_technology`, `SSD`, `RAM`, `Type_of_RAM`, `Number_of_RAM_slots`, `RAM_Bus_speed`, `Maximum_RAM_support`, `Scalable_hard_drive`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `DateIn`) VALUES
+('4_A01', 4, 'HP Pavilion Gaming 15', 19990000, 'AMD Ryzen ™ Processors', 'AMD Ryzen 5 3550H', '4 times 8 threads', '4 MB', '2.10 GHz', '3.70 GHz', '15.6-inch', 'FHD (1920 x 1080) 144Hz', 'IPS anti-glare micro-edge WLED-backlit', '128 GB NVme Pcie 3x4', '8 GB', 'DDR4', '2 slots', '2666 MHz', '32 GB', 'Yes', 'image/Image_Product/GamingLaptop_Image/4_A01_a.png', 'image/Image_Product/GamingLaptop_Image/4_A01_b.png', 'image/Image_Product/GamingLaptop_Image/4_A01_c.png', 'image/Image_Product/GamingLaptop_Image/4_A01_d.png', 'image/Image_Product/GamingLaptop_Image/4_A01_e.png', '0000-00-00'),
+('4_A02', 4, 'Acer Nitro 5 AN515', 17490000, 'AMD', 'AMD Ryzen 5 - 3550H', '4 times 8 threads', ' 4 MB SmartCache', '2.1 GHz', '3.7 GHz', '15.6-inch', 'Full HD (1920 x 1080)', 'Acer ComfyView IPS LED LCD', '256 GB PCIe NVMe', '8 GB', 'DDR4', ' 2 slots', '2400 MHz', '32 GB', 'Yes', 'image/Image_Product/GamingLaptop_Image/4_A02_a.png', 'image/Image_Product/GamingLaptop_Image/4_A02_b.png', 'image/Image_Product/GamingLaptop_Image/4_A02_c.png', 'image/Image_Product/GamingLaptop_Image/4_A02_d.png', 'image/Image_Product/GamingLaptop_Image/4_A02_e.png', '0000-00-00'),
+('4_A03', 4, 'Asus TUF Gaming FX505', 18190000, 'AMD', 'AMD Ryzen 7', '4 times 8 threads', '4 MB SmartCache', '2.1GHz', '3.70 GHz', '15.6-inch', 'FHD (1920 x 1080)', 'IPS 120Hz Non-Glare, Wide View, Narrow Bezel', '512 GB', '8 GB', 'DDR4', '2 slots', '2666 MHz', '32 GB', 'Yes', 'image/Image_Product/GamingLaptop_Image/4_A03_a.png', 'image/Image_Product/GamingLaptop_Image/4_A03_b.png', 'image/Image_Product/GamingLaptop_Image/4_A03_c.png', 'image/Image_Product/GamingLaptop_Image/4_A03_d.png', 'image/Image_Product/GamingLaptop_Image/4_A03_e.png', '0000-00-00'),
+('4_A04', 4, 'Asus TUF Gaming A15 FA506II AL012T', 21990000, 'AMD', 'AMD Ryzen 5 - 4600H', '6 times 12 threads', '8 MB', '3.0 GHz', '4.0 GHz', '15.6-inch', 'FHD (1920 x 1080) 16: 9', 'Value IPS-level, 250nits, 1000: 1, 144Hz, 45% NTSC, 65.5% sRGB, anti-glare display', '512GB M.2 NVMe ™ PCIe® 3.0', '8 GB', 'DDR4', '2 slots', '3200 MHz', '32 GB', 'Yes', 'image/Image_Product/GamingLaptop_Image/4_A04_a.png', 'image/Image_Product/GamingLaptop_Image/4_A04_b.png', 'image/Image_Product/GamingLaptop_Image/4_A04_c.png', 'image/Image_Product/GamingLaptop_Image/4_A04_d.png', 'image/Image_Product/GamingLaptop_Image/4_A04_e.png', '0000-00-00'),
+('4_A05', 4, 'Acer Predator Triton 500', 49990000, 'Comet Lake - 10th generation', 'Intel® Core ™ i7-10875H', '8 times 16 threads', '16 MB Intel® Smart Cache', '2.30 GHz', '5.10 GHz', '15.6-inch', 'Full HD 1920 x 1080', 'IPS technology.Acer ComfyViewTM LED-backlit TFT LCD,supporting 144Hz,3 ms Overdrive', '512GB PCIe NVMe SSD RAID0', '32 GB', 'DDR4', '2 slots', '2933 MHz', '64 GB', '2 SSD slots to upgrade up to 1TB SSD / 1 slot', 'image/Image_Product/GamingLaptop_Image/4_A05_a.png', 'image/Image_Product/GamingLaptop_Image/4_A05_b.png', 'image/Image_Product/GamingLaptop_Image/4_A05_c.png', 'image/Image_Product/GamingLaptop_Image/4_A05_d.png', 'image/Image_Product/GamingLaptop_Image/4_A05_e.png', '0000-00-00'),
+('4_A06', 4, 'Lenovo Ideapad L340', 15800000, 'Coffee Lake - 9th generation', 'Intel® Core ™ i5-9300H', '4 times 8 threads', '8 MB SmartCache', '2.40 GHz', '4.10 GHz', '15.6-inch', 'FHD (1920 x 1080)', 'IPS, antiglare, 250 nits, 45% color gamut', '256GB NVME', '8 GB', 'DDR4', '1 slot', '2666MHz', '16 GB', NULL, 'image/Image_Product/GamingLaptop_Image/4_A06_a.png', 'image/Image_Product/GamingLaptop_Image/4_A06_b.png', 'image/Image_Product/GamingLaptop_Image/4_A06_c.png', 'image/Image_Product/GamingLaptop_Image/4_A06_d.png', 'image/Image_Product/GamingLaptop_Image/4_A06_e.png', '0000-00-00'),
+('4_A07', 4, 'Lenovo Legion Y730-15ICH', 38000000, 'Coffee Lake - 8th generation', 'Intel® Core ™ \r\n i7 -8750H', '6 times 12 threads', '9 MB SmartCache', '2.20 GHz', '4.10 GHz', '15.6-inch', 'FHD (1920 x 1080)', 'IPS anti-glare, 60 Hz refresh', '256 GB', '16 GB', 'DDR4', '2 slots', '2666MHz', '32 GB', 'Yes', 'image/Image_Product/GamingLaptop_Image/4_A07_a.png', 'image/Image_Product/GamingLaptop_Image/4_A07_b.png', 'image/Image_Product/GamingLaptop_Image/4_A07_c.png', 'image/Image_Product/GamingLaptop_Image/4_A07_d.png', 'image/Image_Product/GamingLaptop_Image/4_A07_e.png', '0000-00-00'),
+('4_A08', 4, 'Dell G3 15 3590', 28990000, 'Coffee Lake - 9th generation', 'Intel® Core ™ i7-9750H', '6 times 12 threads', '12 MB SmartCache', '2.60 GHz', '4.50 GHz', '15.6-inch', 'FHD (1920 x 1080)', 'Anti-glare LED Backlit Non-touch Narrow Border WVA Display', '512 GB', '2 x 4 GB', 'DDR4', '2 slots', '2666 MHz', '32 GB', 'Yes', 'image/Image_Product/GamingLaptop_Image/4_A08_a.png', 'image/Image_Product/GamingLaptop_Image/4_A08_b.png', 'image/Image_Product/GamingLaptop_Image/4_A08_c.png', 'image/Image_Product/GamingLaptop_Image/4_A08_d.png', 'image/Image_Product/GamingLaptop_Image/4_A08_e.png', '0000-00-00'),
+('4_A09', 4, 'Dell Vostro 7570', 30190000, 'Kaby Lake, 7th generation', 'Intel Core i7 -7700HQ', '6 times 12 threads', '12 MB SmartCache', '2.8GHz', 'upto 3.8GHz', '15.6-inch', 'FHD 1920 x 1080', 'IPS Anti-Glare LED Backlit Display', NULL, '8GB', 'DDR4', NULL, '2400MHz', '32GB', 'No', 'image/Image_Product/GamingLaptop_Image/4_A09_a.png', 'image/Image_Product/GamingLaptop_Image/4_A09_b.png', 'image/Image_Product/GamingLaptop_Image/4_A09_c.png', 'image/Image_Product/GamingLaptop_Image/4_A09_d.png', 'image/Image_Product/GamingLaptop_Image/4_A09_e.png', '0000-00-00'),
+('4_A10', 4, 'HP Omen', 44990000, 'Coffee Lake - 9th generation', 'Intel® Core ™ i7-9750H', '6 times 12 thread', ' 12 MB Intel® Smart Cache', '2.60 GHz', '4.50 GHz', '15.6-inch', 'FHD (1920 x 1080)', '240 Hz IPS anti-glare micro-edge WLED-backlit', '512 GB PCIe® NVMe ™ M.2', '1 x 16 GB', 'DDR4', '2 slots', '2666 MHz', '32 GB', 'No', 'image/Image_Product/GamingLaptop_Image/4_A10_a.png', 'image/Image_Product/GamingLaptop_Image/4_A10_b.png', 'image/Image_Product/GamingLaptop_Image/4_A10_c.png', 'image/Image_Product/GamingLaptop_Image/4_A10_d.png', 'image/Image_Product/GamingLaptop_Image/4_A10_e.png', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -524,13 +524,13 @@ CREATE TABLE IF NOT EXISTS `tbmainboard` (
   `idClass` int(100) NOT NULL,
   `nameProduct` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `rate` int(100) NOT NULL,
-  `Tong quan` longtext CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `Tong_quan` longtext CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `photo1` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `photo2` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `photo3` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `photo4` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `photo5` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `dateIn` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `dateIn` date DEFAULT NULL,
   PRIMARY KEY (`idProduct`),
   KEY `class_frk_mainboard` (`idClass`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -539,12 +539,12 @@ CREATE TABLE IF NOT EXISTS `tbmainboard` (
 -- Dumping data for table `tbmainboard`
 --
 
-INSERT INTO `tbmainboard` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Tong quan`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `dateIn`) VALUES
-('6_A01', 6, 'Gigabyte H310M H', 1699000, 'Socket	LGA1151\r\nChipset	Intel® H310 Express Chipset\r\nCPU (hỗ trợ tối đa)	Support for 9th and 8th Generation Intel® Core™ i9 processors/Intel® Core™ i7 processors/Intel® Core™ i5 processors/Intel® Core™ i3 processors/Intel® Pentium® processors/Intel® Celeron® processors\r\nBIOS	\r\n1 x 128 Mbit flash\r\nUse of licensed AMI UEFI BIOS\r\nPnP 1.0a, DMI 2.7, WfM 2.0, SM BIOS 2.7, ACPI 5.0\r\nOS hỗ trợ	Support for Windows 10 64-bit\r\n\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	32 GB\r\n\r\nSố khe cắm	2\r\nKênh bộ nhớ	Dual\r\nRAM	Support for DDR4 2666/2400/2133 MHz memory modules\r\n\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nMicro ATX Form Factor\r\n22.6cm x 17.4cm\r\nĐồ Họa và Âm Thanh\r\nAudio	\r\nRealtek® ALC887 codec\r\nHigh Definition Audio\r\n2/4/5.1/7.1-channel\r\n* To configure 7.1-channel audio, you have to use an HD front panel audio module and enable the multi-channel audio feature through the audio driver.\r\n\r\nKết Nối Mạng\r\nLAN	Realtek® GbE LAN chip (10/100/1000 Mbit)\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\nRJ45	\r\nUSB 2.0	4\r\nUSB 3.1	2 x USB 3.1 Gen 1 ports\r\nCổng Audio	3 x audio jacks\r\nVGA	1 x D-Sub port\r\nHDMI	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	4\r\nPCI-EX1	2\r\nPCI-EX16\r\n', 'image/Image_Product/Mainboard_image/Gigabyte%20Z390%20AORUS%20Xtreme%20(2).jpg', 'image/Image_Product/Mainboard_image/Gigabyte%20Z390%20AORUS%20Xtreme%20(3).jpg', 'image/Image_Product/Mainboard_image/Gigabyte%20Z390%20AORUS%20Xtreme%20(4).jpg', 'image/Image_Product/Mainboard_image/Gigabyte%20Z390%20AORUS%20Xtreme%20(5).jpg', '', '2020-07-06 06:14:04'),
-('6_A02', 6, 'ASRock H310M-HDV', 1670000, 'Socket	Socket 1151\r\nChipset	Intel® H310\r\nCPU (hỗ trợ tối đa)	Supports 8th Generation Intel® Core™ Processors\r\nBIOS	\r\n128Mb AMI UEFI Legal BIOS with multilingual GUI support\r\nACPI 6.0 Compliant wake up events\r\nSMBIOS 2.7 Support\r\nDRAM, PCH 1.05V Voltage Multi-adjustment\r\nOS hỗ trợ	Microsoft® Windows® 10 64-bit\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	32 GB\r\nSố khe cắm	2\r\nKênh bộ nhớ	Dual\r\nRAM	DDR4 2666 / 2400 / 2133\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nMicro ATX Form Factor\r\n7.5-in x 7.4-in, 19.1 cm x 18.8 cm\r\nSolid Capacitor design\r\nĐồ Họa và Âm Thanh\r\nAudio	7.1 CH HD Audio (Realtek ALC887 Audio Codec)\r\nKết Nối Mạng\r\nLAN	\r\nPCIE x1 Gigabit LAN 10/100/1000 Mb/s\r\n1 x Realtek RTL8111H\r\nSupports Wake-On-LAN\r\nSupports Lightning/ESD Protection\r\nSupports Energy Efficient Ethernet 802.3az\r\nSupports PXE\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\nRJ45	\r\nUSB 2.0	\r\nMặt trước: đang cập nhật\r\nMặt sau: 4\r\nUSB 3.1	\r\nMặt trước: đang cập nhật\r\nMặt sau: 2 x Gen1\r\nCổng Audio	HD Audio Jacks: Line in / Front Speaker / Microphone\r\nVGA	\r\nDVI-D	\r\nHDMI	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	4\r\nPCI-EX1	\r\nPCI-EX16\r\n', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV.jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20(2).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20(3).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20(4).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20(5).jpg', '2020-07-06 06:46:45'),
-('6_A03', 6, 'Asus Prime H310M-F R2.0', 1390000, 'Socket	Socket 1151\r\nChipset	Intel® H310\r\nCPU (hỗ trợ tối đa)	9th / 8th Gen Intel® Core™, Pentium® Gold and Celeron® Processors\r\nBIOS	64 Mb Flash ROM, UEFI AMI BIOS, PnP, SM BIOS 3.1, ACPI 6.1, Multi-languageBIOS, ASUS EZ Flash 3, CrashFree BIOS 3, F6 Qfan Control, F3 MyFavorites, Last Modified log, F12 PrintScreen, and ASUS DRAM SPD (SerialPresence Detect) memory information\r\nOS hỗ trợ	Windows® 10 64-bit\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	32GB\r\nSố khe cắm	2 x DIMM\r\nKênh bộ nhớ	Dual\r\nRAM	DDR4 2666/2400/2133 MHz Non-ECC, Un-buffered Memory\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nuATX Form Factor\r\n21.34 cm x 17.78 cm\r\nĐồ Họa và Âm Thanh\r\nAudio	Realtek® ALC887 8-Channel High Definition Audio CODEC\r\nCard đồ họa tích hợp	Integrated Graphics Processor- Intel® HD Graphics support\r\nKết Nối Mạng\r\nLAN	Realtek® RTL8111H, 1 x Gigabit LAN Controller(s)\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\n1 x PS/2 keyboard (purple)\r\n1 x PS/2 mouse (green)\r\nRJ45	\r\nUSB 2.0	6 x USB 2.0\r\nUSB 3.1	4 x USB 3.1 Gen 1\r\nCổng Audio	3 x Audio jack(s)\r\nDVI-D	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	4\r\nPCI-EX1	1 x PCIe 2.0 x1\r\nPCI-EX16	1 x PCIe 3.0/2.0 x16\r\n', 'image/Image_Product/Mainboard_image/Mainboard_ASUS%20Prime%20B460M-A%20(2).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASUS%20Prime%20B460M-A%20(3).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASUS%20Prime%20B460M-A%20(4).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASUS%20Prime%20B460M-A%20(5).jpg', '', '2020-07-06 06:51:54'),
-('6_A04', 6, 'ASRock B360 Gaming K4', 2789000, 'Socket	LGA 1151-v2\r\nChipset	Intel® B360\r\nCPU (hỗ trợ tối đa)	Supports 8th Generation Intel® Core™ Processors\r\nBIOS	\r\n128Mb AMI UEFI Legal BIOS with multilingual GUI support\r\nACPI 6.0 Compliant wake up events\r\nSMBIOS 2.7 Support\r\nCPU Core/Cache, GT Core/Cache, DRAM, PCH 1.0V, VCCIO, VCCST, VCCSA, VCCPLL, CPU Internal PLL, GT PLL, Ring PLL, System Agent PLL, Memory Controller PLL Voltage Multi-adjustment\r\nOS hỗ trợ	Microsoft® Windows® 10 64-bit\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	64 GB\r\nSố khe cắm	4\r\nKênh bộ nhớ	Dual\r\nRAM	DDR4 2666 / 2400 / 2133\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nATX Form Factor\r\n12.0-in x 9.6-in, 30.5 cm x 24.4 cm\r\nĐồ Họa và Âm Thanh\r\nAudio	7.1 CH HD Audio with Content Protection (Realtek ALC1220 Audio Codec)\r\nCông nghệ đa card đồ họa	Supports AMD Quad CrossFireX™ and CrossFireX™\r\nKết Nối Mạng\r\nLAN	\r\nGigabit LAN 10/100/1000 Mb/s\r\nGiga PHY Intel® I219V\r\nSupports Wake-On-LAN\r\nSupports Lightning/ESD Protection\r\nSupports Energy Efficient Ethernet 802.3az\r\nSupports PXE\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\nRJ45	\r\nUSB 2.0	\r\nMặt trước: đang cập nhật\r\nMặt sau: 2\r\nUSB 3.1	\r\nMặt trước: đang cập nhật\r\nMặt sau: 1 x Gen2 Type-A, 2 x Gen1\r\nUSB-C	\r\nMặt trước: đang cập nhật\r\nMặt sau: 1 x Gen2 Type-C\r\nCổng Audio	\r\nHD Audio Jacks: Rear Speaker / Central / Bass / Line in / Front Speaker / Microphone (Gold Audio Jacks)\r\n1 x Optical SPDIF Out Port\r\nVGA	\r\nHDMI	\r\nDisplay Port	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	6\r\nM.2 SLOT	2\r\nPCI-EX1	4\r\nPCI-EX16	2\r\n', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4.jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20(2).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20(3).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20(4).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20(5).jpg', '2020-07-06 06:51:54'),
-('6_A05', 6, 'ASUS ROG STRIX B360-F GAMING', 3199000, 'Socket	1151\r\nChipset	Intel® B360\r\nBIOS	1 x 128 Mb Flash ROM, UEFI AMI BIOS, PnP, SM BIOS 3.1, ACPI 6.1, Multi-language BIOS, ASUS EZ Flash 3, CrashFree BIOS 3, Secure Erase, User Profile, F6 Qfan Control, F3 My Favorites, Last Modified log, F12 PrintScreen, , F4 AURA ON/OFF and F9 Search\r\nOS hỗ trợ	Windows® 10 64-bit\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	64 GB\r\nSố khe cắm	4\r\nKênh bộ nhớ	Dual\r\nRAM	2666/2400/2133 MHz Không ECC, Không Đệm Bộ nhớ\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nATX Form Factor\r\n30.5 cm x 24.4 cm\r\nĐồ Họa và Âm Thanh\r\nAudio	ROG SupremeFX 8-Channel High Definition Audio CODEC S1220A\r\nCông nghệ đa card đồ họa	Supports AMD 2-Way CrossFireX Technology\r\nKết Nối Mạng\r\nLAN	\r\nIntel® I219V, 1 x Gigabit LAN Controller\r\nAnti-surge LANGuard\r\nROG GameFirst Technology\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\nRJ45	\r\nUSB 2.0	6 x USB 2.0 port(s) (4 at back panel, black, 2 at mid-board)\r\nUSB 3.1	\r\n2 x USB 3.1 Gen 2 port(s) (2 at back panel, red, Type-A, Support 3A power output)\r\n2 x USB 3.1 Gen 1 port(s) (2 at mid-board)\r\nUSB-C	1 x USB 3.1 Gen 2 port(s) (1 at back panel, black, USB Type-CTM, Support 3A power output)\r\nCổng Audio	\r\n1 x Optical S/PDIF out\r\n5 x Audio jack(s)\r\nDVI-D	\r\nHDMI	\r\nDisplay Port	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	6\r\nM.2 SLOT	2\r\nPCI-EX1	4\r\nPCI-EX4	\r\nPCI-EX16\r\n', 'image\\Image_Product\\Mainboard_image\\Mainboard_ASRock B360 Gaming K4.jpg', 'image\\Image_Product\\Mainboard_image\\Mainboard_ASRock B360 Gaming K4 (2).jpg', 'image\\Image_Product\\Mainboard_image\\Mainboard_ASRock B360 Gaming K4 (3).jpg', 'image\\Image_Product\\Mainboard_image\\Mainboard_ASRock B360 Gaming K4 (4).jpg', 'image\\Image_Product\\Mainboard_image\\Mainboard_ASRock B360 Gaming K4 (5).jpg', '2020-07-06 06:54:40');
+INSERT INTO `tbmainboard` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Tong_quan`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `dateIn`) VALUES
+('6_A01', 6, 'Gigabyte H310M H', 1699000, 'Socket	LGA1151\r\nChipset	Intel® H310 Express Chipset\r\nCPU (hỗ trợ tối đa)	Support for 9th and 8th Generation Intel® Core™ i9 processors/Intel® Core™ i7 processors/Intel® Core™ i5 processors/Intel® Core™ i3 processors/Intel® Pentium® processors/Intel® Celeron® processors\r\nBIOS	\r\n1 x 128 Mbit flash\r\nUse of licensed AMI UEFI BIOS\r\nPnP 1.0a, DMI 2.7, WfM 2.0, SM BIOS 2.7, ACPI 5.0\r\nOS hỗ trợ	Support for Windows 10 64-bit\r\n\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	32 GB\r\n\r\nSố khe cắm	2\r\nKênh bộ nhớ	Dual\r\nRAM	Support for DDR4 2666/2400/2133 MHz memory modules\r\n\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nMicro ATX Form Factor\r\n22.6cm x 17.4cm\r\nĐồ Họa và Âm Thanh\r\nAudio	\r\nRealtek® ALC887 codec\r\nHigh Definition Audio\r\n2/4/5.1/7.1-channel\r\n* To configure 7.1-channel audio, you have to use an HD front panel audio module and enable the multi-channel audio feature through the audio driver.\r\n\r\nKết Nối Mạng\r\nLAN	Realtek® GbE LAN chip (10/100/1000 Mbit)\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\nRJ45	\r\nUSB 2.0	4\r\nUSB 3.1	2 x USB 3.1 Gen 1 ports\r\nCổng Audio	3 x audio jacks\r\nVGA	1 x D-Sub port\r\nHDMI	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	4\r\nPCI-EX1	2\r\nPCI-EX16\r\n', 'image/Image_Product/Mainboard_image/Gigabyte%20Z390%20AORUS%20Xtreme%20(2).jpg', 'image/Image_Product/Mainboard_image/Gigabyte%20Z390%20AORUS%20Xtreme%20(3).jpg', 'image/Image_Product/Mainboard_image/Gigabyte%20Z390%20AORUS%20Xtreme%20(4).jpg', 'image/Image_Product/Mainboard_image/Gigabyte%20Z390%20AORUS%20Xtreme%20(5).jpg', '', '2020-07-06'),
+('6_A02', 6, 'ASRock H310M-HDV', 1670000, 'Socket	Socket 1151\r\nChipset	Intel® H310\r\nCPU (hỗ trợ tối đa)	Supports 8th Generation Intel® Core™ Processors\r\nBIOS	\r\n128Mb AMI UEFI Legal BIOS with multilingual GUI support\r\nACPI 6.0 Compliant wake up events\r\nSMBIOS 2.7 Support\r\nDRAM, PCH 1.05V Voltage Multi-adjustment\r\nOS hỗ trợ	Microsoft® Windows® 10 64-bit\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	32 GB\r\nSố khe cắm	2\r\nKênh bộ nhớ	Dual\r\nRAM	DDR4 2666 / 2400 / 2133\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nMicro ATX Form Factor\r\n7.5-in x 7.4-in, 19.1 cm x 18.8 cm\r\nSolid Capacitor design\r\nĐồ Họa và Âm Thanh\r\nAudio	7.1 CH HD Audio (Realtek ALC887 Audio Codec)\r\nKết Nối Mạng\r\nLAN	\r\nPCIE x1 Gigabit LAN 10/100/1000 Mb/s\r\n1 x Realtek RTL8111H\r\nSupports Wake-On-LAN\r\nSupports Lightning/ESD Protection\r\nSupports Energy Efficient Ethernet 802.3az\r\nSupports PXE\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\nRJ45	\r\nUSB 2.0	\r\nMặt trước: đang cập nhật\r\nMặt sau: 4\r\nUSB 3.1	\r\nMặt trước: đang cập nhật\r\nMặt sau: 2 x Gen1\r\nCổng Audio	HD Audio Jacks: Line in / Front Speaker / Microphone\r\nVGA	\r\nDVI-D	\r\nHDMI	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	4\r\nPCI-EX1	\r\nPCI-EX16\r\n', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV.jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20(2).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20(3).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20(4).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20H310M-HDV%20(5).jpg', '2020-07-06'),
+('6_A03', 6, 'Asus Prime H310M-F R2.0', 1390000, 'Socket	Socket 1151\r\nChipset	Intel® H310\r\nCPU (hỗ trợ tối đa)	9th / 8th Gen Intel® Core™, Pentium® Gold and Celeron® Processors\r\nBIOS	64 Mb Flash ROM, UEFI AMI BIOS, PnP, SM BIOS 3.1, ACPI 6.1, Multi-languageBIOS, ASUS EZ Flash 3, CrashFree BIOS 3, F6 Qfan Control, F3 MyFavorites, Last Modified log, F12 PrintScreen, and ASUS DRAM SPD (SerialPresence Detect) memory information\r\nOS hỗ trợ	Windows® 10 64-bit\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	32GB\r\nSố khe cắm	2 x DIMM\r\nKênh bộ nhớ	Dual\r\nRAM	DDR4 2666/2400/2133 MHz Non-ECC, Un-buffered Memory\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nuATX Form Factor\r\n21.34 cm x 17.78 cm\r\nĐồ Họa và Âm Thanh\r\nAudio	Realtek® ALC887 8-Channel High Definition Audio CODEC\r\nCard đồ họa tích hợp	Integrated Graphics Processor- Intel® HD Graphics support\r\nKết Nối Mạng\r\nLAN	Realtek® RTL8111H, 1 x Gigabit LAN Controller(s)\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\n1 x PS/2 keyboard (purple)\r\n1 x PS/2 mouse (green)\r\nRJ45	\r\nUSB 2.0	6 x USB 2.0\r\nUSB 3.1	4 x USB 3.1 Gen 1\r\nCổng Audio	3 x Audio jack(s)\r\nDVI-D	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	4\r\nPCI-EX1	1 x PCIe 2.0 x1\r\nPCI-EX16	1 x PCIe 3.0/2.0 x16\r\n', 'image/Image_Product/Mainboard_image/Mainboard_ASUS%20Prime%20B460M-A%20(2).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASUS%20Prime%20B460M-A%20(3).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASUS%20Prime%20B460M-A%20(4).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASUS%20Prime%20B460M-A%20(5).jpg', '', '2020-07-06'),
+('6_A04', 6, 'ASRock B360 Gaming K4', 2789000, 'Socket	LGA 1151-v2\r\nChipset	Intel® B360\r\nCPU (hỗ trợ tối đa)	Supports 8th Generation Intel® Core™ Processors\r\nBIOS	\r\n128Mb AMI UEFI Legal BIOS with multilingual GUI support\r\nACPI 6.0 Compliant wake up events\r\nSMBIOS 2.7 Support\r\nCPU Core/Cache, GT Core/Cache, DRAM, PCH 1.0V, VCCIO, VCCST, VCCSA, VCCPLL, CPU Internal PLL, GT PLL, Ring PLL, System Agent PLL, Memory Controller PLL Voltage Multi-adjustment\r\nOS hỗ trợ	Microsoft® Windows® 10 64-bit\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	64 GB\r\nSố khe cắm	4\r\nKênh bộ nhớ	Dual\r\nRAM	DDR4 2666 / 2400 / 2133\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nATX Form Factor\r\n12.0-in x 9.6-in, 30.5 cm x 24.4 cm\r\nĐồ Họa và Âm Thanh\r\nAudio	7.1 CH HD Audio with Content Protection (Realtek ALC1220 Audio Codec)\r\nCông nghệ đa card đồ họa	Supports AMD Quad CrossFireX™ and CrossFireX™\r\nKết Nối Mạng\r\nLAN	\r\nGigabit LAN 10/100/1000 Mb/s\r\nGiga PHY Intel® I219V\r\nSupports Wake-On-LAN\r\nSupports Lightning/ESD Protection\r\nSupports Energy Efficient Ethernet 802.3az\r\nSupports PXE\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\nRJ45	\r\nUSB 2.0	\r\nMặt trước: đang cập nhật\r\nMặt sau: 2\r\nUSB 3.1	\r\nMặt trước: đang cập nhật\r\nMặt sau: 1 x Gen2 Type-A, 2 x Gen1\r\nUSB-C	\r\nMặt trước: đang cập nhật\r\nMặt sau: 1 x Gen2 Type-C\r\nCổng Audio	\r\nHD Audio Jacks: Rear Speaker / Central / Bass / Line in / Front Speaker / Microphone (Gold Audio Jacks)\r\n1 x Optical SPDIF Out Port\r\nVGA	\r\nHDMI	\r\nDisplay Port	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	6\r\nM.2 SLOT	2\r\nPCI-EX1	4\r\nPCI-EX16	2\r\n', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4.jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20(2).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20(3).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20(4).jpg', 'image/Image_Product/Mainboard_image/Mainboard_ASRock%20B360%20Gaming%20K4%20(5).jpg', '2020-07-06'),
+('6_A05', 6, 'ASUS ROG STRIX B360-F GAMING', 3199000, 'Socket	1151\r\nChipset	Intel® B360\r\nBIOS	1 x 128 Mb Flash ROM, UEFI AMI BIOS, PnP, SM BIOS 3.1, ACPI 6.1, Multi-language BIOS, ASUS EZ Flash 3, CrashFree BIOS 3, Secure Erase, User Profile, F6 Qfan Control, F3 My Favorites, Last Modified log, F12 PrintScreen, , F4 AURA ON/OFF and F9 Search\r\nOS hỗ trợ	Windows® 10 64-bit\r\nBộ Nhớ\r\nBộ nhớ RAM tối đa	64 GB\r\nSố khe cắm	4\r\nKênh bộ nhớ	Dual\r\nRAM	2666/2400/2133 MHz Không ECC, Không Đệm Bộ nhớ\r\nNguồn\r\nKích thước nguồn hỗ trợ	\r\nATX Form Factor\r\n30.5 cm x 24.4 cm\r\nĐồ Họa và Âm Thanh\r\nAudio	ROG SupremeFX 8-Channel High Definition Audio CODEC S1220A\r\nCông nghệ đa card đồ họa	Supports AMD 2-Way CrossFireX Technology\r\nKết Nối Mạng\r\nLAN	\r\nIntel® I219V, 1 x Gigabit LAN Controller\r\nAnti-surge LANGuard\r\nROG GameFirst Technology\r\nCổng Kết Nối\r\nPS/2 keyboard/ mouse combo port	\r\nRJ45	\r\nUSB 2.0	6 x USB 2.0 port(s) (4 at back panel, black, 2 at mid-board)\r\nUSB 3.1	\r\n2 x USB 3.1 Gen 2 port(s) (2 at back panel, red, Type-A, Support 3A power output)\r\n2 x USB 3.1 Gen 1 port(s) (2 at mid-board)\r\nUSB-C	1 x USB 3.1 Gen 2 port(s) (1 at back panel, black, USB Type-CTM, Support 3A power output)\r\nCổng Audio	\r\n1 x Optical S/PDIF out\r\n5 x Audio jack(s)\r\nDVI-D	\r\nHDMI	\r\nDisplay Port	\r\nKết Nối I/O Bên Trong\r\nSATA III 6Gb/s	6\r\nM.2 SLOT	2\r\nPCI-EX1	4\r\nPCI-EX4	\r\nPCI-EX16\r\n', 'image\\Image_Product\\Mainboard_image\\Mainboard_ASRock B360 Gaming K4.jpg', 'image\\Image_Product\\Mainboard_image\\Mainboard_ASRock B360 Gaming K4 (2).jpg', 'image\\Image_Product\\Mainboard_image\\Mainboard_ASRock B360 Gaming K4 (3).jpg', 'image\\Image_Product\\Mainboard_image\\Mainboard_ASRock B360 Gaming K4 (4).jpg', 'image\\Image_Product\\Mainboard_image\\Mainboard_ASRock B360 Gaming K4 (5).jpg', '2020-07-06');
 
 -- --------------------------------------------------------
 
@@ -590,14 +590,14 @@ CREATE TABLE IF NOT EXISTS `tbpccaselist` (
   `idClass` int(100) NOT NULL,
   `nameProduct` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `rate` int(100) NOT NULL,
-  `Hỗ trợ quạt` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Khe tản nhiệt hỗ trợ` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Ho_tro_quat` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Khe_tan_nhiet` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo1` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo2` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo3` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo4` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo5` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `DateIn` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `DateIn` date DEFAULT NULL,
   PRIMARY KEY (`idProduct`),
   KEY `tblistclass` (`idClass`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
@@ -606,17 +606,17 @@ CREATE TABLE IF NOT EXISTS `tbpccaselist` (
 -- Dumping data for table `tbpccaselist`
 --
 
-INSERT INTO `tbpccaselist` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Hỗ trợ quạt`, `Khe tản nhiệt hỗ trợ`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `DateIn`) VALUES
-('7_A01', 7, 'Corsair iCUE 465X RGB Smart Case', 3400000, '-Trước :3 x 120mm / 2 x 140mm\r\n-Trên đỉnh :2 x 120mm / 1 x 140mm\r\n-Sau : 1 x 120mm', '-Mặt trước :1 x 280mm / 1 x 360mm\r\n-Mặt trên :1 x 240mm\r\n-Mặt sau :1 x 120mm', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_1a.png', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_1b.png', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_1c.png', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_1e.png', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_1d.png', '0000-00-00 00:00:00'),
-('7_A02', 7, 'Corsair iCUE 220T RGB Airflow Tempered Glass', 2550000, '-Trước: 3 x 120mm / 2 x 140mm\r\n-Trên đỉnh :2 x 120mm / 2 x 140mm\r\n-Sau :1 x 120mm', NULL, 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_2a.png', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_2b.png', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_2c.png', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_2d.png', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_2e.png', '0000-00-00 00:00:00'),
-('7_A03', 7, 'Cooler Master MasterBox TD500 Mesh White ARGB with controller', 2220000, '-Trước :3x 120mm, 2x 140mm\r\n-Trên đỉnh :3x 120mm, 2x 140mm\r\n-Sau :1x 120mm', '-Mặt trước :120mm, 140mm, 240mm, 280mm, 360mm\r\n-Mặt trên :120mm, 240mm, 360mm, (44mm max motherboard component height)\r\n-Mặt sau :120mm', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_1a.png', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_1b.png', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_1c.png', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_1d.png', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_1e.png', '0000-00-00 00:00:00'),
-('7_A04', 7, 'Cooler Master MasterBox TD500 Mesh ARGB with controller', 2220000, '-Trước :3x 120mm, 2x 140mm\r\n-Trên đỉnh :3x 120mm, 2x 140mm\r\n-Sau :1x 120mm', '-Mặt trước :120mm, 140mm, 240mm, 280mm, 360mm\r\n-Mặt trên :120mm, 240mm, 360mm, (44mm max motherboard component height)\r\n-Mặt sau :120mm', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_2a.png', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_2b.png', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_2c.png', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_2d.png', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_2e.png', '0000-00-00 00:00:00'),
-('7_A05', 7, 'Thermaltake H200 TG Snow RGB', 1980000, '-Trước : 3 x 120mm , 2 x 140mm\r\n-Trên đỉnh : 2 x 120mm , 2x 140mm\r\n-Sau :1 x 120mm , 1 x 140mm', '-Mặt trước :1 x 240mm , 1 x 280mm\r\n-Mặt trên :1 x 240mm', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_1a.png', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_1b.png', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_1c.png', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_1d.png', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_1e.png', '0000-00-00 00:00:00'),
-('7_A06', 7, 'Thermaltake H200 TG RGB', 1820000, '-Trước :3 x 120mm , 2 x 140mm\r\n-Trên đỉnh :2 x 120mm , 2x 140mm\r\n-Sau \"1 x 120mm , 1 x 140mm', '-Mặt trước :1 x 240mm , 1 x 280mm\r\n-Mặt trên :1 x 240mm', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_2a.png', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_2b.png', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_2c.png', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_2d.png', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_2e.png', '0000-00-00 00:00:00'),
-('7_A07', 7, 'Xigmatek Aquarius Plus', 1999000, '-Bên hông :Mainboard side: 3 x 120 mm\r\n-Trên đỉnh :3 x 120 mm\r\n-Ở dưới đáy :3 x 120 mm\r\n-Sau :1 x 120 mm', NULL, 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_1a.png', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_1b.png', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_1c.png', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_1d.png', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_1e.png', '0000-00-00 00:00:00'),
-('7_A08', 7, 'Xigmatek Sirocon III', 888000, '-Trước :3 x 120 mm / 2 x 140mm\r\n-Trên đỉnh :2 x 120 mm / 2 x 140 mm\r\n-Sau :1 x 120 mm', '-Mặt trước :240 mm\r\n-Mặt trên :240 mm\r\n-Mặt sau :120 mm', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_2a.png', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_2b.png', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_2c.png', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_2d.png', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_2e.png', '0000-00-00 00:00:00'),
-('7_A09', 7, 'NZXT H510 Elite', 3900000, '-Trước :2x 120 mm / 2x 140 mm\r\n-Trên đỉnh :1x 120 mm / 1x 140 mm\r\n-Sau : 1x 120 mm', '-Trươc: 2x 140 or 2x 120mm with Pull\r\n-Sau: 1x 120mm', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_1a.png', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_1b.png', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_1c.png', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_1d.png', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_1e.png', '0000-00-00 00:00:00'),
-('7_A10', 7, 'NZXT H510 Matte White', 1890000, '-Trước :2 x 120/ 2 x 140mm\r\n-Trên đỉnh :1x 120mm/ 1x 140mm (1 Aer F120 Case Version included)\r\n-Sau :1x 120mm (1 Aer F120 Case Version included)', '-Mặt trước :2x 140 or 2x 120mm with Pull\r\n-Mặt sau :1x 120mm', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_2a.png', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_2b.png', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_2c.png', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_2c.png', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_2e.png', '0000-00-00 00:00:00');
+INSERT INTO `tbpccaselist` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Ho_tro_quat`, `Khe_tan_nhiet`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `DateIn`) VALUES
+('7_A01', 7, 'Corsair iCUE 465X RGB Smart Case', 3400000, '-Trước :3 x 120mm / 2 x 140mm\r\n-Trên đỉnh :2 x 120mm / 1 x 140mm\r\n-Sau : 1 x 120mm', '-Mặt trước :1 x 280mm / 1 x 360mm\r\n-Mặt trên :1 x 240mm\r\n-Mặt sau :1 x 120mm', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_1a.png', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_1b.png', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_1c.png', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_1e.png', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_1d.png', '0000-00-00'),
+('7_A02', 7, 'Corsair iCUE 220T RGB Airflow Tempered Glass', 2550000, '-Trước: 3 x 120mm / 2 x 140mm\r\n-Trên đỉnh :2 x 120mm / 2 x 140mm\r\n-Sau :1 x 120mm', NULL, 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_2a.png', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_2b.png', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_2c.png', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_2d.png', 'image/Image_Product/CPU_Case_Image/PCCase_Corsair_2e.png', '0000-00-00'),
+('7_A03', 7, 'Cooler Master MasterBox TD500 Mesh White ARGB with controller', 2220000, '-Trước :3x 120mm, 2x 140mm\r\n-Trên đỉnh :3x 120mm, 2x 140mm\r\n-Sau :1x 120mm', '-Mặt trước :120mm, 140mm, 240mm, 280mm, 360mm\r\n-Mặt trên :120mm, 240mm, 360mm, (44mm max motherboard component height)\r\n-Mặt sau :120mm', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_1a.png', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_1b.png', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_1c.png', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_1d.png', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_1e.png', '0000-00-00'),
+('7_A04', 7, 'Cooler Master MasterBox TD500 Mesh ARGB with controller', 2220000, '-Trước :3x 120mm, 2x 140mm\r\n-Trên đỉnh :3x 120mm, 2x 140mm\r\n-Sau :1x 120mm', '-Mặt trước :120mm, 140mm, 240mm, 280mm, 360mm\r\n-Mặt trên :120mm, 240mm, 360mm, (44mm max motherboard component height)\r\n-Mặt sau :120mm', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_2a.png', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_2b.png', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_2c.png', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_2d.png', 'image/Image_Product/CPU_Case_Image/PCCase_CoolerMaster_2e.png', '0000-00-00'),
+('7_A05', 7, 'Thermaltake H200 TG Snow RGB', 1980000, '-Trước : 3 x 120mm , 2 x 140mm\r\n-Trên đỉnh : 2 x 120mm , 2x 140mm\r\n-Sau :1 x 120mm , 1 x 140mm', '-Mặt trước :1 x 240mm , 1 x 280mm\r\n-Mặt trên :1 x 240mm', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_1a.png', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_1b.png', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_1c.png', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_1d.png', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_1e.png', '0000-00-00'),
+('7_A06', 7, 'Thermaltake H200 TG RGB', 1820000, '-Trước :3 x 120mm , 2 x 140mm\r\n-Trên đỉnh :2 x 120mm , 2x 140mm\r\n-Sau \"1 x 120mm , 1 x 140mm', '-Mặt trước :1 x 240mm , 1 x 280mm\r\n-Mặt trên :1 x 240mm', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_2a.png', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_2b.png', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_2c.png', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_2d.png', 'image/Image_Product/CPU_Case_Image/PCCase_Themaltake_2e.png', '0000-00-00'),
+('7_A07', 7, 'Xigmatek Aquarius Plus', 1999000, '-Bên hông :Mainboard side: 3 x 120 mm\r\n-Trên đỉnh :3 x 120 mm\r\n-Ở dưới đáy :3 x 120 mm\r\n-Sau :1 x 120 mm', NULL, 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_1a.png', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_1b.png', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_1c.png', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_1d.png', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_1e.png', '0000-00-00'),
+('7_A08', 7, 'Xigmatek Sirocon III', 888000, '-Trước :3 x 120 mm / 2 x 140mm\r\n-Trên đỉnh :2 x 120 mm / 2 x 140 mm\r\n-Sau :1 x 120 mm', '-Mặt trước :240 mm\r\n-Mặt trên :240 mm\r\n-Mặt sau :120 mm', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_2a.png', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_2b.png', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_2c.png', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_2d.png', 'image/Image_Product/CPU_Case_Image/PCCase_Xigmatek_2e.png', '0000-00-00'),
+('7_A09', 7, 'NZXT H510 Elite', 3900000, '-Trước :2x 120 mm / 2x 140 mm\r\n-Trên đỉnh :1x 120 mm / 1x 140 mm\r\n-Sau : 1x 120 mm', '-Trươc: 2x 140 or 2x 120mm with Pull\r\n-Sau: 1x 120mm', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_1a.png', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_1b.png', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_1c.png', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_1d.png', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_1e.png', '0000-00-00'),
+('7_A10', 7, 'NZXT H510 Matte White', 1890000, '-Trước :2 x 120/ 2 x 140mm\r\n-Trên đỉnh :1x 120mm/ 1x 140mm (1 Aer F120 Case Version included)\r\n-Sau :1x 120mm (1 Aer F120 Case Version included)', '-Mặt trước :2x 140 or 2x 120mm with Pull\r\n-Mặt sau :1x 120mm', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_2a.png', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_2b.png', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_2c.png', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_2c.png', 'image/Image_Product/CPU_Case_Image/PCCase_NZXT_2e.png', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -630,14 +630,14 @@ CREATE TABLE IF NOT EXISTS `tbpcmonitor` (
   `idClass` int(100) NOT NULL,
   `nameProduct` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `rate` int(100) NOT NULL,
-  `Tong quan` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Cong ket noi` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Tong_quan` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Cong_ket_noi` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `photo1` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `photo2` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `photo3` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `photo4` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `photo5` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
-  `DateIn` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `DateIn` date DEFAULT NULL,
   PRIMARY KEY (`idProduct`),
   KEY `idClass` (`idClass`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -646,17 +646,17 @@ CREATE TABLE IF NOT EXISTS `tbpcmonitor` (
 -- Dumping data for table `tbpcmonitor`
 --
 
-INSERT INTO `tbpcmonitor` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Tong quan`, `Cong ket noi`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `DateIn`) VALUES
-('8_A01', 8, 'Acer Predator X35 - 35in cong VA 180Hz', 90990000, '-Kích thước màn hình :35-inch\r\n-Độ phân giải :UW-QHD 3440 x 1440\r\n-Tỉ lệ màn hình :21:9\r\n-Góc nhìn :178° / 178°\r\n-Độ sáng:\r\n    1000 Nit - Peak (HDR Mode)\r\n    600 Nit - Native\r\n\r\n-Tấm nền :Vertical A', '-HDMI 	\r\n-USB 3.0 	\r\n-Displayport ver 1.4\r\n', 'image/Image_Product/Monitor-image/PCMonitor_Acer_1a.png', 'image/Image_Product/Monitor-image/PCMonitor_Acer_1b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_1c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_1d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_1e.png', '0000-00-00 00:00:00'),
-('8_A010', 8, 'LG 34GL750 34inch IPS 144Hz cong', 14990000, '-Kích thước màn hình :	34-inch cong\r\n-Độ phân giải :	UWFHD 2560 x 1080\r\n-Tỉ lệ màn hình :21:9\r\n-Góc nhìn :178º (R/L), 178º (U/D)\r\n-Độ sáng :300cd (typ) / 240cd (Min)\r\n-Tấm nền :IPS Haze 1%, 3H\r\n-Kích ', '-Displayport ver 1.2 	\r\n-HDMI :2 x HDMI 2.0\r\n-3.5mm 	', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2a.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2b.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2c.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2d.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2e.png', '0000-00-00 00:00:00'),
-('8_A02', 8, 'Acer HA270B - 27in IPS FHD', 4590000, 'Kích thước màn hình :27-inch\r\n-Độ phân giải :FHD 1920 x 1080\r\n-Tỉ lệ màn hình :16:9\r\n-Góc nhìn :178° / 178°\r\n-Mật độ điểm ảnh ( PPI ) :81 ppi\r\n-Độ sáng \"250 nits\r\n-Tấm nền :IPS\r\n-Kích cỡ điểm ảnh :0.3', '-HDMI 	1 x HDMI 1.4\r\n-3.5mm 	\r\n-D-Sub 	\r\n', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_2a.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_2b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_2c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_2d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_2e.png', '0000-00-00 00:00:00'),
-('8_A03', 8, 'ASUS ROG Swift PG65UQ - 65in 4K UHD 144Hz', 169990000, '-Kích thước màn hình :64.5“\r\n-Độ phân giải :UHD 3840x2160\r\n-Tỉ lệ màn hình :16:9\r\n-Góc nhìn :178°(H)/178°(V)\r\n-Mật độ điểm ảnh ( PPI ) :68 ppi\r\n-Độ sáng :1000 cd/㎡ (Peak)\r\n-Tấm nền :VA\r\n-Kích cỡ điểm ', '-HDMI :4 x HDMI 2.0\r\n-USB 3.0 :2\r\n-Displayport ver 1.4 	\r\n', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_1a.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_1b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_1c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_1d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_1e.png', '0000-00-00 00:00:00'),
-('8_A04', 8, 'ASUS ROG Strix XG49VQ - 49in DFHD 144Hz', 26490000, '-Kích thước màn hình :Super ultra-wide 49-inch (124.46cm) cong 1800R\r\n-Độ phân giải :	DFHD 3840x1080\r\n-Tỉ lệ màn hình :32:9\r\n-Góc nhìn :178°(H)/178°(V)\r\n-Độ sáng :450 cd/㎡ (Typical)\r\n-Tấm nền :VA\r\n-Kí', 'Displayport ver 1.2 	\r\nHDMI :\r\n    HDMI(v2.0) x 1\r\n    HDMI 1.4 x 2\r\nUSB 3.0 :2\r\n', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_2a.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_2b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_2c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_2d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_2e.png', '0000-00-00 00:00:00'),
-('8_A05', 8, 'Dell UltraSharp 27 4K HDR Monitor UP2718Q', 38020000, '-Kích thước màn hình :\"27\"\r\n-Độ phân giải :3840 x 2160\r\n-Tỉ lệ màn hình	16:9\r\n-Độ sáng :400 cd/m² (typical), 1,000 cd/m² (peak)\r\n-Kích cỡ điểm ảnh :0.1554 mm x 0.1554 mm\r\n-Độ phản hồi :6ms (gray to gr', '-Displayport ver 1.2 	\r\n-Mini Displayport Ver 1.2 	\r\n-HDMI : 2 cổng', 'image/Image_Product/Monitor-image/PCMonitor_Dell_1a.png', 'image/Image_Product/Monitor-image/PCMonitor_Dell_1b.png', 'image/Image_Product/Monitor-image/PCMonitor_Dell_1c.png', 'image/Image_Product/Monitor-image/PCMonitor_Dell_1d.png', 'image/Image_Product/Monitor-image/PCMonitor_Dell_1e.png', '0000-00-00 00:00:00'),
-('8_A06', 8, 'Dell Ultrasharp U2419HC', 6230000, '-Thương hiệu :Dell\r\n-Sản xuất tại :Trung Quốc\r\n-Kích thước :	\r\n    With stand (H x W x D): 34.84 - 47.84 x 53.85 x 16.5 cm\r\n    Without stand (H x W x D): 31.37 x 53.85 x 3.9 cm\r\n-Model: U2419HC\r\n-Màn', '-HDMI, Displayport, USB 3.0, USB C', 'Image/Image_Product/Monitor-image/PCMonitor_Dell_2a.png', 'Image/Image_Product/Monitor-image/PCMonitor_Dell_2b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Dell_2c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Dell_2d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Dell_2e.png', '0000-00-00 00:00:00'),
-('8_A07', 8, 'SamSung LC49RG90SSE - 49in cong 2K 120Hz', 42989000, '-Kích Thước Màn Hình : 48.8\"\r\n-Dạng Màn Hình : Cong ( Curved ) 1800R\r\n-Độ Phân Giải : 5120 x 1440\r\n-Tỷ Lệ Khung Hình : 32 : 9\r\n-Tấm Nền : VA\r\n-Thời Gian Đáp Ứng : 4 (GTG)\r\n-Tần Số Quét : 120Hz\r\n-Độ Sá', '-Cổng mở rộng: 4 x USB 2.0\r\n-Cổng xuất hình: 1 x HDMI 2.0 , 2 x DisplayPort 1.4  ', 'image/Image_Product/Monitor-image/PCMonitor_Samsung_1a.png', 'image/Image_Product/Monitor-image/PCMonitor_Samsung_1b.png', 'image/Image_Product/Monitor-image/PCMonitor_Samsung_1c.png', 'image/Image_Product/Monitor-image/PCMonitor_Samsung_1d.png', 'image/Image_Product/Monitor-image/PCMonitor_Samsung_1e.png', '0000-00-00 00:00:00'),
-('8_A08', 8, 'SamSung LS34J550 - 34in 2k', 14989000, '-Screen Size (Inch):34.1\r\n-Flat / Curved	Flat\r\n-Active Display Size (HxV) (mm)	799.8 x 334.8 mm\r\n-Tỷ lệ khung hình:21:9\r\n-Tấm nền:VA\r\n-Độ sáng:300cd/m2\r\n-Độ sáng (Tối thiểu):250cd/m2\r\n-Contrast Ratio ', '-Display Port: 1 x DP 1.2\r\n-HDMI: 1 x HDMI 2.0; 1 x HDMI 1.4\r\n', 'Image/Image_Product/Monitor-image/PCMonitor_Samsung_2a.png', 'Image/Image_Product/Monitor-image/PCMonitor_Samsung_2b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Samsung_2c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Samsung_2d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Samsung_2e.png', '0000-00-00 00:00:00'),
-('8_A09', 8, 'LG UltraGear 27GL850 Nano IPS 144Hz', 16000000, '-Kích thước màn hình :	27-inch\r\n-Độ phân giải :	QHD 2560 x 1440\r\n-Tỉ lệ màn hình :16:9\r\n-Góc nhìn :178˚(R/L), 178˚(U/D)\r\n-Mật độ điểm ảnh ( PPI ) :109 ppi\r\n-Độ sáng :350cd (Điển hình)/280cd (Tối thiểu', '-HDMI: 	2 x HDMI 2.0\r\n-USB 3.0 :	\r\n    2 x USB 3.0 (downstream)\r\n    1 x USB 3.0 (upstream)\r\n', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1a.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1b.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1c.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1d.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1e.png', '0000-00-00 00:00:00');
+INSERT INTO `tbpcmonitor` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Tong_quan`, `Cong_ket_noi`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `DateIn`) VALUES
+('8_A01', 8, 'Acer Predator X35 - 35in cong VA 180Hz', 90990000, '-Kích thước màn hình :35-inch\r\n-Độ phân giải :UW-QHD 3440 x 1440\r\n-Tỉ lệ màn hình :21:9\r\n-Góc nhìn :178° / 178°\r\n-Độ sáng:\r\n    1000 Nit - Peak (HDR Mode)\r\n    600 Nit - Native\r\n\r\n-Tấm nền :Vertical A', '-HDMI 	\r\n-USB 3.0 	\r\n-Displayport ver 1.4\r\n', 'image/Image_Product/Monitor-image/PCMonitor_Acer_1a.png', 'image/Image_Product/Monitor-image/PCMonitor_Acer_1b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_1c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_1d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_1e.png', '0000-00-00'),
+('8_A010', 8, 'LG 34GL750 34inch IPS 144Hz cong', 14990000, '-Kích thước màn hình :	34-inch cong\r\n-Độ phân giải :	UWFHD 2560 x 1080\r\n-Tỉ lệ màn hình :21:9\r\n-Góc nhìn :178º (R/L), 178º (U/D)\r\n-Độ sáng :300cd (typ) / 240cd (Min)\r\n-Tấm nền :IPS Haze 1%, 3H\r\n-Kích ', '-Displayport ver 1.2 	\r\n-HDMI :2 x HDMI 2.0\r\n-3.5mm 	', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2a.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2b.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2c.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2d.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_2e.png', '0000-00-00'),
+('8_A02', 8, 'Acer HA270B - 27in IPS FHD', 4590000, 'Kích thước màn hình :27-inch\r\n-Độ phân giải :FHD 1920 x 1080\r\n-Tỉ lệ màn hình :16:9\r\n-Góc nhìn :178° / 178°\r\n-Mật độ điểm ảnh ( PPI ) :81 ppi\r\n-Độ sáng \"250 nits\r\n-Tấm nền :IPS\r\n-Kích cỡ điểm ảnh :0.3', '-HDMI 	1 x HDMI 1.4\r\n-3.5mm 	\r\n-D-Sub 	\r\n', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_2a.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_2b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_2c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_2d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Acer_2e.png', '0000-00-00'),
+('8_A03', 8, 'ASUS ROG Swift PG65UQ - 65in 4K UHD 144Hz', 169990000, '-Kích thước màn hình :64.5“\r\n-Độ phân giải :UHD 3840x2160\r\n-Tỉ lệ màn hình :16:9\r\n-Góc nhìn :178°(H)/178°(V)\r\n-Mật độ điểm ảnh ( PPI ) :68 ppi\r\n-Độ sáng :1000 cd/㎡ (Peak)\r\n-Tấm nền :VA\r\n-Kích cỡ điểm ', '-HDMI :4 x HDMI 2.0\r\n-USB 3.0 :2\r\n-Displayport ver 1.4 	\r\n', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_1a.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_1b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_1c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_1d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_1e.png', '0000-00-00'),
+('8_A04', 8, 'ASUS ROG Strix XG49VQ - 49in DFHD 144Hz', 26490000, '-Kích thước màn hình :Super ultra-wide 49-inch (124.46cm) cong 1800R\r\n-Độ phân giải :	DFHD 3840x1080\r\n-Tỉ lệ màn hình :32:9\r\n-Góc nhìn :178°(H)/178°(V)\r\n-Độ sáng :450 cd/㎡ (Typical)\r\n-Tấm nền :VA\r\n-Kí', 'Displayport ver 1.2 	\r\nHDMI :\r\n    HDMI(v2.0) x 1\r\n    HDMI 1.4 x 2\r\nUSB 3.0 :2\r\n', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_2a.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_2b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_2c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_2d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Asus_2e.png', '0000-00-00'),
+('8_A05', 8, 'Dell UltraSharp 27 4K HDR Monitor UP2718Q', 38020000, '-Kích thước màn hình :\"27\"\r\n-Độ phân giải :3840 x 2160\r\n-Tỉ lệ màn hình	16:9\r\n-Độ sáng :400 cd/m² (typical), 1,000 cd/m² (peak)\r\n-Kích cỡ điểm ảnh :0.1554 mm x 0.1554 mm\r\n-Độ phản hồi :6ms (gray to gr', '-Displayport ver 1.2 	\r\n-Mini Displayport Ver 1.2 	\r\n-HDMI : 2 cổng', 'image/Image_Product/Monitor-image/PCMonitor_Dell_1a.png', 'image/Image_Product/Monitor-image/PCMonitor_Dell_1b.png', 'image/Image_Product/Monitor-image/PCMonitor_Dell_1c.png', 'image/Image_Product/Monitor-image/PCMonitor_Dell_1d.png', 'image/Image_Product/Monitor-image/PCMonitor_Dell_1e.png', '0000-00-00'),
+('8_A06', 8, 'Dell Ultrasharp U2419HC', 6230000, '-Thương hiệu :Dell\r\n-Sản xuất tại :Trung Quốc\r\n-Kích thước :	\r\n    With stand (H x W x D): 34.84 - 47.84 x 53.85 x 16.5 cm\r\n    Without stand (H x W x D): 31.37 x 53.85 x 3.9 cm\r\n-Model: U2419HC\r\n-Màn', '-HDMI, Displayport, USB 3.0, USB C', 'Image/Image_Product/Monitor-image/PCMonitor_Dell_2a.png', 'Image/Image_Product/Monitor-image/PCMonitor_Dell_2b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Dell_2c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Dell_2d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Dell_2e.png', '0000-00-00'),
+('8_A07', 8, 'SamSung LC49RG90SSE - 49in cong 2K 120Hz', 42989000, '-Kích Thước Màn Hình : 48.8\"\r\n-Dạng Màn Hình : Cong ( Curved ) 1800R\r\n-Độ Phân Giải : 5120 x 1440\r\n-Tỷ Lệ Khung Hình : 32 : 9\r\n-Tấm Nền : VA\r\n-Thời Gian Đáp Ứng : 4 (GTG)\r\n-Tần Số Quét : 120Hz\r\n-Độ Sá', '-Cổng mở rộng: 4 x USB 2.0\r\n-Cổng xuất hình: 1 x HDMI 2.0 , 2 x DisplayPort 1.4  ', 'image/Image_Product/Monitor-image/PCMonitor_Samsung_1a.png', 'image/Image_Product/Monitor-image/PCMonitor_Samsung_1b.png', 'image/Image_Product/Monitor-image/PCMonitor_Samsung_1c.png', 'image/Image_Product/Monitor-image/PCMonitor_Samsung_1d.png', 'image/Image_Product/Monitor-image/PCMonitor_Samsung_1e.png', '0000-00-00'),
+('8_A08', 8, 'SamSung LS34J550 - 34in 2k', 14989000, '-Screen Size (Inch):34.1\r\n-Flat / Curved	Flat\r\n-Active Display Size (HxV) (mm)	799.8 x 334.8 mm\r\n-Tỷ lệ khung hình:21:9\r\n-Tấm nền:VA\r\n-Độ sáng:300cd/m2\r\n-Độ sáng (Tối thiểu):250cd/m2\r\n-Contrast Ratio ', '-Display Port: 1 x DP 1.2\r\n-HDMI: 1 x HDMI 2.0; 1 x HDMI 1.4\r\n', 'Image/Image_Product/Monitor-image/PCMonitor_Samsung_2a.png', 'Image/Image_Product/Monitor-image/PCMonitor_Samsung_2b.png', 'Image/Image_Product/Monitor-image/PCMonitor_Samsung_2c.png', 'Image/Image_Product/Monitor-image/PCMonitor_Samsung_2d.png', 'Image/Image_Product/Monitor-image/PCMonitor_Samsung_2e.png', '0000-00-00'),
+('8_A09', 8, 'LG UltraGear 27GL850 Nano IPS 144Hz', 16000000, '-Kích thước màn hình :	27-inch\r\n-Độ phân giải :	QHD 2560 x 1440\r\n-Tỉ lệ màn hình :16:9\r\n-Góc nhìn :178˚(R/L), 178˚(U/D)\r\n-Mật độ điểm ảnh ( PPI ) :109 ppi\r\n-Độ sáng :350cd (Điển hình)/280cd (Tối thiểu', '-HDMI: 	2 x HDMI 2.0\r\n-USB 3.0 :	\r\n    2 x USB 3.0 (downstream)\r\n    1 x USB 3.0 (upstream)\r\n', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1a.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1b.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1c.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1d.png', 'Image/Image_Product/Monitor-image/PCMonitor_LG_1e.png', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -670,24 +670,24 @@ CREATE TABLE IF NOT EXISTS `tbradiatorslist` (
   `idClass` int(100) NOT NULL,
   `nameProduct` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `rate` int(100) NOT NULL,
-  `CPU Socket` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Kích thước` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Tốc độ` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Số lượng` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Kích thước vật lý` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Nguồn vào` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Áp suất không khí` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Dòng không khí` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Độ ồn` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Đầu cắm` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Độ bền` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Phân loại tản nhiệt` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `CPU_Socket` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Kich_thuoc` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Toc_do` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `So Luong` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Kich_Thuoc_vat_ly` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Nguon_vao` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Ap_Xuat_khong_khi` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Dong_khong_khi` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `DO_on` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Dau_cam` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Do_Ben` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Phan_loai_tan_nhiet` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo1` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo2` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo3` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo4` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo5` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `DateIn` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `DateIn` date DEFAULT NULL,
   PRIMARY KEY (`idProduct`),
   KEY `tblistclass` (`idClass`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
@@ -696,11 +696,11 @@ CREATE TABLE IF NOT EXISTS `tbradiatorslist` (
 -- Dumping data for table `tbradiatorslist`
 --
 
-INSERT INTO `tbradiatorslist` (`idProduct`, `idClass`, `nameProduct`, `rate`, `CPU Socket`, `Kích thước`, `Tốc độ`, `Số lượng`, `Kích thước vật lý`, `Nguồn vào`, `Áp suất không khí`, `Dòng không khí`, `Độ ồn`, `Đầu cắm`, `Độ bền`, `Phân loại tản nhiệt`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `DateIn`) VALUES
-('2_A01', 2, 'Cooler Master Wraith Ripper AMD TR4', 3740000, 'TR4', '150 x 132.3 x 160.5 mm', '0-2750 RPM (PWM) ± 10%', NULL, '120 x 120 x 25 mm', '12V DC 0.45 A', NULL, '76.4 CFM (Max)', '', '4-Pin (PWM)', '0 - 38 dBA', 'Tản nhiệt khí', 'image\\Image_Product\\Radiator_image\\Air_Cooler Master Wraith Ripper AMD TR4.png', 'image\\Image_Product\\Radiator_image\\Air_Cooler Master Wraith Ripper AMD TR4 (2).png', 'image\\Image_Product\\Radiator_image\\Air_Cooler Master Wraith Ripper AMD TR4 (3).png', 'image\\Image_Product\\Radiator_image\\Air_Cooler Master Wraith Ripper AMD TR4 (4).png', 'image\\Image_Product\\Radiator_image\\Air_Cooler Master Wraith Ripper AMD TR4 (5).png', '0000-00-00 00:00:00'),
-('2_A02', 2, 'Corsair A500 Dual Fan CPU Cooler', 2900000, 'Socket', '144mm x 169mm x 171mm', '2400 RPM', '2', '120mm x 120mm x 25mm', NULL, '4.2 mm-H2O', NULL, '36 dBA', NULL, NULL, 'Tản nhiệt khí', 'image\\Image_Product\\Radiator_image\\Air_Corsair A500 Dual Fan CPU Cooler.png', 'image\\Image_Product\\Radiator_image\\Air_Corsair A500 Dual Fan CPU Cooler (2).png', 'image\\Image_Product\\Radiator_image\\Air_Corsair A500 Dual Fan CPU Cooler (3).png', 'image\\Image_Product\\Radiator_image\\Air_Corsair A500 Dual Fan CPU Cooler (4).png', 'image\\Image_Product\\Radiator_image\\Air_Corsair A500 Dual Fan CPU Cooler (5).png', '0000-00-00 00:00:00'),
-('2_A03', 2, 'DeepCool Assassin V3', 2250000, 'Socket', '161 x 140 x 165 mm', '400~1400 RPM', NULL, '140 x 140 x 25 mm', NULL, '1.79 mmAq', '90.37 CFM', '≤34.2 dB(A)', '4-pin PWM', '', 'Tản nhiệt khí', 'image\\Image_Product\\Radiator_image\\Air_DeepCool Assassin V3.jpg', 'image\\Image_Product\\Radiator_image\\Air_DeepCool Assassin V3 (2).jpg', 'image\\Image_Product\\Radiator_image\\Air_DeepCool Assassin V3 (3).jpg', 'image\\Image_Product\\Radiator_image\\Air_DeepCool Assassin V3 (4).jpg', 'image\\Image_Product\\Radiator_image\\Air_DeepCool Assassin V3 (5).jpg', '0000-00-00 00:00:00'),
-('2_A04', 2, 'ASUS ROG Ryujin 240 RGB AIO Liquid CPU Cooler', 5990000, NULL, '120 x 120 x 25 mm', NULL, NULL, NULL, NULL, '3.94 mmH2O', NULL, '29.7 dB(A) ', NULL, NULL, 'Tản nhiệt nước', 'image\\Image_Product\\Radiator_image\\Liquid_ASUS ROG Ryujin 240 RGB AIO Liquid CPU Cooler.jpg', 'image\\Image_Product\\Radiator_image\\Liquid_ASUS ROG Ryujin 240 RGB AIO Liquid CPU Cooler (4).jpg', NULL, NULL, NULL, '2020-07-06 08:23:53');
+INSERT INTO `tbradiatorslist` (`idProduct`, `idClass`, `nameProduct`, `rate`, `CPU_Socket`, `Kich_thuoc`, `Toc_do`, `So Luong`, `Kich_Thuoc_vat_ly`, `Nguon_vao`, `Ap_Xuat_khong_khi`, `Dong_khong_khi`, `DO_on`, `Dau_cam`, `Do_Ben`, `Phan_loai_tan_nhiet`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `DateIn`) VALUES
+('2_A01', 2, 'Cooler Master Wraith Ripper AMD TR4', 3740000, 'TR4', '150 x 132.3 x 160.5 mm', '0-2750 RPM (PWM) ± 10%', NULL, '120 x 120 x 25 mm', '12V DC 0.45 A', NULL, '76.4 CFM (Max)', '', '4-Pin (PWM)', '0 - 38 dBA', 'Tản nhiệt khí', 'image\\Image_Product\\Radiator_image\\Air_Cooler Master Wraith Ripper AMD TR4.png', 'image\\Image_Product\\Radiator_image\\Air_Cooler Master Wraith Ripper AMD TR4 (2).png', 'image\\Image_Product\\Radiator_image\\Air_Cooler Master Wraith Ripper AMD TR4 (3).png', 'image\\Image_Product\\Radiator_image\\Air_Cooler Master Wraith Ripper AMD TR4 (4).png', 'image\\Image_Product\\Radiator_image\\Air_Cooler Master Wraith Ripper AMD TR4 (5).png', '0000-00-00'),
+('2_A02', 2, 'Corsair A500 Dual Fan CPU Cooler', 2900000, 'Socket', '144mm x 169mm x 171mm', '2400 RPM', '2', '120mm x 120mm x 25mm', NULL, '4.2 mm-H2O', NULL, '36 dBA', NULL, NULL, 'Tản nhiệt khí', 'image\\Image_Product\\Radiator_image\\Air_Corsair A500 Dual Fan CPU Cooler.png', 'image\\Image_Product\\Radiator_image\\Air_Corsair A500 Dual Fan CPU Cooler (2).png', 'image\\Image_Product\\Radiator_image\\Air_Corsair A500 Dual Fan CPU Cooler (3).png', 'image\\Image_Product\\Radiator_image\\Air_Corsair A500 Dual Fan CPU Cooler (4).png', 'image\\Image_Product\\Radiator_image\\Air_Corsair A500 Dual Fan CPU Cooler (5).png', '0000-00-00'),
+('2_A03', 2, 'DeepCool Assassin V3', 2250000, 'Socket', '161 x 140 x 165 mm', '400~1400 RPM', NULL, '140 x 140 x 25 mm', NULL, '1.79 mmAq', '90.37 CFM', '≤34.2 dB(A)', '4-pin PWM', '', 'Tản nhiệt khí', 'image\\Image_Product\\Radiator_image\\Air_DeepCool Assassin V3.jpg', 'image\\Image_Product\\Radiator_image\\Air_DeepCool Assassin V3 (2).jpg', 'image\\Image_Product\\Radiator_image\\Air_DeepCool Assassin V3 (3).jpg', 'image\\Image_Product\\Radiator_image\\Air_DeepCool Assassin V3 (4).jpg', 'image\\Image_Product\\Radiator_image\\Air_DeepCool Assassin V3 (5).jpg', '0000-00-00'),
+('2_A04', 2, 'ASUS ROG Ryujin 240 RGB AIO Liquid CPU Cooler', 5990000, NULL, '120 x 120 x 25 mm', NULL, NULL, NULL, NULL, '3.94 mmH2O', NULL, '29.7 dB(A) ', NULL, NULL, 'Tản nhiệt nước', 'image\\Image_Product\\Radiator_image\\Liquid_ASUS ROG Ryujin 240 RGB AIO Liquid CPU Cooler.jpg', 'image\\Image_Product\\Radiator_image\\Liquid_ASUS ROG Ryujin 240 RGB AIO Liquid CPU Cooler (4).jpg', NULL, NULL, NULL, '2020-07-06');
 
 -- --------------------------------------------------------
 
@@ -715,21 +715,21 @@ CREATE TABLE IF NOT EXISTS `tbramlist` (
   `nameProduct` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `rate` int(11) NOT NULL,
   `Type` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Bus (MHz)` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Bus_MHz` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `Low` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Standard Ram` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Capacity (GB)` int(11) DEFAULT NULL,
-  `Authentication speed (MHz)` int(11) DEFAULT NULL,
-  `Certification delay` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `SPD Speed (MHz)` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `SPD Voltage` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Adding fan` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Standard_Ram` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Capacity_GB` int(11) DEFAULT NULL,
+  `Authentication_speed_MHz` int(11) DEFAULT NULL,
+  `Certification_delay` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `SPD_Speed_MHz` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `SPD_Voltage` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Adding_fan` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo1` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo2` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo3` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo4` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo5` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `DateIn` timestamp NOT NULL,
+  `DateIn` date DEFAULT NULL,
   PRIMARY KEY (`idProduct`),
   KEY `tblistclass` (`idClass`),
   KEY `idClass` (`idClass`)
@@ -739,17 +739,17 @@ CREATE TABLE IF NOT EXISTS `tbramlist` (
 -- Dumping data for table `tbramlist`
 --
 
-INSERT INTO `tbramlist` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Type`, `Bus (MHz)`, `Low`, `Standard Ram`, `Capacity (GB)`, `Authentication speed (MHz)`, `Certification delay`, `SPD Speed (MHz)`, `SPD Voltage`, `Adding fan`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `DateIn`) VALUES
-('9_A01', 9, 'Corsair Dominator', 3300000, 'Kit', '3000/3200', '15/16', 'DDR4', 16, 3000, '15-17-17-35', '2133', '1.2V', 'no', 'image/Image_Product/Ram_image/ram_Corsair_Dominator_16gb_1.png', 'image/Image_Product/Ram_image/ram_Corsair_Dominator_16gb_2.png', 'image/Image_Product/Ram_image/ram_Corsair_Dominator_16gb_4.png', 'image/Image_Product/Ram_image/ram_Corsair_Dominator_16gb_3.png', 'image/Image_Product/Ram_image/ram_Corsair_Dominator_16gb_5.png', '0000-00-00 00:00:00'),
-('9_A02', 9, 'Patriot-Viper-16gb', 3000000, 'Kit', '3000/3200/3600', '15/16/17', 'DDR4', 16, 3000, '16-18-18-38', NULL, '1.20V', NULL, 'image/Image_Product/Ram_image/ram_Patriot_Viper_16gb_1.png', 'image/Image_Product/Ram_image/ram_Patriot_Viper_16gb_2.png', 'image/Image_Product/Ram_image/ram_Patriot_Viper_16gb_3.png', NULL, NULL, '0000-00-00 00:00:00'),
-('9_A03', 9, 'TeamGroup-T-Force', 2290000, 'Kit', '3000', '16', 'DDR4', 16, 3000, '16-18-18-38', NULL, '1.20V', NULL, 'image/Image_Product/Ram_image/ram_TeamGroup_T_Force_8gb_1.png', 'image/Image_Product/Ram_image/ram_TeamGroup_T_Force_8gb_2.png', 'image/Image_Product/Ram_image/ram_TeamGroup_T_Force_8gb_4.png', 'image/Image_Product/Ram_image/ram_TeamGroup_T_Force_8gb_3.png', 'image/Image_Product/Ram_image/ram_TeamGroup_T_Force_8gb_5.png', '0000-00-00 00:00:00'),
-('9_A04', 9, 'Corsair Vangeance', 1080000, 'Kit', '2400/2666', NULL, 'DDR4', 8, 2666, '18-19-19-39', '2400', '1.2V', NULL, 'image/Image_Product/Ram_image/ram_Corsair_Vengeance_8gb_1.png', 'image/Image_Product/Ram_image/ram_Corsair_Vengeance_8gb_2.png', 'image/Image_Product/Ram_image/ram_Corsair_Vengeance_8gb_3.png', NULL, NULL, '0000-00-00 00:00:00'),
-('9_A05', 9, 'GSkill Trident', 3505000, 'Kit', '3000/3200/3600/4266/4600', '16/18/19', 'DDR4', 16, 3000, '16-18-18-38', '2133', '1.20V', NULL, 'image/Image_Product/Ram_image/ram_G.Skill_Trident_16gb_1.png', 'image/Image_Product/Ram_image/ram_G.Skill_Trident_16gb_2.png', 'image/Image_Product/Ram_image/ram_G.Skill_Trident_16gb_3.png', NULL, NULL, '0000-00-00 00:00:00'),
-('9_A06', 9, 'Galax', 1850000, 'Single', '2400', '16', 'DDR4', 8, 2400, '16-16-16-36', '2400', '1.2V', NULL, 'image/Image_Product/Ram_image/ram_Galax_Gamer_8gb_1.png', 'image/Image_Product/Ram_image/ram_Galax_Gamer_8gb_2.png', 'image/Image_Product/Ram_image/ram_Galax_Gamer_8gb_3.png', 'image/Image_Product/Ram_image/ram_Galax_Gamer_8gb_5.png', '', '0000-00-00 00:00:00'),
-('9_A07', 9, 'Galax HOF', 6190000, 'Kit', '3666/4000', NULL, 'DDR4', 16, 3000, NULL, NULL, '1.20V', NULL, 'image/Image_Product/Ram_image/ram_Galax_Gamer_8gb_6.png', 'image/Image_Product/Ram_image/ram_Galax_Gamer_8gb_7.png', '', 'TechMedia\\image\\Image_Product\\Ram_image\\ ram_gala', 'TechMedia\\image\\Image_Product\\Ram_image\\ ram_galax', '0000-00-00 00:00:00'),
-('9_A08', 9, 'GSkill-Aegis', 945000, 'Single', '2666', '19', 'DDR4', 8, 2666, '19-19-19-43', '2666', '1.20V', NULL, 'image/Image_Product/Ram_image/ram_G.Skill_Aegis_8gb_1.png', 'image/Image_Product/Ram_image/ram_G.Skill_Aegis_8gb_2.png', '', '', '', '0000-00-00 00:00:00'),
-('9_A09', 9, 'KingMax', 725000, 'Single', '2400/2666/3000', NULL, 'DDR4', 4, 2400, NULL, NULL, '1.20V', NULL, 'image/Image_Product/Ram_image/ram_kingmax_4gb.png', NULL, NULL, NULL, NULL, '0000-00-00 00:00:00'),
-('9_A10', 9, 'Patriot-Viper-8gb', 1200000, 'Single', '3000', '16', 'DDR4', 8, 3000, '16-18-18-38', NULL, '1.20V', NULL, 'image/Image_Product/Ram_image/ram_Patriot_Viper_8gb_1.png', 'image/Image_Product/Ram_image/ram_Patriot_Viper_8gb_2.png', 'image/Image_Product/Ram_image/ram_Patriot_Viper_8gb_3.png', 'image/Image_Product/Ram_image/ram_Patriot_Viper_8gb_4.png', 'image/Image_Product/Ram_image/ram_Patriot_Viper_8gb_5.png', '0000-00-00 00:00:00');
+INSERT INTO `tbramlist` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Type`, `Bus_MHz`, `Low`, `Standard_Ram`, `Capacity_GB`, `Authentication_speed_MHz`, `Certification_delay`, `SPD_Speed_MHz`, `SPD_Voltage`, `Adding_fan`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `DateIn`) VALUES
+('9_A01', 9, 'Corsair Dominator', 3300000, 'Kit', '3000/3200', '15/16', 'DDR4', 16, 3000, '15-17-17-35', '2133', '1.2V', 'no', 'image/Image_Product/Ram_image/ram_Corsair_Dominator_16gb_1.png', 'image/Image_Product/Ram_image/ram_Corsair_Dominator_16gb_2.png', 'image/Image_Product/Ram_image/ram_Corsair_Dominator_16gb_4.png', 'image/Image_Product/Ram_image/ram_Corsair_Dominator_16gb_3.png', 'image/Image_Product/Ram_image/ram_Corsair_Dominator_16gb_5.png', '0000-00-00'),
+('9_A02', 9, 'Patriot-Viper-16gb', 3000000, 'Kit', '3000/3200/3600', '15/16/17', 'DDR4', 16, 3000, '16-18-18-38', NULL, '1.20V', NULL, 'image/Image_Product/Ram_image/ram_Patriot_Viper_16gb_1.png', 'image/Image_Product/Ram_image/ram_Patriot_Viper_16gb_2.png', 'image/Image_Product/Ram_image/ram_Patriot_Viper_16gb_3.png', NULL, NULL, '0000-00-00'),
+('9_A03', 9, 'TeamGroup-T-Force', 2290000, 'Kit', '3000', '16', 'DDR4', 16, 3000, '16-18-18-38', NULL, '1.20V', NULL, 'image/Image_Product/Ram_image/ram_TeamGroup_T_Force_8gb_1.png', 'image/Image_Product/Ram_image/ram_TeamGroup_T_Force_8gb_2.png', 'image/Image_Product/Ram_image/ram_TeamGroup_T_Force_8gb_4.png', 'image/Image_Product/Ram_image/ram_TeamGroup_T_Force_8gb_3.png', 'image/Image_Product/Ram_image/ram_TeamGroup_T_Force_8gb_5.png', '0000-00-00'),
+('9_A04', 9, 'Corsair Vangeance', 1080000, 'Kit', '2400/2666', NULL, 'DDR4', 8, 2666, '18-19-19-39', '2400', '1.2V', NULL, 'image/Image_Product/Ram_image/ram_Corsair_Vengeance_8gb_1.png', 'image/Image_Product/Ram_image/ram_Corsair_Vengeance_8gb_2.png', 'image/Image_Product/Ram_image/ram_Corsair_Vengeance_8gb_3.png', NULL, NULL, '0000-00-00'),
+('9_A05', 9, 'GSkill Trident', 3505000, 'Kit', '3000/3200/3600/4266/4600', '16/18/19', 'DDR4', 16, 3000, '16-18-18-38', '2133', '1.20V', NULL, 'image/Image_Product/Ram_image/ram_G.Skill_Trident_16gb_1.png', 'image/Image_Product/Ram_image/ram_G.Skill_Trident_16gb_2.png', 'image/Image_Product/Ram_image/ram_G.Skill_Trident_16gb_3.png', NULL, NULL, '0000-00-00'),
+('9_A06', 9, 'Galax', 1850000, 'Single', '2400', '16', 'DDR4', 8, 2400, '16-16-16-36', '2400', '1.2V', NULL, 'image/Image_Product/Ram_image/ram_Galax_Gamer_8gb_1.png', 'image/Image_Product/Ram_image/ram_Galax_Gamer_8gb_2.png', 'image/Image_Product/Ram_image/ram_Galax_Gamer_8gb_3.png', 'image/Image_Product/Ram_image/ram_Galax_Gamer_8gb_5.png', '', '0000-00-00'),
+('9_A07', 9, 'Galax HOF', 6190000, 'Kit', '3666/4000', NULL, 'DDR4', 16, 3000, NULL, NULL, '1.20V', NULL, 'image/Image_Product/Ram_image/ram_Galax_Gamer_8gb_6.png', 'image/Image_Product/Ram_image/ram_Galax_Gamer_8gb_7.png', '', 'TechMedia\\image\\Image_Product\\Ram_image\\ ram_gala', 'TechMedia\\image\\Image_Product\\Ram_image\\ ram_galax', '0000-00-00'),
+('9_A08', 9, 'GSkill-Aegis', 945000, 'Single', '2666', '19', 'DDR4', 8, 2666, '19-19-19-43', '2666', '1.20V', NULL, 'image/Image_Product/Ram_image/ram_G.Skill_Aegis_8gb_1.png', 'image/Image_Product/Ram_image/ram_G.Skill_Aegis_8gb_2.png', '', '', '', '0000-00-00'),
+('9_A09', 9, 'KingMax', 725000, 'Single', '2400/2666/3000', NULL, 'DDR4', 4, 2400, NULL, NULL, '1.20V', NULL, 'image/Image_Product/Ram_image/ram_kingmax_4gb.png', NULL, NULL, NULL, NULL, '0000-00-00'),
+('9_A10', 9, 'Patriot-Viper-8gb', 1200000, 'Single', '3000', '16', 'DDR4', 8, 3000, '16-18-18-38', NULL, '1.20V', NULL, 'image/Image_Product/Ram_image/ram_Patriot_Viper_8gb_1.png', 'image/Image_Product/Ram_image/ram_Patriot_Viper_8gb_2.png', 'image/Image_Product/Ram_image/ram_Patriot_Viper_8gb_3.png', 'image/Image_Product/Ram_image/ram_Patriot_Viper_8gb_4.png', 'image/Image_Product/Ram_image/ram_Patriot_Viper_8gb_5.png', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -765,22 +765,22 @@ CREATE TABLE IF NOT EXISTS `tbspeaklist` (
   `rate` int(100) NOT NULL,
   `Size` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `Weight` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Input power` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Driver type` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Frequency response` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Amplifier output power` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Noise signal ratio` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Input_power` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Driver_type` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Frequency_response` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Amplifier_output_power` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Noise_signal_ratio` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `Bluetooth` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Amplifier type` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `RCA Analog` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `Amplifier_type` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `RCA_Analog` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo1` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo2` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo3` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo4` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
   `photo5` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `Usb Type B` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `3.5mm Analog` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `DateIn` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `Usb_Type_B` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `35mm_Analog` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `DateIn` date DEFAULT NULL,
   PRIMARY KEY (`idProduct`),
   KEY `tblistclass` (`idClass`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
@@ -789,10 +789,10 @@ CREATE TABLE IF NOT EXISTS `tbspeaklist` (
 -- Dumping data for table `tbspeaklist`
 --
 
-INSERT INTO `tbspeaklist` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Size`, `Weight`, `Input power`, `Driver type`, `Frequency response`, `Amplifier output power`, `Noise signal ratio`, `Bluetooth`, `Amplifier type`, `RCA Analog`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `Usb Type B`, `3.5mm Analog`, `DateIn`) VALUES
-('5_A01', 5, 'Audioengine A5', 10000000, 'Left speaker - 10.75 ″ (27cm) x 7 ″ (18cm) x 9 ″ (23cm)\r\nRight speaker - 10.75 ″ (27cm) x 7 ″ (18cm) x 7.75 ″ (20cm)', 'Left speaker: 7kg\r\nRight speaker: 4.4kg', '115 / 240V, 50 / 60Hz automatically adjustable', '5 ″ Kevlar woofers, 3/4 ″ silk dome tweeters', '50Hz-22kHz ± 1.5dB', '150W peak power total (50W RMS / 75W peak per channel), AES', '> 95dB (typical A-weighted)', 'No', 'Dual Class AB monolithic', 'L-R', 'image/Image_Product/Speak_image/loa-audioengineA5-1.jpg', 'image/Image_Product/Speak_image/loa-audioengineA5-2.jpg', NULL, NULL, NULL, 'Yes', 'Yes', '0000-00-00 00:00:00'),
-('5_A02', 5, 'Creative Inspire T6300', 2190000, 'Subwoofer: 175.0 x 227.0 x 263 mm (6.89 x 8.94 x 10.35 inches)\r\n     Front Satellite: 86.0 x 177.0 x 93.0 mm (3.39 x 6.97 x 3.66 inches)\r\n     Center & Rear Satellite: 72.0 x 147.0 x 79.0 mm (2.83 x 5.79 x 3.11 inches)', 'Front Satellite: 2 x 274g (2 x 9.7oz)\r\n     Center Satellite: 258g (9.1oz)\r\n     Rear Satellite: 2 x 319g (2 x 11.3oz)\r\n     Subwoofer: 2.4kg (5.3lbs)', NULL, NULL, '50 Hz ~ 20 kHz', NULL, NULL, 'No', NULL, NULL, 'image/Image_Product/Speak_image/loa-inspireT6300-1.jpg', 'image/Image_Product/Speak_image/loa-inspireT6300-2.jpg', 'image/Image_Product/Speak_image/loa-inspireT6300-3.jpg', NULL, NULL, 'Yes', 'Yes', '0000-00-00 00:00:00'),
-('5_A03', 5, 'Creative Stage Air', 1290000, '70 x 410 x 78 mm\r\nUSB Cord Length: Approximately 0.5 m, 3.5 mm\r\nCable Cord Length: Approximately 0.5 m', '3.5mm Stereo Cable: 10 g\r\nmicro USB Cable: 10 g, 910 g', NULL, ' 2 x 2.25 ″', '80 Hz ~ 20 kHz', '2 x 5W', '≥ 72 dB', 'Yes', NULL, NULL, 'image/Image_Product/Speak_image/loa-stageAir-1.jpg', 'image/Image_Product/Speak_image/loa-stageAir-2.jpg', 'image/Image_Product/Speak_image/loa-stageAir-3.jpg', 'image/Image_Product/Speak_image/loa-stageAir-4.jpg', 'image/Image_Product/Speak_image/loa-stageAir-5.jpg', 'Yes', 'Yes', '0000-00-00 00:00:00');
+INSERT INTO `tbspeaklist` (`idProduct`, `idClass`, `nameProduct`, `rate`, `Size`, `Weight`, `Input_power`, `Driver_type`, `Frequency_response`, `Amplifier_output_power`, `Noise_signal_ratio`, `Bluetooth`, `Amplifier_type`, `RCA_Analog`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `Usb_Type_B`, `35mm_Analog`, `DateIn`) VALUES
+('5_A01', 5, 'Audioengine A5', 10000000, 'Left speaker - 10.75 ″ (27cm) x 7 ″ (18cm) x 9 ″ (23cm)\r\nRight speaker - 10.75 ″ (27cm) x 7 ″ (18cm) x 7.75 ″ (20cm)', 'Left speaker: 7kg\r\nRight speaker: 4.4kg', '115 / 240V, 50 / 60Hz automatically adjustable', '5 ″ Kevlar woofers, 3/4 ″ silk dome tweeters', '50Hz-22kHz ± 1.5dB', '150W peak power total (50W RMS / 75W peak per channel), AES', '> 95dB (typical A-weighted)', 'No', 'Dual Class AB monolithic', 'L-R', 'image/Image_Product/Speak_image/loa-audioengineA5-1.jpg', 'image/Image_Product/Speak_image/loa-audioengineA5-2.jpg', NULL, NULL, NULL, 'Yes', 'Yes', '0000-00-00'),
+('5_A02', 5, 'Creative Inspire T6300', 2190000, 'Subwoofer: 175.0 x 227.0 x 263 mm (6.89 x 8.94 x 10.35 inches)\r\n     Front Satellite: 86.0 x 177.0 x 93.0 mm (3.39 x 6.97 x 3.66 inches)\r\n     Center & Rear Satellite: 72.0 x 147.0 x 79.0 mm (2.83 x 5.79 x 3.11 inches)', 'Front Satellite: 2 x 274g (2 x 9.7oz)\r\n     Center Satellite: 258g (9.1oz)\r\n     Rear Satellite: 2 x 319g (2 x 11.3oz)\r\n     Subwoofer: 2.4kg (5.3lbs)', NULL, NULL, '50 Hz ~ 20 kHz', NULL, NULL, 'No', NULL, NULL, 'image/Image_Product/Speak_image/loa-inspireT6300-1.jpg', 'image/Image_Product/Speak_image/loa-inspireT6300-2.jpg', 'image/Image_Product/Speak_image/loa-inspireT6300-3.jpg', NULL, NULL, 'Yes', 'Yes', '0000-00-00'),
+('5_A03', 5, 'Creative Stage Air', 1290000, '70 x 410 x 78 mm\r\nUSB Cord Length: Approximately 0.5 m, 3.5 mm\r\nCable Cord Length: Approximately 0.5 m', '3.5mm Stereo Cable: 10 g\r\nmicro USB Cable: 10 g, 910 g', NULL, ' 2 x 2.25 ″', '80 Hz ~ 20 kHz', '2 x 5W', '≥ 72 dB', 'Yes', NULL, NULL, 'image/Image_Product/Speak_image/loa-stageAir-1.jpg', 'image/Image_Product/Speak_image/loa-stageAir-2.jpg', 'image/Image_Product/Speak_image/loa-stageAir-3.jpg', 'image/Image_Product/Speak_image/loa-stageAir-4.jpg', 'image/Image_Product/Speak_image/loa-stageAir-5.jpg', 'Yes', 'Yes', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -805,18 +805,18 @@ CREATE TABLE IF NOT EXISTS `tbusers` (
   `IDUser` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `PASSWORD` varchar(50) CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
-  `ROLE` tinyint(1) NOT NULL,
+  `ROLE` tinyint(1) DEFAULT NULL,
   `FULLNAME` varchar(50) CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
-  `Address` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ADDRESS` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `PHONE` varchar(10) CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
   `GENDER` tinyint(1) DEFAULT NULL,
   `DOB` date DEFAULT NULL,
-  `PROVINCE` varchar(50) CHARACTER SET utf8 COLLATE utf8_vietnamese_ci NOT NULL,
-  `JOIN-DATE` timestamp NOT NULL,
+  `ZIPCODE` varchar(6) CHARACTER SET utf8 COLLATE utf8_vietnamese_ci DEFAULT NULL,
+  `JOIN_DATE` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`IDUser`),
   UNIQUE KEY `IDUser_2` (`IDUser`),
   UNIQUE KEY `EMAIL_2` (`email`),
-  KEY `ADDRESS` (`Address`),
+  KEY `ADDRESS` (`ADDRESS`),
   KEY `IDUser` (`IDUser`),
   KEY `IDUser_3` (`IDUser`),
   KEY `EMAIL` (`email`)
@@ -826,11 +826,11 @@ CREATE TABLE IF NOT EXISTS `tbusers` (
 -- Dumping data for table `tbusers`
 --
 
-INSERT INTO `tbusers` (`IDUser`, `email`, `PASSWORD`, `ROLE`, `FULLNAME`, `Address`, `PHONE`, `GENDER`, `DOB`, `PROVINCE`, `JOIN-DATE`) VALUES
-(2, 'thanhtan.scout@gmail.com', '12345678', 1, 'Trần Thanh Tân', '1234567890', '0987654321', 1, NULL, 'HCM', '0000-00-00 00:00:00'),
-(3, 'tbtram206@gmail.com', 'tranthanhtanyeu', 0, 'TrÆ°Æ¡ng Báº£o TrÃ¢m', '75 ThÃ nh ThÃ¡i', '0917182943', 0, NULL, 'HCM', '0000-00-00 00:00:00'),
-(4, 'tranhoa@gmail.com', '12345678', 0, 'Trần Hòa', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', '0909132456', 0, NULL, 'HCM', '0000-00-00 00:00:00'),
-(5, 'nguyenthiphuonghuyen5755@gmail.com', '12345678', 0, 'Nguyễn Thị Phương Huyền', '580 CMT 8', '0908123456', NULL, NULL, '', '0000-00-00 00:00:00');
+INSERT INTO `tbusers` (`IDUser`, `email`, `PASSWORD`, `ROLE`, `FULLNAME`, `ADDRESS`, `PHONE`, `GENDER`, `DOB`, `ZIPCODE`, `JOIN_DATE`) VALUES
+(2, 'thanhtan.scout@gmail.com', '12345678', 1, 'Tr?n Thanh Tï¿½n', '123456789010', '0987654321', 1, NULL, '70000', NULL),
+(3, 'tbtram206@gmail.com', 'tranthanhtanyeu', 2, 'TrÆ°Æ¡ng Báº£o TrÃ¢m', '75 ThÃ nh ThÃ¡i', '0917182943', 0, NULL, '70000', NULL),
+(4, 'tranhoa@gmail.com', '12345678', 0, 'Trần Hòa', '580 CÃ¡ch Máº¡ng ThÃ¡ng 8', '0909132456', 1, NULL, '70000', NULL),
+(5, 'nguyenthiphuonghuyen5755@gmail.com', '12345678', 3, 'Nguyễn Thị Phương Huyền', '580 CMT 8', '0908123456', NULL, NULL, '', NULL);
 
 --
 -- Constraints for dumped tables
@@ -841,18 +841,6 @@ INSERT INTO `tbusers` (`IDUser`, `email`, `PASSWORD`, `ROLE`, `FULLNAME`, `Addre
 --
 ALTER TABLE `orders_item`
   ADD CONSTRAINT `item_id_order` FOREIGN KEY (`order_id`) REFERENCES `orders` (`order_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
-
---
--- Constraints for table `tbcpulist`
---
-ALTER TABLE `tbcpulist`
-  ADD CONSTRAINT `class_frk_cpu` FOREIGN KEY (`idClass`) REFERENCES `tblistclass` (`idClass`) ON DELETE RESTRICT ON UPDATE RESTRICT;
-
---
--- Constraints for table `tbgraphicslist`
---
-ALTER TABLE `tbgraphicslist`
-  ADD CONSTRAINT `class_frk_tbgrapphic` FOREIGN KEY (`idClass`) REFERENCES `tblistclass` (`idClass`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
 -- Constraints for table `tblaptoplist`

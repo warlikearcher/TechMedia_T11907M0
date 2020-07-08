@@ -72,39 +72,39 @@ switch ($ref) {
         break;
     case "laptop2040":
         $tableName = "tblaptoplist";
-        $sql = "select * from $tableName where rate between 20000000 and 40000000   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit  ;";
+        $sql = "select * from $tableName where rate > 20000000  ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit  ;";
         break;
-    case "laptop40h":
+    case "laptop4h":
         $tableName = "tblaptoplist";
         $sql = "select * from $tableName where rate > 40000000   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
         break;
     case "laptopInteli3":
         $tableName = "tblaptoplist";
-        $sql = "select * from $tableName where `CPU type` like '%i3%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
+        $sql = "select * from $tableName where `CPU_type` like '%i3%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
         break;
     case "laptopInteli5":
         $tableName = "tblaptoplist";
-        $sql = "select * from $tableName where `CPU type` like '%i5%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
+        $sql = "select * from $tableName where `CPU_type` like '%i5%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
         break;
     case "laptopInteli7":
         $tableName = "tblaptoplist";
-        $sql = "select * from $tableName where `CPU type` like '%i7%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
+        $sql = "select * from $tableName where `CPU_type` like '%i7%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
         break;
     case "laptopInteli9":
         $tableName = "tblaptoplist";
-        $sql = "select * from $tableName where `CPU type` like '%i9%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
+        $sql = "select * from $tableName where `CPU_type` like '%i9%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
         break;
     case "laptopAMD3":
         $tableName = "tblaptoplist";
-        $sql = "select * from $tableName where `CPU type` like '%Ryzen 3%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
+        $sql = "select * from $tableName where `CPU_type` like '%Ryzen 3%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
         break;
     case "laptopAMD5":
         $tableName = "tblaptoplist";
-        $sql = "select * from $tableName where `CPU type` like '%Ryzen 5%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
+        $sql = "select * from $tableName where `CPU_type` like '%Ryzen 5%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
         break;
     case "laptopAMD7":
         $tableName = "tblaptoplist";
-        $sql = "select * from $tableName where `CPU type` like '%Ryzen 7%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
+        $sql = "select * from $tableName where `CPU_type` like '%Ryzen 7%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
         break;
 //    end ref laptop
 //    
@@ -155,15 +155,15 @@ switch ($ref) {
         break;
     case "ram4GB":
         $tableName = "tbramlist";
-        $sql = "select * from $tableName where `Capacity (GB)` like '%4%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
+        $sql = "select * from $tableName where `Capacity_GB` like '%4%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
         break;
     case "ram8GB":
         $tableName = "tbramlist";
-        $sql = "select * from $tableName where `Capacity (GB)` like '%8%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
+        $sql = "select * from $tableName where `Capacity_GB` like '%8%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
         break;
     case "ram16GB":
         $tableName = "tbramlist";
-        $sql = "select * from $tableName where `Capacity (GB)` like '%16%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
+        $sql = "select * from $tableName where `Capacity_GB` like '%16%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
         break;
 //    end ref ram
 //    
@@ -190,11 +190,11 @@ switch ($ref) {
         break;
     case "mainboardIntel":
         $tableName = "tbmainboard";
-        $sql = "select * from $tableName where `Tong quan` like '%Intel%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
+        $sql = "select * from $tableName where `Tong_quan` like '%Intel%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
         break;
     case "mainboardAMD":
         $tableName = "tbmainboard";
-        $sql = "select * from $tableName where `Tong quan` like '%AMD%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
+        $sql = "select * from $tableName where `Tong_quan` like '%AMD%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
         break;
 //    end ref mainboard
 //    
@@ -327,15 +327,15 @@ switch ($ref) {
         break;
     case "graphicsNVIDIA":
         $tableName = "tbgraphicslist";
-        $sql = "select * from $tableName where `Graphic processor` like '%NVIDIA%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
+        $sql = "select * from $tableName where `Graphic_processor` like '%NVIDIA%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
         break;
     case "graphicsGeForce":
         $tableName = "tbgraphicslist";
-        $sql = "select * from $tableName where `Graphic processor` like '%GeForce%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
+        $sql = "select * from $tableName where `Graphic_processor` like '%GeForce%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
         break;
     case "graphicsRadeon":
         $tableName = "tbgraphicslist";
-        $sql = "select * from $tableName where `Graphic processor` like '%Radeon%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
+        $sql = "select * from $tableName where `Graphic_processor` like '%Radeon%'   ORDER BY " . $columns . '   ' . $sort_order . " LIMIT $start, $limit ;";
         break;
     case "graphics1":
         $tableName = "tbgraphicslist";

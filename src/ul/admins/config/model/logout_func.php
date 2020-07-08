@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once '../database/connectDB.php';
+include_once '../../controllers/database/connectDB.php';
 if (isset($_COOKIE["user-email"]) && isset($_COOKIE["user-pass"])) {
     setcookie("user-email", "", time() - 3600, "/");
     setcookie("user-pass", "", time() - 3600, "/");

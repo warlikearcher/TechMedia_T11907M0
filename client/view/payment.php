@@ -5,14 +5,14 @@ if (isset($_SESSION["user-email"])) {
     $cart = mysqli_query($link, "SELECT nameProduct,code,SUM(quantity) as quantitySUM,SUM(price) as priceSUM FROM cart WHERE email = '$email' GROUP BY nameProduct");
     $infoAddress = mysqli_fetch_row($info);
     $code_promo1 = isset($_POST['total_promo_code']) ? $_POST['total_promo_code'] : "";
-    $r = mysqli_query($link, "SELECT PROVINCE FROM `tbusers` WHERE EMAIL = '$email' ");
+    $r = mysqli_query($link, "SELECT ZIPCODE FROM `tbusers` WHERE EMAIL = '$email' ");
     $ro = mysqli_fetch_row($r);
     switch ($ro[0]) {
-        case "HN":
-            $ship = 30000;
+        case "63000":
+            $ship = 63000;
             $reportShip = "30.000VND";
             break;
-        case "HCM":
+        case "70000":
             $ship = 0;
             $reportShip = "Miễn phí";
             break;

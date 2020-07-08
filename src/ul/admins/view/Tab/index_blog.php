@@ -25,7 +25,7 @@ include_once '../controllers/database/connectDB.php';
             </thead>
             <tbody>                   
                 <?php
-                $sql = "select * from tbarticles";
+                $sql = "select * from tbarticles ORDER BY `tbarticles`.`date` DESC";
                 $r = mysqli_query($link, $sql);
 
                 $a = mysqli_fetch_all($r);

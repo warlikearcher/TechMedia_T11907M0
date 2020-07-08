@@ -32,12 +32,15 @@ for ($i = $count; $i >= 0; $i--) {
     }
 }
 $sql .= " WHERE $field_name[0]='$code';";
+//echo $sql;
 $r = mysqli_query($link, $sql);
 if ($r == FALSE) {
     echo false;
     exit();
 } else {
-    echo true;
+    echo "<script>";
+    echo "window.location.href = 'index.php';";
+    echo "</script>";
 }
 ?>
 

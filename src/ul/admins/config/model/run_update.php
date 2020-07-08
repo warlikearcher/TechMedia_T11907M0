@@ -1,31 +1,43 @@
-
 <?php
-
-include_once '../../controllers/database/connectDB.php';
-if(isset($_POST['update']) && ($_POST['update'] = 'NameRate')){
-    $name = $_POST["txtName"];
-    $rate = $_POST["txtRate"];
-    $id = $_POST["hidden_id"];
-    $nameTable = $_POST["hidden_tableName"];
-
-
-    $sql = "update $nameTable set nameProduct = '$name', rate='$rate' WHERE idProduct= '$id' ;";
-}
-if(isset($_POST['update']) && ($_POST['update'] = 'all')){
-    
-}
-
+include './controllers/database/connectDB.php';
+$code = $_POST["code"];
+$table = $_POST["table"];
+$sql = "select * from $table; ";
 $r = mysqli_query($link, $sql);
-
+if ($r == FALSE || mysqli_num_rows($r) == 0) {
+    echo false;
+    exit();
+}
+while ($field = mysqli_fetch_field($r)) {
+    $field_name[] = $field->name;
+}
+$sql = "select * from $table where $field_name[0] like '$code' ; ";
+$r = mysqli_query($link, $sql);
+if ($r == FALSE || mysqli_num_rows($r) == 0) {
+    echo false;
+    exit();
+}
+$name = mysqli_fetch_row($r);
+$count = count($name) - 2;
+$sql = "UPDATE $table SET";
+for ($i = $count; $i >= 0; $i--) {
+    $name[$i] = $_POST["$field_name[$i]"];
+    if ($name[$i] == "") {
+        continue;
+    }
+    if ($i==0) {
+       $sql .= " $field_name[$i]='$name[$i]'"; 
+    } else {
+    $sql .= " $field_name[$i]='$name[$i]',";
+    }
+}
+$sql .= " WHERE $field_name[0]='$code';";
+$r = mysqli_query($link, $sql);
 if ($r == FALSE) {
-    echo "<h3 style='color:blue'>Lỗi sai Điều Chỉnh thông tin sản phẩm</h3>";
+    echo false;
     exit();
 } else {
-    ?>
-    <script>
-        window.location.href = '../../index.php';
-        alert('Cập nhật Thành Công !!!');
-    </script>
-
-<?php } ?>
+    echo true;
+}
+?>
 

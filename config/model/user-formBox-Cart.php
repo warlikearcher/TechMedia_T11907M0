@@ -4,6 +4,9 @@
 </div>
 <?php
 $r = mysqli_query($link, "SELECT nameProduct,code,SUM(quantity) as quantitySUM,SUM(price) as priceSUM FROM cart WHERE email = '$email' GROUP BY nameProduct");
+
+//var_dump($r);
+//exit();
 if (($item = mysqli_num_rows($r)) > 0) {
     $total_price = 0;
     ?>

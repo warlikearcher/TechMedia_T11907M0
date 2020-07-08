@@ -23,7 +23,7 @@ if ($num = mysqli_num_rows($r) > 0) {
         <div id="main-header">
             <div class="col-md-3 col-sm-2 col-xs-12" id="left-header">
                 <div id="logo">
-                    <a href="../../index.php"><img src="../image/Screen_Image/Logoweb.png" alt="TechMedia"></a>
+                    <a href="#"><img src="../image/Screen_Image/Logoweb.png" alt="TechMedia"></a>
                 </div>
             </div>
             <div class="col-md-5 col-sm-5 col-xs-12" id="center-header">
@@ -32,13 +32,13 @@ if ($num = mysqli_num_rows($r) > 0) {
                         <li id="fb"><a href="https://www.facebook.com/TechMedia-107704110962045/" target="_blank"><span class="fa fa-facebook ">acebook</span></a></li>
                         <li id="tw"><a href="https://twitter.com/MinelrealEric" target="_blank"><span class="fa fa-twitter">Twitter</span></a></li>
                         <li id="gmail"><a href="mailto:warlikearcher@gmail.com" target="_blank"><span class="fa fa-google">mail</span></a></li>
-                        <li id="promo"><a href="index.php?view=news&id=16" target="_blank"><span class="glyphicon glyphicon-gift">Khuyến mãi</span></a>
+                        <li id="promo"><a href="../../index.php?view=news&id=16" target="_blank"><span class="glyphicon glyphicon-gift">Khuyến mãi</span></a>
                         </li>
                     </ul>
                 </div>
                 <div class="clearfix" id="center-header-search">
                     <div class="wrap">
-                        <form action="search.php" method="get">
+                        <form action="../../config/model/search.php" method="get">
                             <div class="bk padding-0">
                                 <input type="text" id="fname" name="fname" onkeyup="showHint(this.value)" class="textbox padding-0" placeholder="What you need?" tabindex="1">
                                 <button type="button" class="textbox-clr padding-0" id="textbox-clr" onClick="lightbg_clr()"></button>
@@ -67,28 +67,23 @@ if ($num = mysqli_num_rows($r) > 0) {
     <div class="container" >
         <div class="row">
             <div class="col-md-3 left-menu ">
-                <div class="navbar-header">
-                    <div class="navbar-brand">
-                        <i class="fa fa-list-ul"></i>
-                        <span>Danh mục sản phẩm</span>
-                    </div>
-                </div>
+
 
             </div>
             <div class="col-md-6 center-menu" >
                 <div>
                     <ul class="nav navbar-nav" id="list-nav">
                         <li class="menu-list"><a href="../../index.php">Trang chủ</a></li>
-                        <li class="menu-list"><a href="">Giới thiệu</a></li>
-                        <li class="menu-list"><a href="index.php?view=news&id=16">Khuyến mãi</a></li>
-                        <li class="menu-list"><a href="">Liên hệ</a></li>                      
+                        <li class="menu-list"><a href="../../index.php?view=introduce">Giới thiệu</a></li>
+                        <li class="menu-list"><a href="../../index.php?view=news&id=16">Khuyến mãi</a></li>
+                        <li class="menu-list"><a href="../../index.php?view=contact">Liên hệ</a></li>                      
                         <?php
                         if (isset($_SESSION["user-email"]) && ($role == 0)) {
-                            echo '<li class="menu-list"><a href="customer_info.php" style="color: white; font-family: sans-serif;">' . $name . '</a></li>';
+                            echo '<li class="menu-list"><a href="client/view/customer_info.php" style="color: white; font-family: sans-serif;">' . $name . '</a></li>';
                         } else if (isset($_SESSION["user-email"]) && ($role == 1)) {
-                            echo '<li class="menu-list"><a href="../../src/ul/admins/index.php">Quản lý/a></li>';
+                            echo '<li class="menu-list"><a href="././src/ul/admins/index.php">Quản lý/a></li>';
                         } else {
-                            echo '<li class="menu-list"><a href="client/view/user.php">Đăng nhập</a></li>';
+                            echo '<li class="menu-list"><a href="user.php">Đăng nhập</a></li>';
                         }
                         ?>
                     </ul>
@@ -96,15 +91,24 @@ if ($num = mysqli_num_rows($r) > 0) {
             </div>
             <div class="col-md-3 right-menu">
                 <?php
-                $email = $_SESSION["user-email"];
-                $re = mysqli_query($link, "SELECT * FROM cart WHERE email = '$email' GROUP BY nameProduct");
-                $cart_count = mysqli_num_rows($re);
+                if (!isset($_SESSION["user-email"])) {
+                    if (!empty($_SESSION["cart_item"])) {
+                        $cart_count = count(array_keys($_SESSION["cart_item"]));
+                    } else {
+                        $cart_count = 0;
+                    }
+                } else {
+                    $email = $_SESSION["user-email"];
+                    $re = mysqli_query($link, "SELECT * FROM cart WHERE email = '$email' GROUP BY nameProduct");
+                    $cart_count = mysqli_num_rows($re);
+                }
                 ?>
                 <ul class="nav navbar-nav cart_div" id="list-nav">
-                    <li class="cart" id="buttonCart"><a href="?view=cart">Giỏ Hàng <span class="fa fa-shopping-cart"></span><span>(<?php echo $cart_count; ?>)</span></a></li>
+                    <li class="cart" id="buttonCart"><a href="../../index.php?view=cart">Giỏ Hàng <span class="fa fa-shopping-cart"></span><span>(<?php echo $cart_count; ?>)</span></a></li>
                 </ul>
+
                 <ul class="nav navbar-nav cart_div" id="list-nav">
-                    <li class="menu-list"><a href="?view=orderQuery">Truy vấn đơn hàng</a></li>
+                    <li class="menu-list"><a href="../../index.php?view=orderQuery">Truy vấn đơn hàng</a></li>
                 </ul>
             </div>
         </div>

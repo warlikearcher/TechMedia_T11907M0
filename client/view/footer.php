@@ -40,7 +40,7 @@
                 </div>
                 <div class="item-column">
                     <h3>Need help?</h3>
-                    <a href="contact.html">Contact now</a>
+                    <a href="index.php?view=contact">Contact now</a>
                 </div>
             </div>
             <!--End Center -->

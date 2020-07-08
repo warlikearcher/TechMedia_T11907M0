@@ -21,9 +21,8 @@
                                         <div class="line-2 grid-item item2">
                                             <h3>Giá khoảng từ</h3>
                                             <ul>
-                                                <li><a  href="index.php?view=product&ref=laptop1000">Từ 10 triệu đến 20 triệu</a></li>
-                                                <li><a  href="index.php?view=product&ref=laptop2000">Từ 20 triệu đến 40 triệu</a></li>
-                                                <li><a  href="index.php?view=product&ref=laptop3000">Trên 40 triệu</a></li>
+                                                <li><a  href="index.php?view=product&ref=laptop1020">Từ 10 triệu đến 20 triệu</a></li>
+                                                <li><a  href="index.php?view=product&ref=laptop2040">Trên 20 triệu đến 40 triệu</a></li>
                                             </ul>
                                         </div>
                                         <div class="line-3 grid-item item3">
@@ -114,8 +113,7 @@
                                             <h3>Phân loại theo giá</h3>
                                             <ul>
                                                 <li><a  href="index.php?view=product&ref=pccase1">Dưới 1 triệu</a></li>
-                                                <li><a  href="index.php?view=product&ref=pccase12">Từ 1 đến 2 triệu</a></li>
-                                                <li><a  href="index.php?view=product&ref=pccase23">Từ 2 đến 3 triệu</a></li>
+                                                <li><a  href="index.php?view=product&ref=pccase13">Từ 1 đến 3 triệu</a></li>
                                                 <li><a  href="index.php?view=product&ref=pccase3h">Trên 3 triệu</a></li>
                                             </ul>
                                         </div>

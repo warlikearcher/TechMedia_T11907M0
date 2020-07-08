@@ -134,11 +134,12 @@
                     <h2 class="content_column">Thông số chung</h2>
                     <?php
                     $numCol = mysqli_num_fields($r);
+                    $dateNow = date("Y-m-d");
                     ?>
                     <table class="user-input-table">
                         <tbody>
                             <?php
-                            for ($i = 0; $i < $count-2; $i++) {
+                            for ($i = 0; $i < $count; $i++) {
                                 if ($i == 0) {
                                     echo "<tr>";
                                     echo '<td class = "user-input-lable"><label>' . $field_name[$i] . '</label></td>';
@@ -147,7 +148,19 @@
                                 }else if($i == 1){
                                     echo "<tr>";
                                     echo '<td class = "user-input-lable"><label>' . $field_name[$i] . '</label></td>';
-                                    echo '<td class = "user-input-field"><input class = "input-field" type = "text" id = "' . $field_name[$i] . '" name = "' . $field_name[$i] . '" value = "' .$idClass. '"></td>';
+                                    echo '<td class = "user-input-field"><input class = "input-field" type = "number" min="1" max ="9" id = "' . $field_name[$i] . '" name = "' . $field_name[$i] . '" value = "' .$idClass. '"></td>';
+                                    echo "</tr>";
+                                }
+                                else if($i == 3){
+                                    echo "<tr>";
+                                    echo '<td class = "user-input-lable"><label>' . $field_name[$i] . '</label></td>';
+                                    echo '<td class = "user-input-field"><input class = "input-field" type = "number" min="0" max ="100000000" id = "' . $field_name[$i] . '" name = "' . $field_name[$i] . '" value = "' .$field_name[$i]. '"></td>';
+                                    echo "</tr>";
+                                }
+                                else if($i == $count-1){
+                                    echo "<tr>";
+                                    echo '<td class = "user-input-lable"><label>' . $field_name[$i] . '</label></td>';
+                                    echo '<td class = "user-input-field"><input class = "input-field" type = "date" id = "' . $field_name[$i] . '" name = "' . $field_name[$i] . '" value = "' .$dateNow. '" readonly></td>';
                                     echo "</tr>";
                                 }
                                 else {

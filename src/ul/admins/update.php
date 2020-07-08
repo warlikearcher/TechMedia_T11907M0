@@ -23,21 +23,16 @@ if (isset($_GET["table"])) {
             $table = 'tbspeaklist';
             break;
         case "6":
-            $table = '';
-//            $sql = "select * from $aa where idProduct = '$id' ";
+            $table = 'tbmainboard';
             break;
         case "7":
             $table = 'tbpccaselist';
             break;
         case "8":
-            $table = '';
+            $table = 'tbpcmonitor';
             break;
         case "9":
             $table = 'tbramlist';
-            break;
-        case "10":
-            $talbe = '';
-//            $sql = "select * from $aa where idProduct = '$id' ";
             break;
         default: break;
     }

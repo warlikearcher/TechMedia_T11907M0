@@ -1,6 +1,7 @@
 <?php
+include_once '../../config/database/connectDB.php';
 session_start();
-include '../../config/database/connectDB.php';
+
 if (isset($_COOKIE["user-email"]) && isset($_COOKIE["user-pass"]) && isset($_COOKIE["user-role"])) {
     $_SESSION["user-email"] = $_COOKIE["user-email"];
     $_SESSION["user-pass"] = $_COOKIE["user-pass"];
@@ -43,14 +44,14 @@ if (isset($_GET["action"])) {
         <link href="../../library/css/css_customer_info.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <?php include'./header_1.php'; ?>
+        <?php include_once './header_1.php'; ?>
         <main style="background: rgb(241,241,241);">
             <div class="container" >
                 <div class="center-div">
                     <div class="row">
                         <div class="col-12 col-lg-3 col-xl-3">
                             <?php
-                            include './../../config/model/customer_info_navsidebar.php';
+                            include_once './../../config/model/customer_info_navsidebar.php';
                             ?>
                         </div>
                         <div class="col-12 col-lg-9 col-xl-9">
@@ -58,15 +59,15 @@ if (isset($_GET["action"])) {
                                 <?php
                                 if (isset($_GET['action'])) {
                                     switch ($_GET['action']) {
-                                        case 'infor': include './../../config/model/user-formBox-Infor.php';
+                                        case 'infor': include_once './../../config/model/user-formBox-Infor.php';
                                             break;
-                                        case 'his': include './../../config/model/user-formBox-His.php';
+                                        case 'his': include_once './../../config/model/user-formBox-His.php';
                                             break;
-                                        case 'cart': include './../../config/model/user-formBox-Cart.php';
+                                        case 'cart': include_once './../../config/model/user-formBox-Cart.php';
                                             break;
                                     }
                                 } else {
-                                    include './../../config/model/user-formBox-Infor.php';
+                                    include_once './../../config/model/user-formBox-Infor.php';
                                 }
                                 ?>
                             </div>
@@ -74,10 +75,10 @@ if (isset($_GET["action"])) {
                     </div>
 
                     </main>
-                    <footer><?php include'./footer.php'; ?></footer>
+                    <footer><?php include_once'./footer.php'; ?></footer>
                     </body>
                     <?php
-                    include '../../library/js/customer_info.js';
+                    include_once '../../library/js/customer_info.js';
                     ?>
                     </html>
                     <script>

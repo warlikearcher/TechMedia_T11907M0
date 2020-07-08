@@ -15,6 +15,7 @@
                                         3928 6888 <br>
                                         <Strong>Fax:</Strong> (+84)28 - 3928 6666<br>
                                         <Strong>Email:</Strong> techMedia@gmail.com <br><br></p>
+                                    <button class="btn btn-default"><a href="client/view/feedback_form3/feedback.php">Gửi mail cho chúng tôi ngay</a></button>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6">
