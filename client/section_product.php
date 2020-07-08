@@ -4,7 +4,7 @@ include_once (__DIR__ . "\..\config\database\connectDB.php");
 require (__DIR__ . "\..\config\model\load.php");
 $result = mysqli_query($link, $sql);
 $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
+$check = mysqli_num_rows($result);
 ?>
 <div class="second-menu">
     <div class="container">
@@ -240,7 +240,7 @@ $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
             </div>
             <!-- End left section-->
             <!-- Right Section-->
-            
+
             <div class="col-md-9 padding-0">
                 <div class="col-sm-6 right-ct-list padding-0">
                     <!--Start Sort bar-->
@@ -270,67 +270,74 @@ $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
                     <!-- End Sort bar-->
 
                     <!-- Start Display product-->
-                    <div class="grid-container">
+                    <?php if ($check > 0) { ?>
+                        <div class="grid-container">
 
-                        <?php foreach ((array) $rows as $values) : ?>
-                        <form method="POST" action="index.php?view=product&ref=<?php echo $ref;?>&action=add&id=<?php echo $values["idProduct"]; ?>">
-                                <div class="grid-item">
-                                    <div class="block_item height">
-                                        <ul class="item-inf padding-0">
-                                            <li>
-                                                <figure>
-                                                    <input type="hidden" name="quantity" value="1" class="form-control" />
-                                                    <input type="hidden" name="hidden_name" value="<?php echo $values["nameProduct"]; ?>" />
-                                                    <input type="hidden" name="hidden_price" value="<?php echo $values["rate"]; ?>" />
-                                                    <a class="item-img" href="?view=detail&id=<?php echo $values['idProduct']; ?>"><img src="<?php echo $values["photo1"]; ?>" alt="Image Product"></a>
+                            <?php foreach ((array) $rows as $values) : ?>
+                                <form method="POST" action="index.php?view=product&ref=<?php echo $ref; ?>&action=add&id=<?php echo $values["idProduct"]; ?>">
+                                    <div class="grid-item">
+                                        <div class="block_item height">
+                                            <ul class="item-inf padding-0">
+                                                <li>
+                                                    <figure>
+                                                        <input type="hidden" name="quantity" value="1" class="form-control" />
+                                                        <input type="hidden" name="hidden_name" value="<?php echo $values["nameProduct"]; ?>" />
+                                                        <input type="hidden" name="hidden_price" value="<?php echo $values["rate"]; ?>" />
+                                                        <a class="item-img" href="?view=detail&id=<?php echo $values['idProduct']; ?>"><img src="<?php echo $values["photo1"]; ?>" alt="Image Product"></a>
 
-                                                    <a class="add-card-btn" name="add_to_cart" href="index.php?action=add&id=<?php echo $values['idProduct']; ?>"><span class="fa fa-shopping-cart"></span><input type="submit" name="add_to_cart" value="Thêm vào giỏ hàng"></a>
-                                                    <figcaption >
-                                                        <div class="name-pr">
-                                                            <h4 class="item-title"><a href="#"><?php echo $values['nameProduct']; ?></a></h4>
-                                                        </div>
+                                                        <a class="add-card-btn" name="add_to_cart" href="index.php?action=add&id=<?php echo $values['idProduct']; ?>"><span class="fa fa-shopping-cart"></span><input type="submit" name="add_to_cart" value="Thêm vào giỏ hàng"></a>
+                                                        <figcaption >
+                                                            <div class="name-pr">
+                                                                <h4 class="item-title"><a href="#"><?php echo $values['nameProduct']; ?></a></h4>
+                                                            </div>
 
-                                                        <div class="span-price">
-                                                            <span class="item-price"><?php echo number_format($values["rate"], 0); ?></span><span
-                                                                class="item-price-del"><del><?php echo number_format($del_price = $values['rate'] + round($values['rate'] * 0.2, -4), 0); ?></del></span>
-                                                        </div>
-                                                    </figcaption>
-                                                </figure>
+                                                            <div class="span-price">
+                                                                <span class="item-price"><?php echo number_format($values["rate"], 0); ?></span><span
+                                                                    class="item-price-del"><del><?php echo number_format($del_price = $values['rate'] + round($values['rate'] * 0.2, -4), 0); ?></del></span>
+                                                            </div>
+                                                        </figcaption>
+                                                    </figure>
 
-                                            </li>
-                                        </ul> 
+                                                </li>
+                                            </ul> 
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
 
-                        <?php endforeach; ?>
-                    </div>
-                    <!-- End display product-->
+                            <?php endforeach; ?>
 
-                    <!-- Start pagination-->
-                    <div class="pagination-container" align ="center">
-                        <div class="paginationss">
-                            <?php
-                            if ($current_page > 1 && $total_page > 1) {
-                                echo '<a href="index.php?view=product&ref='.$ref.'&page=' . ($current_page - 1) . '">Prev</a> | ';
-                            }
-
-                            for ($i = 1; $i <= $total_page; $i++) {
-                                if ($i == $current_page) {
-                                    echo '<span>' . $i . '</span> |';
-                                } else {
-                                    echo '<a href="index.php?view=product&ref='.$ref.'&page=' . $i . '">' . $i . '</a> | ';
-                                }
-                            }
-
-                            if ($current_page < $total_page && $total_page > 1) {
-                                echo '<a href="index.php?view=product&ref='.$ref.'&page=' . ($current_page + 1) . '">Next</a>';
-                            }
-                            ?>
                         </div>
+                        <!-- End display product-->
 
-                    </div>
-                    <!-- End pagiantion-->
+                        <!-- Start pagination-->
+                        <div class="pagination-container" align ="center">
+                            <div class="paginationss">
+                                <?php
+                                if ($current_page > 1 && $total_page > 1) {
+                                    echo '<a href="index.php?view=product&ref=' . $ref . '&page=' . ($current_page - 1) . '">Prev</a> | ';
+                                }
+
+                                for ($i = 1; $i <= $total_page; $i++) {
+                                    if ($i == $current_page) {
+                                        echo '<span>' . $i . '</span> |';
+                                    } else {
+                                        echo '<a href="index.php?view=product&ref=' . $ref . '&page=' . $i . '">' . $i . '</a> | ';
+                                    }
+                                }
+
+                                if ($current_page < $total_page && $total_page > 1) {
+                                    echo '<a href="index.php?view=product&ref=' . $ref . '&page=' . ($current_page + 1) . '">Next</a>';
+                                }
+                                ?>
+                            </div>
+
+                        </div>
+                        <!-- End pagiantion-->
+                    <?php } else { ?>
+                        <div style="text-align: center">
+                            <h3>Không tìm thấy sản phẩm phù hợp!!</h3>
+                        </div>
+                    <?php } ?>
                 </div>            
             </div>
             <!-- End right section-->

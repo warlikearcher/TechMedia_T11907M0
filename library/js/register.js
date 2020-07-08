@@ -5,7 +5,7 @@ var btn = document.getElementById("btn");
             var submit = null;
             
             function register() {
-                btn.style.left = "110px";
+                btn.style.left = "128px";
                 res.style.left = "50px";
                 log.style.left = "-400px";
                 box.style.height= "480px";
@@ -22,10 +22,9 @@ var btn = document.getElementById("btn");
                 var email = document.getElementById("re-user-email").value;
                 var pass = document.getElementById("re-user-password").value;
                 var repass = document.getElementById("re-user-repassword").value;
-                var add = document.getElementById("re-user-address").value;
                 var phone = document.getElementById("re-user-phonenumber").value;
                 if (pass===repass) {
-                    $.post("../../config/model/register_func.php",{email:email, pass:pass, name:name, add:add, phone:phone},function(data){
+                    $.post("../../config/model/register_func.php",{email:email, pass:pass, name:name, phone:phone},function(data){
                         $("#re-result").html(data);
                     });
                     return false;

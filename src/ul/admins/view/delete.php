@@ -57,7 +57,7 @@ $res = mysqli_query($link, $sql);
             <div class="card-body">
                 <div class=" no-gutters align-content-center-delete">
                     <div class="card-font">
-                        <h1>Bạn thật sự muốn xóa sản phẩm:</h1>
+                        <h1>Bạn thật sự muốn xóa:</h1>
                         <h2><?php echo $name; ?></h2>
                     </div>
                 </div>

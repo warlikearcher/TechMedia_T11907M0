@@ -49,13 +49,7 @@
     <div class="container" >
         <div class="row">
             <div class="col-md-3 left-menu ">
-                <div class="navbar-header">
-                    <div class="navbar-brand">
-                        <i class="fa fa-list-ul"></i>
-                        <span>Danh mục sản phẩm</span>
-                    </div>
-                </div>
-
+                
             </div>
             <div class="col-md-6 center-menu" >
                 <div>

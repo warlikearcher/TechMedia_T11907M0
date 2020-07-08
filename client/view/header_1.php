@@ -79,7 +79,7 @@ if ($num = mysqli_num_rows($r) > 0) {
                         <li class="menu-list"><a href="../../index.php?view=contact">Liên hệ</a></li>                      
                         <?php
                         if (isset($_SESSION["user-email"]) && ($role == 0)) {
-                            echo '<li class="menu-list"><a href="client/view/customer_info.php" style="color: white; font-family: sans-serif;">' . $name . '</a></li>';
+                            echo '<li class="menu-list"><a href="customer_info.php" style="color: white; font-family: sans-serif;">' . $name . '</a></li>';
                         } else if (isset($_SESSION["user-email"]) && ($role == 1)) {
                             echo '<li class="menu-list"><a href="././src/ul/admins/index.php">Quản lý/a></li>';
                         } else {

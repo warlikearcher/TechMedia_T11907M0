@@ -16,7 +16,7 @@ if ($r == FALSE) {
     ?>
     <script>
         window.location.href = '../../index.php';
-        alert('Đã vô hiệu hóa!!!');
+        alert('Đã hiệu hóa trở lại!!!');
     </script>
 
 <?php } ?>
