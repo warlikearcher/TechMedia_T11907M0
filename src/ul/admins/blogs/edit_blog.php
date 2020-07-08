@@ -68,7 +68,7 @@ $tin = mysqli_fetch_row($r);
                     <input type="text" name="date"  class="form-control" value="<?php echo $tin[5]?>" required/>
                     <br/>
                     <input type="submit" id="btnOk" name="btnOk" value="Đăng Bài" class="btn btn-info" style="width: 90px; height: 40px">
-                    <a href="index_blog.php" class="btn btn-info" style="width: 200px; height: 40px"> Trở về trang trước</a>
+                    <a href="../index.php?src=news" class="btn btn-info" style="width: 200px; height: 40px"> Trở về trang trước</a>
                 </form>
             </div>
         </div>
